@@ -1,0 +1,1363 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MSustentaMais | ESG que se sustenta em quem decide</title>
+<meta name="description" content="A MSustentaMais forma líderes em ESG a partir de uma fazenda no Pantanal. Conheça Fernanda de Arruda Machado, o método CEPGAS™, projetos de cultura, patrimônio e educação ambiental, boas práticas e artigos.">
+<meta name="theme-color" content="#0D3B2B">
+<meta property="og:title" content="MSustentaMais | ESG que se sustenta em quem decide">
+<meta property="og:description" content="Formação de líderes em ESG a partir de uma fazenda no Pantanal. Método CEPGAS™.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230D3B2B'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E9C989'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --verde:#0D3B2B; --fundo:#082A1F; --menta:#4ECFA0; --ouro:#E9C989; --ouro-texto:#7A5F1C;
+  --bruma:#EDF3EF; --tinta:#13251D; --suave:#4A5D53; --linha:#C9D8CF; --branco:#fff;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'DM Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);font-size:1.0625rem;line-height:1.65;color:var(--tinta);background:var(--branco)}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.01em;margin:0 0 .55em}
+h1{font-size:clamp(2.7rem,6.4vw,5.2rem)}
+h2{font-size:clamp(2rem,3.6vw,3rem)}
+h3{font-size:clamp(1.45rem,2.2vw,1.85rem);line-height:1.15}
+h4{font-size:1.25rem}
+p{margin:0 0 1em}
+.container{width:100%;max-width:1120px;margin:0 auto;padding:0 1.25rem}
+.texto{max-width:66ch}
+.suave{color:var(--suave)}
+:focus-visible{outline:3px solid var(--menta);outline-offset:3px;border-radius:2px}
+.faixa--escura :focus-visible,.topo :focus-visible,.rodape :focus-visible,.heroi :focus-visible{outline-color:var(--ouro)}
+.skip{position:absolute;left:-999px;top:0;background:var(--ouro);color:var(--verde);padding:.6rem 1rem;z-index:100;font-weight:700}
+.skip:focus{left:.5rem;top:.5rem}
+[hidden]{display:none!important}
+
+/* topo */
+.topo{position:sticky;top:0;z-index:50;background:rgba(13,59,43,.96);backdrop-filter:blur(8px);color:#fff;border-bottom:1px solid rgba(233,201,137,.18)}
+.topo__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:4.25rem}
+.marca{display:flex;align-items:center;gap:.65rem;text-decoration:none}
+.marca__simbolo{width:2rem;height:2rem;flex:none}
+.marca__nome{font-family:var(--serif);font-size:1.6rem;font-weight:600;letter-spacing:.005em}
+.menu{display:flex;align-items:center;gap:1.15rem}
+.menu a{text-decoration:none;font-size:.95rem;padding:.4rem 0;border-bottom:2px solid transparent;color:#DCE8E1}
+.menu a:hover{color:#fff;border-bottom-color:rgba(233,201,137,.6)}
+.menu a[aria-current="page"]{color:#fff;border-bottom-color:var(--ouro)}
+.menu-btn{display:none;background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5);padding:.45rem .9rem;font:inherit;font-size:.95rem;border-radius:4px;cursor:pointer}
+
+/* botões */
+.botao{display:inline-flex;align-items:center;justify-content:center;text-align:center;padding:.85rem 1.45rem;border-radius:4px;font-weight:700;font-size:1rem;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:var(--sans);line-height:1.25}
+.botao--ouro{background:var(--ouro);color:var(--verde)}
+.botao--ouro:hover{background:#F2D9A6}
+.botao--verde{background:var(--verde);color:#fff}
+.botao--verde:hover{background:#14503B}
+.botao--linha-clara{border-color:rgba(255,255,255,.7);color:#fff}
+.botao--linha-clara:hover{background:rgba(255,255,255,.1)}
+.botao--linha{border-color:var(--verde);color:var(--verde)}
+.botao--linha:hover{background:var(--verde);color:#fff}
+.acoes{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+
+/* whatsapp flutuante */
+.zap{position:fixed;right:1rem;bottom:1rem;z-index:60;background:var(--ouro);color:var(--verde);font-weight:700;text-decoration:none;padding:.75rem 1.1rem;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.28);font-size:.98rem}
+.zap:hover{background:#F2D9A6}
+
+/* faixas */
+.faixa{padding:clamp(3rem,7vw,5.5rem) 0}
+.faixa--bruma{background:var(--bruma)}
+.faixa--escura{background:var(--verde);color:#E4EEE8}
+.faixa--escura h2,.faixa--escura h3{color:#fff}
+.faixa--escura .suave{color:#B9CCC1}
+.pagina{outline:none}
+.cabeca{background:var(--verde);color:#E4EEE8;padding:clamp(3rem,7vw,5.5rem) 0 clamp(2.5rem,5vw,4rem);position:relative;overflow:hidden}
+.cabeca h1{color:#fff;max-width:18ch;font-size:clamp(2.4rem,5.4vw,4.4rem)}
+.cabeca .lead{max-width:60ch;font-size:1.2rem;color:#C9DBD1;margin:0}
+.cabeca::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:linear-gradient(90deg,var(--ouro) 0 18%,transparent 18%)}
+.lead{font-size:1.2rem}
+.ancora{scroll-margin-top:5.5rem}
+
+/* hero */
+.heroi{background:var(--verde);color:#E4EEE8;position:relative;overflow:hidden;min-height:min(86vh,46rem);display:flex;flex-direction:column;justify-content:space-between}
+.heroi__texto{padding-top:clamp(3rem,8vw,6rem);padding-bottom:2rem;position:relative;z-index:2}
+.heroi h1{color:#fff;max-width:14ch;margin-bottom:.4em}
+.heroi__intro{font-size:1.02rem;color:var(--ouro);margin-bottom:1rem}
+.heroi__sub{font-size:1.25rem;max-width:44ch;color:#D5E4DB;margin:0}
+.horizonte{display:block;width:100%;height:clamp(150px,24vw,300px);margin-top:auto}
+.horizonte .sol{animation:nascer 2.2s cubic-bezier(.2,.7,.2,1) both}
+@keyframes nascer{from{transform:translateY(74px)}to{transform:translateY(0)}}
+
+/* problema */
+.tentativas{margin:2rem 0 0;padding:0;list-style:none;max-width:52rem}
+.tentativas li{display:grid;grid-template-columns:1fr;gap:.2rem;padding:1.15rem 0;border-top:1px solid var(--linha)}
+.tentativas li:last-child{border-bottom:1px solid var(--linha)}
+.tentativas strong{font-family:var(--serif);font-size:1.6rem;font-weight:600;line-height:1.15}
+.tentativas span{color:var(--suave)}
+.frase{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.7rem,3.2vw,2.5rem);line-height:1.2;margin:2.2rem 0 0;max-width:30ch;padding-left:1.1rem;border-left:4px solid var(--ouro)}
+.faixa--escura .frase{color:#fff}
+
+/* competências na home */
+.letras{display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin:2rem 0 1.5rem;border-top:1px solid rgba(255,255,255,.25)}
+.letras a{display:block;text-decoration:none;padding:1rem .6rem 1.1rem 0;border-right:1px solid rgba(255,255,255,.18);padding-left:.8rem}
+.letras a:first-child{padding-left:0}
+.letras a:last-child{border-right:0}
+.letras b{display:block;font-family:var(--serif);font-size:clamp(2.4rem,5vw,4rem);line-height:1;color:var(--ouro);font-weight:600}
+.letras span{display:block;font-size:.92rem;line-height:1.3;color:#D5E4DB;margin-top:.35rem}
+.letras a:hover span{color:#fff;text-decoration:underline}
+
+/* entradas */
+.entradas{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:2rem;border-top:1px solid var(--linha)}
+.entradas a{display:block;text-decoration:none;padding:1.4rem 1.4rem 1.6rem 0;border-right:1px solid var(--linha)}
+.entradas a+a{padding-left:1.4rem}
+.entradas a:last-child{border-right:0}
+.entradas h3{margin-bottom:.35em}
+.entradas p{color:var(--suave);margin:0}
+.entradas a:hover h3{text-decoration:underline;text-decoration-color:var(--ouro);text-decoration-thickness:3px;text-underline-offset:5px}
+
+/* linhas (registro) */
+.linhas{margin:1.5rem 0 0;padding:0;list-style:none}
+.linha{display:grid;grid-template-columns:minmax(6rem,9rem) 1fr;gap:1.5rem;padding:1.2rem 0;border-top:1px solid var(--linha)}
+.linha:last-child{border-bottom:1px solid var(--linha)}
+.linha__ano{font-family:var(--serif);font-size:1.5rem;font-weight:600;line-height:1.2;color:var(--verde)}
+.linha__corpo h3,.linha__corpo h4{margin:0 0 .25em}
+.linha__corpo p{margin:0;color:var(--suave)}
+.linha__tipo{display:inline-block;font-size:.85rem;color:var(--ouro-texto);font-weight:700;margin-bottom:.15rem}
+.linha a.titulo{text-decoration-color:var(--ouro);text-decoration-thickness:2px;text-underline-offset:4px}
+
+/* quem sou */
+.duas{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:clamp(1.5rem,5vw,4rem);align-items:start}
+.retrato{margin:0;aspect-ratio:4/5;background:var(--verde);border-radius:2px;display:grid;place-items:center;position:relative;overflow:hidden}
+.retrato img{width:100%;height:100%;object-fit:cover;display:block}
+.retrato__mono{font-family:var(--serif);font-size:6rem;color:var(--ouro);font-weight:600}
+.retrato::after{content:"";position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(180deg,transparent,rgba(8,42,31,.9))}
+.retrato figcaption{position:absolute;left:1rem;right:1rem;bottom:.9rem;color:#fff;font-size:.95rem;z-index:2}
+.retrato img+figcaption{text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.bloco{margin-top:2.6rem}
+.bloco h2{margin-bottom:.4em}
+.marcadores{list-style:none;padding:0;margin:1rem 0 0}
+.marcadores li{padding:.55rem 0 .55rem 1.3rem;position:relative;border-top:1px solid var(--linha)}
+.marcadores li::before{content:"";position:absolute;left:0;top:1.15rem;width:.55rem;height:.55rem;border-radius:50%;background:var(--ouro)}
+.principios{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:1rem}
+.principios p{margin:0;font-family:var(--serif);font-size:1.5rem;line-height:1.2;padding-top:.8rem;border-top:3px solid var(--ouro)}
+
+/* estratos */
+.sistema{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:start;margin-top:2rem}
+.estratos{display:grid;gap:4px}
+.estrato{--o:0px;display:grid;grid-template-columns:3.2rem 1fr;align-items:center;gap:.9rem;width:100%;text-align:left;padding:.85rem 1.1rem;border:2px solid transparent;border-left:8px solid transparent;background:var(--verde);color:#fff;font:inherit;cursor:pointer;transform:translateX(var(--o));transition:transform .5s cubic-bezier(.3,.7,.3,1),background .2s}
+.estrato:nth-child(2){background:#124534}.estrato:nth-child(3){background:#175039}.estrato:nth-child(4){background:#1B5B40}.estrato:nth-child(5){background:#1F6546}.estrato:nth-child(6){background:#236F4C}
+.estrato b{font-family:var(--serif);font-size:2.3rem;line-height:1;color:var(--ouro);font-weight:600}
+.estrato span{font-size:1.02rem;line-height:1.3}
+.estrato[aria-pressed="true"]{box-shadow:inset 8px 0 0 var(--ouro)}
+.estrato[data-fora="1"]{background:transparent!important;border:2px dashed var(--menta);border-left-width:2px;color:#2D7A5C}
+.estrato[data-fora="1"] b{color:#2D7A5C}
+.estrato[data-fora="1"] span::after{content:" (ausente)";font-weight:700}
+.estratos[data-trinca="1"] .estrato:not([data-fora="1"]):nth-child(odd){--o:7px}
+.estratos[data-trinca="1"] .estrato:not([data-fora="1"]):nth-child(even){--o:-7px}
+.estado{margin:.9rem 0 0;font-size:.98rem;min-height:3em;color:var(--suave)}
+.painel{border-top:4px solid var(--verde);padding-top:1.1rem}
+.painel h3{margin-bottom:.15em}
+.painel .pergunta{font-family:var(--serif);font-style:italic;font-size:1.45rem;line-height:1.2;color:var(--verde);margin:.2rem 0 1rem}
+.cha{margin:0 0 1rem;padding:0;list-style:none}
+.cha li{display:grid;grid-template-columns:8.2rem 1fr;gap:.9rem;padding:.65rem 0;border-top:1px solid var(--linha)}
+.cha li:last-child{border-bottom:1px solid var(--linha)}
+.cha strong{font-weight:700;color:var(--ouro-texto)}
+.falta{background:var(--bruma);padding:.85rem 1rem;border-left:4px solid var(--ouro);margin:0 0 1rem}
+.faixa--bruma .falta{background:#fff}
+
+/* abas */
+.abas{display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;border-bottom:1px solid var(--linha);margin-top:1.6rem}
+.aba{background:none;border:0;border-bottom:3px solid transparent;padding:.7rem 0;font:inherit;font-weight:700;color:var(--suave);cursor:pointer;margin-bottom:-1px}
+.aba:hover{color:var(--verde)}
+.aba[aria-selected="true"]{color:var(--verde);border-bottom-color:var(--ouro)}
+.painel-aba{padding-top:1.4rem}
+
+/* passos */
+.passos{list-style:none;padding:0;margin:1.6rem 0 0;counter-reset:passo;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--linha)}
+.passos li{counter-increment:passo;padding:1rem 1.2rem 1.2rem 0}
+.passos li+li{padding-left:1.2rem;border-left:1px solid var(--linha)}
+.passos li::before{content:counter(passo);display:block;font-family:var(--serif);font-size:2.6rem;line-height:1;color:var(--ouro-texto);font-weight:600}
+.passos h4{margin:.3rem 0 .3rem}
+.passos p{margin:0;color:var(--suave);font-size:.98rem}
+.tres{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:1.4rem}
+.tres h4{padding-top:.7rem;border-top:3px solid var(--ouro)}
+.tres p{color:var(--suave);margin:0}
+
+/* filtros */
+.filtros{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.4rem 0 .4rem}
+.filtro{background:#fff;color:var(--verde);border:1.5px solid var(--verde);border-radius:999px;padding:.4rem 1rem;font:inherit;font-size:.95rem;font-weight:500;cursor:pointer}
+.filtro:hover{background:var(--bruma)}
+.filtro[aria-pressed="true"]{background:var(--verde);color:#fff}
+
+/* boas práticas */
+.pratica{border-top:1px solid var(--linha)}
+.pratica:last-child{border-bottom:1px solid var(--linha)}
+.pratica summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(6.5rem,9rem) 1fr auto;gap:1.5rem;align-items:baseline;padding:1.2rem 0}
+.pratica summary::-webkit-details-marker{display:none}
+.pratica summary h3{margin:0}
+.pratica .pilar{font-weight:700;font-size:.9rem;color:var(--ouro-texto)}
+.pratica summary::after{content:"+";font-family:var(--serif);font-size:2rem;line-height:1;color:var(--verde)}
+.pratica[open] summary::after{content:"\2212"}
+.pratica__corpo{display:grid;grid-template-columns:minmax(6.5rem,9rem) 1fr;gap:1.5rem;padding:0 0 1.6rem}
+.pratica__corpo>div{grid-column:2;max-width:64ch}
+.pratica__corpo h4{font-size:1.1rem;margin:.9rem 0 .2rem;color:var(--verde)}
+.pratica__corpo ul{margin:.2rem 0 0;padding-left:1.2rem}
+.pratica__corpo li{margin:.2rem 0}
+.pratica__corpo p{margin:0;color:var(--suave)}
+
+/* linha do tempo */
+.marcos{list-style:none;padding:0;margin:1.5rem 0 0}
+.marco{display:grid;grid-template-columns:5.5rem 1.6rem 1fr;gap:.9rem;padding:.2rem 0 1.15rem}
+.marco__ano{font-family:var(--serif);font-size:1.5rem;font-weight:600;line-height:1.2;text-align:right}
+.marco__pt{position:relative}
+.marco__pt::before{content:"";position:absolute;left:50%;top:.55rem;bottom:-1.3rem;width:2px;background:var(--linha);transform:translateX(-1px)}
+.marco:last-child .marco__pt::before{display:none}
+.marco__pt i{position:absolute;left:50%;top:.42rem;width:.9rem;height:.9rem;transform:translateX(-50%);border-radius:50%;background:var(--verde);border:2px solid #fff;box-shadow:0 0 0 1px var(--verde)}
+.marco[data-lane="br"] .marco__pt i{background:var(--ouro);box-shadow:0 0 0 1px var(--ouro-texto)}
+.marco[data-lane="eu"] .marco__pt i{background:#fff;border-radius:2px;transform:translateX(-50%) rotate(45deg);box-shadow:0 0 0 2px var(--verde)}
+.marco__lane{display:block;font-size:.85rem;font-weight:700;color:var(--ouro-texto)}
+.marco[data-lane="mundo"] .marco__lane{color:var(--verde)}
+.marco[data-lane="eu"] .marco__lane{color:#0B6B4A}
+.marco h4{margin:0 0 .1em;font-size:1.3rem}
+.marco p{margin:0;color:var(--suave)}
+
+/* fotos */
+.fotos{display:grid;grid-template-columns:repeat(12,1fr);gap:.6rem;margin-top:1.4rem}
+.fotos figure{margin:0;position:relative;overflow:hidden;background:var(--verde);min-height:10rem}
+.fotos figure:nth-child(7n+1){grid-column:span 7;min-height:18rem}
+.fotos figure:nth-child(7n+2){grid-column:span 5;min-height:18rem}
+.fotos figure:nth-child(7n+3),.fotos figure:nth-child(7n+4),.fotos figure:nth-child(7n+5){grid-column:span 4}
+.fotos figure:nth-child(7n+6){grid-column:span 5}.fotos figure:nth-child(7n+7){grid-column:span 7}
+.fotos img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.fotos figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.6rem .9rem .7rem;color:#fff;font-size:.92rem;background:linear-gradient(180deg,transparent,rgba(8,42,31,.85))}
+
+/* vídeos */
+.videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1.2rem;margin-top:1.4rem}
+.video{border-top:3px solid var(--ouro)}
+.video__tela{aspect-ratio:16/9;background:var(--verde);position:relative;display:grid;place-items:center;color:#fff;overflow:hidden}
+.video__tela iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video__tela button{all:unset;cursor:pointer;position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:1rem;font-weight:700;color:#fff}
+.video__tela .sol-mini{width:3rem;height:3rem;border-radius:50%;background:var(--ouro);display:block;margin:0 auto .5rem}
+.video__tela .breve{color:#B9CCC1;font-weight:500;text-align:center;padding:1rem}
+.video h4{margin:.7rem 0 .1rem}
+.video p{margin:0;color:var(--suave);font-size:.98rem}
+.video .serie{font-size:.85rem;font-weight:700;color:var(--ouro-texto)}
+
+/* contato */
+.contato{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(1.5rem,5vw,4rem);align-items:start}
+form label{display:block;font-weight:700;margin:1rem 0 .3rem}
+form input,form select,form textarea{width:100%;font:inherit;font-size:1rem;padding:.75rem .85rem;border:1.5px solid #8FA79B;border-radius:4px;background:#fff;color:var(--tinta)}
+form textarea{min-height:8.5rem;resize:vertical}
+form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--menta);outline-offset:1px;border-color:var(--verde)}
+.aviso-form{font-size:.95rem;color:var(--suave);margin:.8rem 0 0}
+.erro{color:#9A2B1F;font-weight:700;margin:.8rem 0 0;min-height:1.4em}
+.canais{list-style:none;padding:0;margin:0}
+.canais li{padding:1rem 0;border-top:1px solid var(--linha)}
+.canais li:last-child{border-bottom:1px solid var(--linha)}
+.canais b{display:block;font-family:var(--serif);font-size:1.4rem;font-weight:600}
+.canais a{text-underline-offset:4px}
+
+/* rodapé */
+.rodape{background:var(--fundo);color:#B9CCC1;padding:3rem 0 5.5rem}
+.rodape__grade{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
+.rodape h2{font-size:1.5rem;color:#fff;margin-bottom:.4em}
+.rodape ul{list-style:none;padding:0;margin:0}
+.rodape li{margin:.25rem 0}
+.rodape a{text-decoration:none}
+.rodape a:hover{color:#fff;text-decoration:underline}
+.rodape small{display:block;margin-top:2rem;border-top:1px solid rgba(255,255,255,.14);padding-top:1rem;font-size:.9rem}
+
+
+/* projetos e cultura */
+.filtros-rot{display:block;font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--suave);margin:1.2rem 0 .1rem}
+.contagem{font-family:var(--serif);font-size:1.5rem;color:var(--verde);margin:0}
+.projetos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem 2.2rem;margin-top:2rem}
+.projetos--tres{grid-template-columns:repeat(3,minmax(0,1fr))}
+.projeto{border-top:3px solid var(--ouro);padding-top:1rem;display:flex;flex-direction:column}
+.projeto__topo{display:flex;flex-wrap:wrap;gap:.5rem .8rem;align-items:center;font-size:.88rem;color:var(--suave)}
+.projeto h3{margin:.55rem 0 .35rem}
+.projeto p{color:var(--suave);margin:0 0 .6rem}
+.projeto .temas{font-size:.86rem;font-weight:700;color:var(--ouro-texto);margin-top:auto;padding-top:.3rem}
+.projeto a.titulo{text-decoration-color:var(--ouro);text-decoration-thickness:2px;text-underline-offset:4px}
+.selo{display:inline-block;padding:.12rem .65rem;border-radius:999px;font-weight:700;font-size:.8rem;line-height:1.5}
+.selo--andamento{background:#D6F3E7;color:#0B4631}
+.selo--realizado{background:var(--bruma);color:var(--verde);border:1px solid var(--linha)}
+.selo--submetido{background:#F6EBD2;color:#6B5215}
+.faixa--escura .selo--submetido{background:var(--ouro);color:var(--verde)}
+.vazio{color:var(--suave);font-style:italic;margin-top:1.4rem}
+.destaque{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(1.5rem,5vw,4rem);align-items:start}
+.capitulos{list-style:none;padding:0;margin:0;counter-reset:cap;border-top:1px solid var(--linha)}
+.capitulos li{counter-increment:cap;display:grid;grid-template-columns:2.4rem 1fr;gap:.6rem;padding:.55rem 0;border-bottom:1px solid var(--linha)}
+.capitulos li::before{content:counter(cap);font-family:var(--serif);font-size:1.45rem;font-weight:600;color:var(--ouro-texto);line-height:1.1}
+.data-mini{font-size:.85rem;color:var(--suave);font-weight:500}
+.aviso{background:#FFF4D6;color:#5C4510;border-bottom:2px solid var(--ouro);padding:.8rem 1.25rem;text-align:center;font-weight:500}
+.marca__logo{height:2.4rem;width:auto;display:block}
+.topo .container{max-width:1320px}
+.menu a{white-space:nowrap}
+@media (max-width:1240px){
+  .menu-btn{display:inline-block}
+  .menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--verde);flex-direction:column;align-items:stretch;gap:0;padding:.5rem 1.25rem 1.2rem;border-bottom:1px solid rgba(233,201,137,.25)}
+  .menu.aberto{display:flex}
+  .menu a{padding:.8rem 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:1.05rem}
+}
+@media (max-width:860px){
+  .projetos,.projetos--tres,.destaque{grid-template-columns:1fr}
+}
+
+/* responsivo */
+@media (max-width:1100px){
+  .menu-btn{display:inline-block}
+  .menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--verde);flex-direction:column;align-items:stretch;gap:0;padding:.5rem 1.25rem 1.2rem;border-bottom:1px solid rgba(233,201,137,.25)}
+  .menu.aberto{display:flex}
+  .menu a{padding:.8rem 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:1.05rem}
+  .topo{position:sticky}
+}
+@media (max-width:860px){
+  .duas,.sistema,.contato{grid-template-columns:1fr}
+  .retrato{max-width:320px}
+  .entradas{grid-template-columns:1fr}
+  .entradas a,.entradas a+a{padding:1.2rem 0;border-right:0;border-bottom:1px solid var(--linha)}
+  .letras{grid-template-columns:repeat(3,1fr)}
+  .letras a{border-bottom:1px solid rgba(255,255,255,.18)}
+  .letras a:nth-child(3n){border-right:0}
+  .letras a:nth-child(4){padding-left:0}
+  .passos{grid-template-columns:1fr 1fr}
+  .passos li:nth-child(3){padding-left:0;border-left:0}
+  .tres,.principios,.rodape__grade{grid-template-columns:1fr}
+  .fotos{grid-template-columns:1fr 1fr}
+  .fotos figure,.fotos figure:nth-child(n){grid-column:auto;min-height:11rem}
+}
+@media (max-width:560px){
+  body{font-size:1.02rem}
+  .linha,.pratica__corpo{grid-template-columns:1fr;gap:.3rem}
+  .pratica summary{grid-template-columns:1fr auto;gap:.4rem 1rem}
+  .pratica summary .pilar{grid-column:1/-1}
+  .pratica__corpo>div{grid-column:1}
+  .marco{grid-template-columns:3.6rem 1.2rem 1fr;gap:.6rem}
+  .marco__ano{font-size:1.25rem}
+  .cha li{grid-template-columns:1fr;gap:.1rem}
+  .passos{grid-template-columns:1fr}
+  .passos li,.passos li+li{padding-left:0;border-left:0;border-bottom:1px solid var(--linha)}
+  .zap{padding:.65rem .95rem;font-size:.92rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .horizonte .sol{animation:none}
+  .estrato{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="topo">
+  <div class="container topo__in">
+    <a class="marca" href="#/inicio" aria-label="MSustentaMais, página inicial">
+      <!-- LOGO: substitua este símbolo provisório pelo logo aprovado (SVG ou PNG com fundo transparente). -->
+      <svg class="marca__simbolo" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14.5" fill="none" stroke="#E9C989" stroke-width="1.5"/><circle cx="16" cy="16" r="6" fill="#E9C989"/></svg>
+      <span class="marca__nome">MSustentaMais</span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="#/inicio" data-nav="inicio">Início</a>
+      <a href="#/quem-sou" data-nav="quem-sou">Quem sou</a>
+      <a href="#/empresa" data-nav="empresa">A empresa</a>
+      <a href="#/cepgas" data-nav="cepgas">CEPGAS™</a>
+      <a href="#/projetos" data-nav="projetos">Projetos</a>
+      <a href="#/cultura" data-nav="cultura">Cultura</a>
+      <a href="#/meio-ambiente" data-nav="meio-ambiente">Meio ambiente</a>
+      <a href="#/boas-praticas" data-nav="boas-praticas">Boas práticas</a>
+      <a href="#/artigos" data-nav="artigos">Artigos</a>
+      <a href="#/contato" data-nav="contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<div class="aviso" id="aviso-conteudo" role="alert" hidden>O arquivo <strong>conteudo.js</strong> não carregou. Confira se ele está na mesma pasta do site e se não falta nenhuma vírgula, aspa ou chave.</div>
+
+<main id="conteudo">
+
+<!-- ============ INÍCIO ============ -->
+<section class="pagina" id="p-inicio" data-titulo="Início" tabindex="-1" aria-labelledby="t-inicio">
+  <div class="heroi">
+    <div class="container heroi__texto">
+      <p class="heroi__intro">Formação de líderes em ESG, a partir de uma fazenda no Pantanal.</p>
+      <h1 id="t-inicio">ESG que se sustenta em quem decide.</h1>
+      <p class="heroi__sub">Ou a decisão é coerente, ou o impacto aparece. É isso que se aprende no Pantanal, e é isso que a MSustentaMais ensina a quem lidera.</p>
+      <div class="acoes">
+        <a class="botao botao--ouro" data-diag target="_blank" rel="noopener">Fazer o diagnóstico comportamental</a>
+        <a class="botao botao--linha-clara" href="#/cepgas">Conhecer o método CEPGAS™</a>
+      </div>
+    </div>
+    <svg class="horizonte" viewBox="0 0 1440 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+      <g class="sol"><circle cx="900" cy="152" r="56" fill="#E9C989"/></g>
+      <rect y="150" width="1440" height="150" fill="#0A3327"/>
+      <rect y="150" width="1440" height="2" fill="#E9C989" opacity=".55"/>
+      <rect y="196" width="1440" height="104" fill="#082B20"/>
+      <rect y="244" width="1440" height="56" fill="#061F17"/>
+      <g fill="#E9C989">
+        <rect x="850" y="164" width="100" height="3" opacity=".55"/>
+        <rect x="862" y="178" width="76" height="3" opacity=".4"/>
+        <rect x="872" y="194" width="56" height="3" opacity=".3"/>
+        <rect x="882" y="212" width="36" height="3" opacity=".2"/>
+      </g>
+      <g fill="#4ECFA0" opacity=".18">
+        <rect x="120" y="168" width="220" height="2"/><rect x="420" y="186" width="300" height="2"/>
+        <rect x="80" y="214" width="180" height="2"/><rect x="520" y="230" width="260" height="2"/>
+        <rect x="1160" y="176" width="200" height="2"/><rect x="1120" y="224" width="240" height="2"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="faixa">
+    <div class="container">
+      <h2 class="texto">Mesmo depois de tudo que a empresa já fez, o ESG continua frágil.</h2>
+      <p class="lead texto suave">O problema não é falta de esforço. É que quase tudo o que o mercado oferece ataca o lugar errado.</p>
+      <ul class="tentativas">
+        <li><strong>Contratar uma boa consultoria técnica.</strong><span>O dado passa a ter dono. A decisão continua sem dono.</span></li>
+        <li><strong>Investir num relatório robusto ou num selo.</strong><span>O relatório descreve o que já aconteceu. A pergunta difícil chega depois: por que vocês decidiram assim?</span></li>
+        <li><strong>Montar um comitê e treinar a equipe.</strong><span>Comitê não decide. Pessoas decidem. E conhecimento não é critério.</span></li>
+      </ul>
+      <p class="frase">ESG não falha por falta de boa intenção. Falha por falta de liderança preparada.</p>
+    </div>
+  </div>
+
+  <div class="faixa faixa--escura">
+    <div class="container">
+      <h2 class="texto">O método começa por quem decide.</h2>
+      <p class="lead texto suave">O CEPGAS™ prepara o líder em seis competências que funcionam como um sistema. Falta uma, e o sistema trinca.</p>
+      <div class="letras">
+        <a href="#/cepgas/competencias"><b>C</b><span>Clareza estratégica</span></a>
+        <a href="#/cepgas/competencias"><b>E</b><span>Estruturação de papéis</span></a>
+        <a href="#/cepgas/competencias"><b>P</b><span>Parâmetros e critérios</span></a>
+        <a href="#/cepgas/competencias"><b>G</b><span>Gestão de impacto</span></a>
+        <a href="#/cepgas/competencias"><b>A</b><span>Autonomia real</span></a>
+        <a href="#/cepgas/competencias"><b>S</b><span>Sustentação por evidências</span></a>
+      </div>
+      <a class="botao botao--ouro" href="#/cepgas/competencias">Ver como cada competência funciona</a>
+    </div>
+  </div>
+
+  <div class="faixa">
+    <div class="container">
+      <h2>Do Pantanal para a decisão</h2>
+      <p class="lead texto suave">Um método vale o que vale a vida de quem o ensina. Conheça de onde ele vem.</p>
+      <div class="entradas">
+        <a href="#/quem-sou"><h3>Quem sou</h3><p>Educadora, gestora da terra e consultora de liderança ESG.</p></a>
+        <a href="#/meio-ambiente"><h3>Meio ambiente</h3><p>O Pantanal como ponto de partida, e a história da sustentabilidade.</p></a>
+        <a href="#/cultura"><h3>Cultura</h3><p>Patrimônio, saberes tradicionais e setor criativo como parte da sustentabilidade.</p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faixa faixa--bruma">
+    <div class="container">
+      <h2>Onde o trabalho acontece</h2>
+      <p class="lead texto suave" id="home-contagem">Projetos de cultura, educação ambiental, patrimônio, turismo e pecuária sustentável.</p>
+      <div class="projetos projetos--tres" id="home-projetos"></div>
+      <div class="acoes">
+        <a class="botao botao--verde" href="#/projetos">Ver todos os projetos</a>
+        <a class="botao botao--linha" href="#/cultura">Conhecer a frente de cultura</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faixa">
+    <div class="container">
+      <h2>Boas práticas recentes</h2>
+      <p class="lead texto suave">Práticas do território e da liderança, atualizadas com frequência.</p>
+      <ul class="linhas" id="home-praticas"></ul>
+      <p style="margin-top:1.4rem"><a class="botao botao--linha" href="#/boas-praticas">Ver todas as boas práticas</a></p>
+    </div>
+  </div>
+
+  <div class="faixa faixa--bruma">
+    <div class="container">
+      <h2>Para ler</h2>
+      <ul class="linhas" id="lista-recentes"></ul>
+      <p style="margin-top:1.4rem"><a class="botao botao--linha" href="#/artigos">Ver artigos, publicações e vídeos</a></p>
+    </div>
+  </div>
+
+  <div class="faixa faixa--escura">
+    <div class="container">
+      <h2 class="texto">Quer saber se o meu trabalho faz sentido para a sua empresa agora?</h2>
+      <p class="lead texto suave">Uma conversa privada e direta. Você conta o cenário, e eu digo, com honestidade, se faz sentido.</p>
+      <div class="acoes"><a class="botao botao--ouro" data-wa="Olá, Fernanda! Vim pelo site da MSustentaMais e gostaria de conversar sobre o cenário da minha empresa." target="_blank" rel="noopener">Conversar no WhatsApp</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUEM SOU ============ -->
+<section class="pagina" id="p-quem-sou" data-titulo="Quem sou" tabindex="-1" aria-labelledby="t-quem-sou" hidden>
+  <div class="cabeca">
+    <div class="container">
+      <h1 id="t-quem-sou">Fernanda de Arruda Machado</h1>
+      <p class="lead">Educadora, gestora e consultora em sustentabilidade. Vivo a sustentabilidade todos os dias numa fazenda no Pantanal, um lugar onde discurso não se sustenta.</p>
+    </div>
+  </div>
+  <div class="faixa">
+    <div class="container duas">
+      <figure class="retrato" id="retrato">
+        <span class="retrato__mono" aria-hidden="true">FM</span>
+        <figcaption>Fernanda de Arruda Machado</figcaption>
+      </figure>
+      <div>
+        <p class="frase" style="margin-top:0">Foi lá que eu aprendi a olhar menos para o que se fala e mais para o que se decide.</p>
+
+        <div class="bloco">
+          <h2>Educadora</h2>
+          <p class="texto">Mais de 30 anos de docência, pesquisa e consultoria, da educação de jovens e adultos à pós-graduação. Trabalhos consolidados com SEBRAE, SENAC e SESI. Coautora de livros de educação ambiental e ex-colunista de jornal.</p>
+        </div>
+        <div class="bloco">
+          <h2>Gestora da terra</h2>
+          <p class="texto">Gestora da Fazenda Pantaneira Santa Fé do Machadinho, que participa dos programas Fazenda Pantaneira Sustentável e Produção Sustentável de Bezerros desde 2018. Embaixadora Territorial do projeto Pecuária Tropical pelo Clima, da Morada Comum.</p>
+        </div>
+        <div class="bloco">
+          <h2>Consultora de liderança ESG</h2>
+          <p class="texto">Criei o CEPGAS™, metodologia de formação de líderes em ESG, aplicada em consultoria estratégica individual. Participo, como representante, do COMDER, do COMDEMA e da IGR Pantanal, a Instância de Governança Regional do Pantanal, na construção de propostas de desenvolvimento sustentável regional.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faixa faixa--bruma">
+    <div class="container">
+      <h2>Formação</h2>
+      <ul class="linhas">
+        <li class="linha"><span class="linha__ano">Doutorado</span><div class="linha__corpo"><h3>Doutora em Educação</h3><p>Universidad de Santiago de Compostela, Espanha, 2019.</p></div></li>
+        <li class="linha"><span class="linha__ano">Mestrado</span><div class="linha__corpo"><h3>Mestre em Educação</h3><p>Universidade Federal de Mato Grosso.</p></div></li>
+        <li class="linha"><span class="linha__ano">Especialização</span><div class="linha__corpo"><h3>Turismo, Desenvolvimento Local e Regional</h3><p>Universidade do Estado de Mato Grosso (UNEMAT).</p></div></li>
+        <li class="linha"><span class="linha__ano">Especialização</span><div class="linha__corpo"><h3>Didática e Metodologia do Ensino Superior</h3><p>Universidade Católica Dom Bosco, 1993.</p></div></li>
+        <li class="linha"><span class="linha__ano">Graduação</span><div class="linha__corpo"><h3>Pedagogia</h3><p>Universidade Estadual de Maringá, 1992.</p></div></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="faixa">
+    <div class="container">
+      <h2>Como eu trabalho</h2>
+      <div class="principios">
+        <p>Fazer bem feito, ou não fazer.</p>
+        <p>Comunicar de forma clara, direta e honesta.</p>
+        <p>Ajudar sem gerar dependência.</p>
+      </div>
+      <div class="acoes" style="margin-top:2.2rem">
+        <a class="botao botao--verde" data-wa="Olá, Fernanda! Vim pelo site da MSustentaMais e gostaria de conversar." target="_blank" rel="noopener">Conversar no WhatsApp</a>
+        <a class="botao botao--linha" href="#/empresa">Conhecer a empresa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ A EMPRESA ============ -->
+<section class="pagina" id="p-empresa" data-titulo="A empresa" tabindex="-1" aria-labelledby="t-empresa" hidden>
+  <div class="cabeca">
+    <div class="container">
+      <h1 id="t-empresa">A MSustentaMais</h1>
+      <p class="lead">Uma consultoria de liderança ESG com sede numa fazenda no Pantanal. Prepara quem decide para sustentar, diante de qualquer pessoa, o que a empresa afirma sobre sustentabilidade.</p>
+    </div>
+  </div>
+
+  <div class="faixa">
+    <div class="container">
+      <h2>No que acreditamos</h2>
+      <div class="tres">
+        <div><h4>ESG é decisão do dia a dia</h4><p>Não é relatório nem discurso. Sustentabilidade se prova na forma como a liderança decide.</p></div>
+        <div><h4>Método e empresa são coisas distintas</h4><p>A MSustentaMais é a empresa. O CEPGAS™ é a metodologia de formação de líderes que ela desenvolveu.</p></div>
+        <div><h4>O que fica é da empresa do cliente</h4><p>Critérios escritos, papéis definidos e evidências organizadas continuam na empresa depois que a consultoria termina.</p></div>
+      </div>
+      <p class="texto" style="margin-top:1.8rem">Nossos valores: liberdade, responsabilidade, verdade, justiça e cuidado com o coletivo.</p>
+    </div>
+  </div>
+
+  <div class="faixa faixa--bruma">
+    <div class="container">
+      <h2>De onde viemos</h2>
+      <p class="lead texto suave">Uma fazenda, três décadas de educação e um método que amadureceu no território.</p>
+      <ul class="linhas">
+        <li class="linha"><span class="linha__ano">1994 a 1998</span><div class="linha__corpo"><h3>Educação de jovens e adultos</h3><p>Coordenação do programa de EJA no SESI-MT e capacitação de professores.</p></div></li>
+        <li class="linha"><span class="linha__ano">2001 a 2004</span><div class="linha__corpo"><h3>Consultoria no SEBRAE-MT</h3><p>Treinamentos de liderança, atendimento e desenvolvimento de equipes, e consultoria em turismo e arranjos produtivos locais.</p></div></li>
+        <li class="linha"><span class="linha__ano">2003</span><div class="linha__corpo"><h3>A fazenda vira projeto</h3><p>A proposta de implantação do turismo na Fazenda Santa Fé do Machadinho, feita como monografia, torna-se projeto real e é apresentada em eventos nacionais até 2005.</p></div></li>
+        <li class="linha"><span class="linha__ano">2004 a 2006</span><div class="linha__corpo"><h3>Educação ambiental com o Pantanal</h3><p>Projetos com comunidades pantaneiras, em parceria com a UFMT e com apoio da FAPEMAT.</p></div></li>
+        <li class="linha"><span class="linha__ano">2018</span><div class="linha__corpo"><h3>Pecuária sustentável</h3><p>A fazenda passa a participar dos programas Fazenda Pantaneira Sustentável e Produção Sustentável de Bezerros.</p></div></li>
+        <li class="linha"><span class="linha__ano">2025</span><div class="linha__corpo"><h3>A metodologia ganha nome</h3><p>O trabalho de formação de líderes, que já era aplicado, evolui para o CEPGAS™.</p></div></li>
+        <li class="linha"><span class="linha__ano">2026</span><div class="linha__corpo"><h3>CEPGAS™ em consultoria individual</h3><p>Formação em cinco módulos, com diagnósticos e plano de ação para cada líder.</p></div></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="faixa">
+    <div class="container">
+      <h2>Produtos e serviços</h2>
+      <p class="lead texto suave">Todos partem do mesmo método. O que muda é o formato.</p>
+      <ul class="linhas" id="lista-produtos"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CEPGAS ============ -->
+<section class="pagina" id="p-cepgas" data-titulo="CEPGAS™" tabindex="-1" aria-labelledby="t-cepgas" hidden>
+  <div class="cabeca">
+    <div class="container">
+      <h1 id="t-cepgas">CEPGAS™</h1>
+      <p class="lead">Formação de líderes em ESG por competências: Conhecimento, Habilidade e Atitude. O método começa por quem decide, e não pelo relatório.</p>
+      <div class="acoes">
+        <a class="botao botao--ouro" data-diag target="_blank" rel="noopener">Fazer o diagnóstico comportamental</a>
+        <a class="botao botao--linha-clara" data-guia target="_blank" rel="noopener">Baixar o guia das seis competências</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faixa ancora" id="a-cepgas-competencias">
+    <div class="container">
+      <h2 class="texto">Retire uma competência e veja o que trinca.</h2>
+      <p class="lead texto suave">Escolha uma faixa para ler o que ela significa. Depois, retire-a do sistema.</p>
+      <div class="sistema">
+        <div>
+          <div class="estratos" id="estratos" role="group" aria-label="As seis competências do CEPGAS"></div>
+          <p class="estado" id="estado-sistema" role="status" aria-live="polite"></p>
+        </div>
+        <div class="painel" id="painel-comp"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faixa faixa--bruma ancora" id="a-cepgas-estilos">
+    <div class="container">
+      <h2 class="texto">Cada líder entra por uma porta.</h2>
+      <p class="lead texto suave">O diagnóstico comportamental identifica o seu estilo predominante de liderança. O CEPGAS™ reconhece o que já é força e trabalha onde você mais precisa crescer.</p>
+      <div class="abas" role="tablist" aria-label="Estilos de liderança" id="abas-estilos"></div>
+      <div id="painel-estilo" class="painel-aba"></div>
+      <p class="suave" style="margin-top:1.2rem">Há ainda perfis que combinam dois estilos e um perfil equilibrado. O diagnóstico mostra o seu.</p>
+    </div>
+  </div>
+
+  <div class="faixa ancora" id="a-cepgas-plano">
+    <div class="container">
+      <h2 class="texto">O plano de ação</h2>
+      <p class="lead texto">É o roteiro individual do líder. Parte do diagnóstico, mostra qual das seis competências está mais fraca e define, para cada uma, o que fazer, quem faz, com qual critério e com qual evidência.</p>
+      <ol class="passos">
+        <li><h4>Diagnóstico comportamental</h4><p>Você descobre o seu estilo de liderança e o maior gargalo do ESG da sua empresa.</p></li>
+        <li><h4>Devolutiva</h4><p>Reconhecemos o que já é força e mostramos o nível de cada dimensão do CHA.</p></li>
+        <li><h4>Plano de ação por módulo</h4><p>A consultoria segue em cinco módulos, sempre sobre as decisões reais da sua mesa.</p></li>
+        <li><h4>Evidências e continuidade</h4><p>O que foi decidido fica registrado e a equipe segue sem depender de mim.</p></li>
+      </ol>
+      <h3 style="margin-top:2.6rem">O que você leva</h3>
+      <div class="tres">
+        <div><h4>Critérios escritos</h4><p>A mesma situação recebe a mesma resposta, e você sabe explicar por quê.</p></div>
+        <div><h4>Papéis definidos</h4><p>Para cada tema, alguém decide e alguém executa, com nome.</p></div>
+        <div><h4>Evidências organizadas</h4><p>Cada coisa afirmada em público tem uma prova do lado de dentro.</p></div>
+      </div>
+      <h3 style="margin-top:2.6rem">O que o CEPGAS™ não é</h3>
+      <p class="texto">Não é curso. Não é selo para pendurar na parede. E não substitui a consultoria técnica que mede os seus dados. Ela continua importante. O CEPGAS™ prepara quem decide para sustentar esses dados na frente de qualquer pessoa.</p>
+      <div class="acoes">
+        <a class="botao botao--verde" data-diag target="_blank" rel="noopener">Começar pelo diagnóstico</a>
+        <a class="botao botao--linha" data-compra target="_blank" rel="noopener" hidden></a>
+        <a class="botao botao--linha" data-wa="Olá, Fernanda! Quero conversar sobre a consultoria estratégica individual CEPGAS™." target="_blank" rel="noopener">Conversar no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJETOS ============ -->
+<section class="pagina" id="p-projetos" data-titulo="Projetos" tabindex="-1" aria-labelledby="t-projetos" hidden>
+  <div class="cabeca">
+    <div class="container">
+      <h1 id="t-projetos">Projetos</h1>
+      <p class="lead">O que já fizemos, o que está em andamento e o que foi submetido. Cultura, educação ambiental, patrimônio, turismo e pecuária sustentável, sempre a partir do território.</p>
+    </div>
+  </div>
+  <div class="faixa">
+    <div class="container">
+      <p class="contagem" id="contagem-projetos" aria-live="polite"></p>
+      <span class="filtros-rot" id="rot-status">Situação</span>
+      <div class="filtros" id="filtros-status" role="group" aria-labelledby="rot-status"></div>
+      <span class="filtros-rot" id="rot-temas">Tema</span>
+      <div class="filtros" id="filtros-temas" role="group" aria-labelledby="rot-temas"></div>
+      <div class="projetos" id="lista-projetos"></div>
+    </div>
+  </div>
+  <div class="faixa faixa--escura">
+    <div class="container">
+      <h2 class="texto">Quer construir um projeto junto?</h2>
+      <p class="lead texto suave">Prefeituras, escolas, associações, empresas e produtores: conte a ideia, o lugar e as pessoas envolvidas. A gente conversa sobre o caminho, do diagnóstico à prestação de contas.</p>
+      <div class="acoes"><a class="botao botao--ouro" data-wa="Olá, Fernanda! Vim pelo site da MSustentaMais e quero conversar sobre um projeto." target="_blank" rel="noopener">Conversar no WhatsApp</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CULTURA ============ -->
+<section class="pagina" id="p-cultura" data-titulo="Cultura" tabindex="-1" aria-labelledby="t-cultura" hidden>
+  <div class="cabeca">
+    <div class="container">
+      <h1 id="t-cultura">Cultura é a forma como um território cuida de si.</h1>
+      <p class="lead">Não existe sustentabilidade sem as pessoas que dão sentido ao lugar. No Pantanal, o jeito de fazer, de comer, de contar e de celebrar também é manejo do ambiente.</p>
+    </div>
+  </div>
+
+  <div class="faixa">
+    <div class="container">
+      <h2 class="texto">Por que a cultura está no centro</h2>
+      <div class="tres">
+        <div><h4>Patrimônio que continua vivo</h4><p>Ruas, ilhas e paisagens de Cáceres guardam a história de quem viveu ali. Restaurar esses espaços é devolver à cidade um lugar de convivência.</p></div>
+        <div><h4>Saberes de quem vive o território</h4><p>Mestres de tradição, artesãos, cozinheiras e pantaneiros guardam conhecimentos que nenhum manual substitui. Escutá-los é parte do método.</p></div>
+        <div><h4>Cultura que educa e gera renda</h4><p>Educação ambiental, turismo e setor criativo caminham juntos quando a cultura local é reconhecida e se transforma em projeto.</p></div>
+      </div>
+      <p class="frase">Antes de propor um modelo pronto, olhamos para o território. É o mesmo princípio que orienta a Gestão de impacto no CEPGAS™.</p>
+    </div>
+  </div>
+
+  <div class="faixa faixa--bruma" id="bloco-destaque" hidden>
+    <div class="container destaque">
+      <div>
+        <span class="selo selo--submetido" id="destaque-status"></span>
+        <h2 id="destaque-titulo" style="margin-top:.6rem"></h2>
+        <p class="lead suave" id="destaque-texto"></p>
+      </div>
+      <div>
+        <h3>Os capítulos</h3>
+        <ol class="capitulos" id="destaque-itens"></ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="faixa">
+    <div class="container">
+      <h2>Projetos de cultura e patrimônio</h2>
+      <div class="projetos" id="lista-cultura"></div>
+    </div>
+  </div>
+
+  <div class="faixa faixa--escura">
+    <div class="container">
+      <h2 class="texto">Tem um projeto cultural, uma escola ou uma comunidade que quer participar?</h2>
+      <p class="lead texto suave">Elaboração de projetos, oficinas para professores, parcerias e palestras sobre cultura, educação ambiental e turismo.</p>
+      <div class="acoes">
+        <a class="botao botao--ouro" data-wa="Olá, Fernanda! Vim pela página de Cultura do site da MSustentaMais e quero conversar." target="_blank" rel="noopener">Conversar no WhatsApp</a>
+        <a class="botao botao--linha-clara" data-mail="Cultura e projetos - contato pelo site">Enviar e-mail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEIO AMBIENTE ============ -->
+<section class="pagina" id="p-meio-ambiente" data-titulo="Meio ambiente" tabindex="-1" aria-labelledby="t-meio-ambiente" hidden>
+  <div class="cabeca">
+    <div class="container">
+      <h1 id="t-meio-ambiente">O meio ambiente é o lugar onde a decisão aparece.</h1>
+      <p class="lead">Não é um capítulo do relatório. No Pantanal, se a decisão não é coerente, o impacto aparece. Foi assim que eu aprendi a liderar.</p>
+    </div>
+  </div>
+
+  <div class="faixa">
+    <div class="container">
+      <div class="tres">
+        <div><h4>A fazenda como ponto de partida</h4><p>A Fazenda Pantaneira Santa Fé do Machadinho participa, desde 2018, dos programas Fazenda Pantaneira Sustentável e Produção Sustentável de Bezerros.</p></div>
+        <div><h4>Educação ambiental com a comunidade</h4><p>Desde 2003, projetos de educação ambiental com comunidades pantaneiras, como Mimoso e São Pedro de Joselândia, com a UFMT e o apoio da FAPEMAT.</p></div>
+        <div><h4>Escuta do território hoje</h4><p>Como Embaixadora Territorial do projeto Pecuária Tropical pelo Clima, da Morada Comum, conduzi o diagnóstico territorial e rodas de conversa com produtores, mulheres produtoras e juventude em Cáceres e Vila Bela da Santíssima Trindade.</p></div>
+      </div>
+      <p class="texto" style="margin-top:2rem">Minha tese de doutorado tratou da sustentabilidade florestal em Cáceres, em Mato Grosso. Em 2005, apresentei em Fortaleza o trabalho “A Água na Percepção Pantaneira de Meio Ambiente”.</p>
+      <section id="galeria" aria-label="Fotos da fazenda" hidden>
+        <div class="fotos" id="fotos"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="faixa faixa--bruma ancora" id="a-meio-ambiente-historico">
+    <div class="container">
+      <h2>Histórico da sustentabilidade</h2>
+      <p class="lead texto suave">O ESG não nasceu num relatório. Vem de mais de cinquenta anos de decisões sobre como produzir e conviver. Veja onde a minha trajetória cruza essa história.</p>
+      <div class="filtros" id="filtros-marcos" role="group" aria-label="Filtrar linha do tempo"></div>
+      <ol class="marcos" id="lista-marcos"></ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOAS PRÁTICAS ============ -->
+<section class="pagina" id="p-boas-praticas" data-titulo="Boas práticas" tabindex="-1" aria-labelledby="t-boas-praticas" hidden>
+  <div class="cabeca">
+    <div class="container">
+      <h1 id="t-boas-praticas">Boas práticas para quem lidera ESG</h1>
+      <p class="lead">Práticas simples, que vêm do território e das decisões de liderança, e que qualquer empresa pode adaptar. Cada uma diz como fazer e qual prova fica.</p>
+    </div>
+  </div>
+  <div class="faixa">
+    <div class="container">
+      <div class="filtros" id="filtros-praticas" role="group" aria-label="Filtrar boas práticas por pilar"></div>
+      <div id="lista-praticas"></div>
+    </div>
+  </div>
+  <div class="faixa faixa--escura">
+    <div class="container">
+      <h2 class="texto">Tem uma boa prática para compartilhar?</h2>
+      <p class="lead texto suave">Conte o que a sua empresa ou a sua comunidade faz. As práticas que ajudarem outros líderes entram aqui.</p>
+      <div class="acoes">
+        <a class="botao botao--ouro" data-wa="Olá, Fernanda! Quero compartilhar uma boa prática para o espaço do site." target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
+        <a class="botao botao--linha-clara" data-mail="Boa prática para o site da MSustentaMais" data-mail-corpo="Olá, Fernanda! Quero compartilhar uma boa prática:%0D%0A%0D%0AO que fazemos:%0D%0AOnde:%0D%0AQual prova fica:">Enviar por e-mail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARTIGOS E VÍDEOS ============ -->
+<section class="pagina" id="p-artigos" data-titulo="Artigos, imprensa e vídeos" tabindex="-1" aria-labelledby="t-artigos" hidden>
+  <div class="cabeca">
+    <div class="container">
+      <h1 id="t-artigos">Artigos, imprensa e vídeos</h1>
+      <p class="lead">O que publico sobre liderança ESG, educação ambiental, cultura e sustentabilidade no Pantanal, as matérias em que o trabalho apareceu e os vídeos.</p>
+    </div>
+  </div>
+  <div class="faixa">
+    <div class="container">
+      <div class="abas" role="tablist" aria-label="Tipo de conteúdo">
+        <button class="aba" role="tab" id="aba-pub" aria-selected="true" aria-controls="painel-pub" type="button">Artigos e publicações</button>
+        <button class="aba" role="tab" id="aba-imp" aria-selected="false" aria-controls="painel-imp" tabindex="-1" type="button">Na imprensa</button>
+        <button class="aba" role="tab" id="aba-vid" aria-selected="false" aria-controls="painel-vid" tabindex="-1" type="button">Vídeos</button>
+      </div>
+      <div class="painel-aba" id="painel-pub" role="tabpanel" aria-labelledby="aba-pub">
+        <div class="filtros" id="filtros-pub" role="group" aria-label="Filtrar por tipo"></div>
+        <ul class="linhas" id="lista-pub"></ul>
+      </div>
+      <div class="painel-aba" id="painel-imp" role="tabpanel" aria-labelledby="aba-imp" hidden>
+        <ul class="linhas" id="lista-imp"></ul>
+      </div>
+      <div class="painel-aba" id="painel-vid" role="tabpanel" aria-labelledby="aba-vid" hidden>
+        <div class="videos" id="lista-videos"></div>
+        <p id="link-canal" style="margin-top:1.6rem" hidden><a class="botao botao--linha" data-yt-canal target="_blank" rel="noopener">Ver o canal no YouTube</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATO ============ -->
+<section class="pagina" id="p-contato" data-titulo="Contato" tabindex="-1" aria-labelledby="t-contato" hidden>
+  <div class="cabeca">
+    <div class="container">
+      <h1 id="t-contato">Vamos conversar.</h1>
+      <p class="lead">Uma conversa privada e direta, sem apresentação genérica. Você me conta o cenário da sua empresa, e eu digo, com honestidade, se o meu trabalho faz sentido para você agora.</p>
+    </div>
+  </div>
+  <div class="faixa">
+    <div class="container contato">
+      <form id="form-contato" novalidate>
+        <h2>Escreva a sua mensagem</h2>
+        <label for="f-nome">Seu nome</label>
+        <input id="f-nome" name="nome" type="text" autocomplete="name" required>
+        <label for="f-empresa">Empresa e cargo</label>
+        <input id="f-empresa" name="empresa" type="text" autocomplete="organization">
+        <label for="f-assunto">Sobre o que você quer conversar?</label>
+        <select id="f-assunto" name="assunto" required>
+          <option value="">Escolha uma opção</option>
+          <option>Consultoria estratégica individual CEPGAS™</option>
+          <option>Diagnóstico comportamental</option>
+          <option>Palestra ou workshop na minha empresa</option>
+          <option>Vivência na fazenda</option>
+          <option>Projeto cultural ou de educação ambiental</option>
+          <option>Artigos, entrevistas ou parcerias</option>
+          <option>Outro assunto</option>
+        </select>
+        <label for="f-msg">Conte o cenário da sua empresa</label>
+        <textarea id="f-msg" name="msg"></textarea>
+        <p class="erro" id="erro-form" role="alert"></p>
+        <div class="acoes" style="margin-top:.4rem">
+          <button class="botao botao--verde" type="submit">Abrir no WhatsApp</button>
+          <button class="botao botao--linha" type="button" id="btn-email">Abrir no e-mail</button>
+        </div>
+        <p class="aviso-form">Os botões abrem o WhatsApp ou o seu e-mail com a mensagem pronta. Nada é enviado até você confirmar.</p>
+      </form>
+      <div>
+        <h2>Outros caminhos</h2>
+        <ul class="canais">
+          <li><b>WhatsApp</b><a data-wa="Olá, Fernanda! Vim pelo site da MSustentaMais." target="_blank" rel="noopener" id="txt-zap"></a></li>
+          <li><b>E-mail</b><a id="txt-email"></a></li>
+          <li><b>Onde estou</b>Cáceres, Mato Grosso, Pantanal.</li>
+          <li id="canal-redes" hidden><b>Redes</b><span id="txt-redes"></span></li>
+          <li><b>Antes de conversar</b><a data-diag target="_blank" rel="noopener">Faça o diagnóstico comportamental</a><br><a data-guia target="_blank" rel="noopener">Baixe o guia das seis competências</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <div class="rodape__grade">
+      <div>
+        <h2>MSustentaMais</h2>
+        <p>Formação de líderes em ESG, projetos de cultura e educação ambiental, a partir de uma fazenda no Pantanal. O CEPGAS™ é a metodologia da MSustentaMais.</p>
+      </div>
+      <div>
+        <h2>Navegue</h2>
+        <ul>
+          <li><a href="#/quem-sou">Quem sou</a></li>
+          <li><a href="#/empresa">A empresa</a></li>
+          <li><a href="#/cepgas">CEPGAS™</a></li>
+          <li><a href="#/projetos">Projetos</a></li>
+          <li><a href="#/cultura">Cultura</a></li>
+          <li><a href="#/meio-ambiente">Meio ambiente</a></li>
+          <li><a href="#/boas-praticas">Boas práticas</a></li>
+          <li><a href="#/artigos">Artigos e vídeos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Fale comigo</h2>
+        <ul>
+          <li><a data-wa="Olá, Fernanda! Vim pelo site da MSustentaMais." target="_blank" rel="noopener" id="rod-zap"></a></li>
+          <li><a id="rod-email"></a></li>
+          <li id="rod-yt" hidden><a data-yt-canal target="_blank" rel="noopener">YouTube</a></li>
+          <li id="rod-ig" hidden><a data-ig target="_blank" rel="noopener">Instagram</a></li>
+          <li>Cáceres, Mato Grosso</li>
+        </ul>
+      </div>
+    </div>
+    <small>© 2026 MSustentaMais. Todos os direitos reservados.</small>
+  </div>
+</footer>
+
+<a class="zap" data-wa="Olá, Fernanda! Vim pelo site da MSustentaMais e gostaria de conversar." target="_blank" rel="noopener">Conversar no WhatsApp</a>
+
+<script src="conteudo.js"></script>
+<script>
+/* =====================================================================
+   O conteúdo editável (contatos, projetos, boas práticas, matérias,
+   artigos, vídeos, produtos e linha do tempo) fica no arquivo conteudo.js.
+   Aqui ficam só as partes fixas do método CEPGAS™.
+   ===================================================================== */
+const D = window.CONTEUDO || {};
+const lista = x => Array.isArray(x) ? x : [];
+const CT = D.contato || {}, VD = D.vendas || {}, FT = D.fotos || {};
+const CONFIG = {
+  whatsapp: String(CT.whatsapp || '5565999055552').replace(/\D/g, ''),
+  telefoneTexto: CT.whatsappTexto || '(65) 99905-5552',
+  email: CT.email || 'msustentamais@gmail.com',
+  diagnostico: VD.diagnostico || '',
+  guia: VD.guia || '',
+  compra: VD.compra || '',
+  compraTexto: VD.compraTexto || 'Adquirir',
+  youtube: CT.youtube || '',
+  youtubeVideoId: CT.youtubeVideoId || '',
+  instagram: CT.instagram || '',
+  fotoFernanda: FT.fernanda || ''
+};
+const FOTOS = lista(FT.fazenda);
+const PUBLICACOES = lista(D.publicacoes);
+const VIDEOS = lista(D.videos);
+const BOAS_PRATICAS = lista(D.boasPraticas);
+const PRODUTOS = lista(D.produtos);
+const MARCOS = lista(D.marcos);
+const PROJETOS = lista(D.projetos);
+const MATERIAS = lista(D.materias);
+const DESTAQUE_CULTURA = D.culturaDestaque || null;
+const LANES = { mundo: 'Mundo', br: 'Brasil e Pantanal', eu: 'Minha trajetória' };
+
+/* AS SEIS COMPETÊNCIAS DO CEPGAS™ */
+const COMPETENCIAS = [
+  { letra: 'C', nome: 'Clareza estratégica',
+    frase: 'É o líder conseguir explicar por que ESG importa para o resultado da própria empresa, e não de uma empresa qualquer. Quando essa clareza existe, o tema deixa de ser moda e vira prioridade de negócio.',
+    pergunta: 'Por que ESG importa para o resultado da minha empresa?',
+    c: 'Como ESG se liga ao resultado do negócio.', h: 'Explicar essa ligação em uma frase, para a equipe e para o conselho.', a: 'Tratar ESG como prioridade de negócio, e não como moda.',
+    falta: 'O ESG vira moda, e não prioridade de negócio.' },
+  { letra: 'E', nome: 'Estruturação de papéis',
+    frase: 'Para cada tema, alguém decide e alguém executa, com nome. É isso que faz a reunião circular virar uma reunião que termina com decisão.',
+    pergunta: 'Quem decide e quem executa, em cada tema?',
+    c: 'Quem decide e quem executa em cada tema de ESG.', h: 'Desenhar papéis com nome e conduzir a reunião até a decisão.', a: 'Assumir a responsabilidade de decidir e de delegar com clareza.',
+    falta: 'A mesma pauta volta toda semana, e a reunião termina com todo mundo de acordo e nada decidido.' },
+  { letra: 'P', nome: 'Parâmetros e critérios',
+    frase: 'A mesma situação recebe a mesma resposta. Se um fornecedor importante aparece com um problema ambiental, a empresa não improvisa: ela já sabe o que faz e consegue explicar por quê.',
+    pergunta: 'A mesma situação recebe a mesma resposta?',
+    c: 'Quais critérios orientam cada tipo de decisão.', h: 'Escrever critérios e aplicá-los do mesmo jeito a situações parecidas.', a: 'Preferir o critério ao improviso, mesmo quando o improviso parece mais rápido.',
+    falta: 'Cada situação nova vira improviso, e a empresa não consegue explicar por que decidiu assim.' },
+  { letra: 'G', nome: 'Gestão de impacto',
+    frase: 'É conhecer os impactos reais da operação, no lugar onde ela acontece, em vez de copiar as prioridades de outra empresa. Uma indústria no interior e uma fazenda no Pantanal não têm os mesmos impactos, e não podem ter as mesmas soluções.',
+    pergunta: 'Quais são os impactos reais da minha operação, no lugar onde ela acontece?',
+    c: 'Os impactos reais da operação, no território onde ela acontece.', h: 'Priorizar o que de fato pesa, em vez de copiar a lista de outra empresa.', a: 'Olhar para o território antes de olhar para o modelo pronto.',
+    falta: 'A empresa copia as prioridades de outra e ignora os impactos do lugar onde opera.' },
+  { letra: 'A', nome: 'Autonomia real',
+    frase: 'É a equipe conseguir conduzir o tema mesmo quando o cenário é ambíguo, sem precisar ligar para o fornecedor a cada decisão.',
+    pergunta: 'Minha equipe conduz o tema sem me chamar a cada decisão?',
+    c: 'Onde a equipe pode decidir sozinha e onde precisa levar a decisão.', h: 'Conduzir o tema em cenário ambíguo, sem depender do fornecedor a cada passo.', a: 'Confiar na equipe preparada e sustentar as decisões dela.',
+    falta: 'Toda decisão volta para o líder ou para o fornecedor, e a empresa vira dependente.' },
+  { letra: 'S', nome: 'Sustentação por evidências',
+    frase: 'Cada coisa que a empresa afirma em público tem uma prova do lado de dentro: um registro, um indicador, uma decisão documentada.',
+    pergunta: 'O que afirmamos em público tem prova por dentro?',
+    c: 'Que prova sustenta cada afirmação feita em público.', h: 'Organizar registros, indicadores e decisões documentadas.', a: 'Só afirmar o que se consegue provar.',
+    falta: 'A frase publicada não tem prova, e o relatório bonito cai na primeira pergunta difícil.' }
+];
+
+/* OS ESTILOS DE LIDERANÇA DO DIAGNÓSTICO */
+const ESTILOS = [
+  { nome: 'Executor', contribuicao: 'Você transforma intenções em ações concretas.',
+    entra: 'Gestão de impacto: foco no que realmente pesa, onde há retorno.',
+    cresce: 'Estruturação de papéis: uma equipe que decide e executa com nome, sem depender só de você.',
+    c: 'Quais impactos realmente pesam na operação e quais critérios tornam a decisão rápida também defensável.',
+    h: 'Escutar antes de decidir quando envolve pessoas, distribuir papéis com nome e formar quem executa.',
+    a: 'De “eu resolvo” para “deixo a decisão funcionando sem mim”.' },
+  { nome: 'Inspirador', contribuicao: 'Você mobiliza pessoas em torno de causas e propósitos.',
+    entra: 'Clareza estratégica: o propósito que vira prioridade de negócio.',
+    cresce: 'Sustentação por evidências: a prova que dá lastro ao seu discurso.',
+    c: 'Como o propósito se conecta ao resultado do negócio e que evidência sustenta cada afirmação pública.',
+    h: 'Organizar prioridades, acompanhar poucos indicadores e manter a disciplina depois do entusiasmo.',
+    a: 'De “engajar” para “engajar e comprovar”.' },
+  { nome: 'Integrador', contribuicao: 'Você fortalece culturas sustentáveis e relações saudáveis.',
+    entra: 'Estruturação de papéis: quem decide e quem executa, com nome, como segurança para o grupo.',
+    cresce: 'Parâmetros e critérios: a decisão difícil deixa de ser pessoal e vira decisão da empresa.',
+    c: 'Quem decide o quê em cada tema e quais critérios orientam as decisões difíceis.',
+    h: 'Conduzir conflito com critério, dizer não com clareza e agir com mais agilidade quando o cenário muda.',
+    a: 'De “preservar a harmonia” para “proteger as pessoas com clareza”.' },
+  { nome: 'Estrategista', contribuicao: 'Você transforma sustentabilidade em processos consistentes.',
+    entra: 'Parâmetros e critérios, e sustentação por evidências: método, consistência e prova.',
+    cresce: 'Autonomia real: uma equipe que conduz o tema em cenário ambíguo, sem depender de você a cada passo.',
+    c: 'Como as seis competências formam um sistema e como escrever critérios e evidências que resistem à pergunta difícil.',
+    h: 'Decidir em cenário incerto sem todos os dados, delegar com critério e dar flexibilidade ao processo.',
+    a: 'Da precisão que espera para a precisão que orienta.' }
+];
+
+/* =====================================================================
+   FUNCIONAMENTO DO SITE (não precisa mexer daqui para baixo)
+   ===================================================================== */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const urlSegura = u => (/^https?:\/\//i.test(u || '') ? u : '');
+const waLink = t => 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(t);
+const mailLink = (assunto, corpoCodificado) => 'mailto:' + CONFIG.email + '?subject=' + encodeURIComponent(assunto) + (corpoCodificado ? '&body=' + corpoCodificado : '');
+const dataBR = d => { const m = String(d || '').match(/^(\d{4})-(\d{2})-(\d{2})$/); return m ? `${m[3]}/${m[2]}/${m[1]}` : ''; };
+const anoMax = s => { const ns = String(s || '').match(/\d{4}/g); return ns ? Math.max(...ns.map(Number)) : 0; };
+const reduzir = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---- links gerais ---- */
+function ligarLinks() {
+  $$('[data-wa]').forEach(a => { a.href = waLink(a.dataset.wa); });
+  $$('[data-diag]').forEach(a => { a.href = CONFIG.diagnostico; });
+  $$('[data-guia]').forEach(a => { if (urlSegura(CONFIG.guia)) a.href = CONFIG.guia; else a.hidden = true; });
+  $$('[data-compra]').forEach(a => { if (urlSegura(CONFIG.compra)) { a.href = CONFIG.compra; a.textContent = CONFIG.compraTexto; a.hidden = false; } });
+  $$('[data-yt-canal]').forEach(a => { a.href = urlSegura(CONFIG.youtube) || '#'; });
+  $$('[data-ig]').forEach(a => { a.href = urlSegura(CONFIG.instagram) || '#'; });
+  const temYt = !!urlSegura(CONFIG.youtube), temIg = !!urlSegura(CONFIG.instagram);
+  $('#rod-yt').hidden = !temYt; $('#rod-ig').hidden = !temIg; $('#link-canal').hidden = !temYt;
+  if (temYt || temIg) {
+    $('#canal-redes').hidden = false;
+    $('#txt-redes').innerHTML = [temYt ? `<a href="${esc(CONFIG.youtube)}" target="_blank" rel="noopener">YouTube</a>` : '', temIg ? `<a href="${esc(CONFIG.instagram)}" target="_blank" rel="noopener">Instagram</a>` : ''].filter(Boolean).join(' · ');
+  }
+  $$('[data-mail]').forEach(a => { a.href = mailLink(a.dataset.mail, a.dataset.mailCorpo); });
+  ['#txt-email', '#rod-email'].forEach(s => { const a = $(s); a.href = mailLink('Contato pelo site'); a.textContent = CONFIG.email; });
+  ['#txt-zap', '#rod-zap'].forEach(s => { $(s).textContent = CONFIG.telefoneTexto; });
+}
+
+/* ---- abas ---- */
+function configurarAbas(lista, aoMudar) {
+  const abas = $$('[role="tab"]', lista);
+  const ativar = (aba, foco) => {
+    abas.forEach(a => { const s = a === aba; a.setAttribute('aria-selected', String(s)); a.tabIndex = s ? 0 : -1; });
+    if (foco) aba.focus();
+    aoMudar(aba);
+  };
+  abas.forEach((a, i) => {
+    a.addEventListener('click', () => ativar(a, false));
+    a.addEventListener('keydown', e => {
+      let j = null;
+      if (e.key === 'ArrowRight') j = (i + 1) % abas.length;
+      if (e.key === 'ArrowLeft') j = (i - 1 + abas.length) % abas.length;
+      if (e.key === 'Home') j = 0;
+      if (e.key === 'End') j = abas.length - 1;
+      if (j !== null) { e.preventDefault(); ativar(abas[j], true); }
+    });
+  });
+}
+
+/* ---- publicações ---- */
+let filtroPub = 'Todos';
+function linhaPub(p) {
+  const u = urlSegura(p.link || p.url);
+  const titulo = u ? `<a class="titulo" href="${esc(u)}" target="_blank" rel="noopener">${esc(p.titulo)}</a>` : esc(p.titulo);
+  return `<li class="linha"><span class="linha__ano">${esc(p.ano)}</span><div class="linha__corpo"><span class="linha__tipo">${esc(p.tipo)}</span><h3>${titulo}</h3><p>${esc(p.detalhe)}</p></div></li>`;
+}
+const pubsOrdenadas = () => PUBLICACOES.map((p, i) => ({ p, i })).sort((a, b) => (anoMax(b.p.ano) - anoMax(a.p.ano)) || (a.i - b.i)).map(x => x.p);
+function renderPub() {
+  const tipos = ['Todos', ...new Set(PUBLICACOES.map(p => p.tipo))];
+  $('#filtros-pub').innerHTML = tipos.map(t => `<button type="button" class="filtro" aria-pressed="${t === filtroPub}" data-t="${esc(t)}">${esc(t)}</button>`).join('');
+  $('#lista-pub').innerHTML = pubsOrdenadas().filter(p => filtroPub === 'Todos' || p.tipo === filtroPub).map(linhaPub).join('');
+  $('#lista-recentes').innerHTML = pubsOrdenadas().slice(0, 3).map(linhaPub).join('');
+}
+
+/* ---- vídeos ---- */
+const ytId = u => { const m = String(u || '').match(/(?:youtu\.be\/|v=|embed\/)([\w-]{11})/); return m ? m[1] : null; };
+function renderVideos() {
+  const todos = [...VIDEOS];
+  if (/^[\w-]{11}$/.test(CONFIG.youtubeVideoId)) todos.unshift({ serie: 'Em destaque', titulo: 'Vídeo em destaque', descricao: '', link: 'https://youtu.be/' + CONFIG.youtubeVideoId });
+  $('#lista-videos').innerHTML = todos.map(v => {
+    const id = ytId(v.link || v.url), u = urlSegura(v.link || v.url);
+    let tela;
+    if (id) tela = `<button type="button" data-yt="${id}" data-titulo="${esc(v.titulo)}" aria-label="Assistir: ${esc(v.titulo)}"><span><i class="sol-mini"></i>Assistir</span></button>`;
+    else if (u) tela = `<a class="breve" href="${esc(u)}" target="_blank" rel="noopener" style="color:#fff;font-weight:700">Assistir em nova aba</a>`;
+    else tela = `<span class="breve">Em breve</span>`;
+    return `<article class="video"><div class="video__tela">${tela}</div><h4>${esc(v.titulo)}</h4><span class="serie">${esc(v.serie)}</span><p>${esc(v.descricao)}</p></article>`;
+  }).join('');
+}
+
+/* ---- produtos ---- */
+function renderProdutos() {
+  $('#lista-produtos').innerHTML = PRODUTOS.map(p => {
+    let link;
+    if (p.acao === 'compra' && urlSegura(CONFIG.compra)) link = `<a class="botao botao--linha" href="${esc(CONFIG.compra)}" target="_blank" rel="noopener">${esc(CONFIG.compraTexto)}</a>`;
+    else if (p.acao === 'diag') link = `<a class="botao botao--linha" href="${esc(CONFIG.diagnostico)}" target="_blank" rel="noopener">Fazer o diagnóstico</a>`;
+    else if (p.status === 'Em breve') link = `<a class="botao botao--linha" href="${esc(waLink('Olá, Fernanda! Quero saber quando este item estiver disponível: ' + p.nome + '.'))}" target="_blank" rel="noopener">Quero saber quando abrir</a>`;
+    else link = `<a class="botao botao--linha" href="${esc(waLink('Olá, Fernanda! Quero saber mais sobre: ' + p.nome + '.'))}" target="_blank" rel="noopener">Conversar sobre isto</a>`;
+    return `<li class="linha"><span class="linha__ano" style="font-size:1.25rem">${esc(p.status)}</span><div class="linha__corpo"><h3>${esc(p.nome)}</h3><p>${esc(p.desc)}</p><p style="margin-top:.7rem">${link}</p></div></li>`;
+  }).join('');
+}
+
+/* ---- boas práticas ---- */
+let filtroPratica = 'Todas';
+const praticasOrdenadas = () => BOAS_PRATICAS.map((p, i) => ({ p, i })).sort((a, b) => {
+  const da = a.p.data || '', db = b.p.data || '';
+  if (da && db) return db.localeCompare(da) || (a.i - b.i);
+  if (da) return -1; if (db) return 1; return a.i - b.i;
+}).map(x => x.p);
+function renderPraticas() {
+  const pilares = ['Todas', 'Ambiental', 'Social', 'Governança'];
+  $('#filtros-praticas').innerHTML = pilares.map(t => `<button type="button" class="filtro" aria-pressed="${t === filtroPratica}" data-t="${t}">${t}</button>`).join('');
+  const itens = praticasOrdenadas().filter(p => filtroPratica === 'Todas' || lista(p.pilares).includes(filtroPratica));
+  $('#lista-praticas').innerHTML = itens.length ? itens.map(p => {
+    const rot = [p.categoria, lista(p.pilares).join(' e ')].filter(Boolean).join(' · ');
+    const como = lista(p.como).filter(Boolean);
+    const u = urlSegura(p.link);
+    return `
+    <details class="pratica">
+      <summary><span class="pilar">${esc(rot)}${p.data ? `<br><span class="data-mini">${dataBR(p.data)}</span>` : ''}</span><h3>${esc(p.titulo)}</h3></summary>
+      <div class="pratica__corpo"><div>
+        ${p.texto ? `<p style="color:var(--tinta)">${esc(p.texto)}</p>` : ''}
+        ${como.length ? `<h4>Como fazer</h4><ul>${como.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+        ${p.prova ? `<h4>Prova que fica</h4><p>${esc(p.prova)}</p>` : ''}
+        ${p.origem ? `<h4>De onde vem</h4><p>${esc(p.origem)}</p>` : ''}
+        ${u ? `<p style="margin-top:1rem"><a href="${esc(u)}" target="_blank" rel="noopener">Saiba mais</a></p>` : ''}
+      </div></div>
+    </details>`; }).join('') : '<p class="vazio">Nenhuma prática neste pilar ainda.</p>';
+  $('#home-praticas').innerHTML = praticasOrdenadas().slice(0, 3).map(p => `<li class="linha"><span class="linha__ano" style="font-size:1.15rem">${p.data ? dataBR(p.data) : esc(p.categoria)}</span><div class="linha__corpo"><span class="linha__tipo">${esc(p.categoria || lista(p.pilares).join(' e '))}</span><h3><a class="titulo" href="#/boas-praticas">${esc(p.titulo)}</a></h3>${p.texto ? `<p>${esc(p.texto)}</p>` : ''}</div></li>`).join('');
+}
+
+/* ---- matérias na imprensa ---- */
+function renderMaterias() {
+  const itens = MATERIAS.filter(m => m && m.titulo).sort((a, b) => String(b.data || '').localeCompare(String(a.data || '')));
+  $('#lista-imp').innerHTML = itens.length ? itens.map(m => {
+    const u = urlSegura(m.link);
+    const t = u ? `<a class="titulo" href="${esc(u)}" target="_blank" rel="noopener">${esc(m.titulo)}</a>` : esc(m.titulo);
+    return `<li class="linha"><span class="linha__ano" style="font-size:1.15rem">${dataBR(m.data) || esc(m.data)}</span><div class="linha__corpo"><span class="linha__tipo">${esc(m.veiculo)}</span><h3>${t}</h3></div></li>`;
+  }).join('') : '<li class="vazio" style="list-style:none">As matérias publicadas aparecem aqui em breve.</li>';
+}
+
+/* ---- projetos ---- */
+let filtroStatus = 'Todos', filtroTema = 'Todos';
+const classeSelo = s => ({ 'Em andamento': 'andamento', 'Realizado': 'realizado', 'Submetido': 'submetido' }[s] || 'realizado');
+const ordemStatus = { 'Em andamento': 0, 'Submetido': 1, 'Realizado': 2 };
+const ehCultura = p => lista(p.temas).some(t => t === 'Cultura' || t === 'Patrimônio');
+function cartaoProjeto(p) {
+  const u = urlSegura(p.link);
+  const t = u ? `<a class="titulo" href="${esc(u)}" target="_blank" rel="noopener">${esc(p.titulo)}</a>` : esc(p.titulo);
+  return `<article class="projeto">
+    <div class="projeto__topo"><span class="selo selo--${classeSelo(p.status)}">${esc(p.status)}</span>${p.periodo ? `<span>${esc(p.periodo)}</span>` : ''}</div>
+    <h3>${t}</h3>
+    ${p.descricao ? `<p>${esc(p.descricao)}</p>` : ''}
+    ${lista(p.temas).length ? `<span class="temas">${esc(lista(p.temas).join(' · '))}</span>` : ''}
+  </article>`;
+}
+function renderProjetos() {
+  const todos = PROJETOS.filter(p => p && p.titulo);
+  const ord = arr => arr.map((p, i) => ({ p, i })).sort((a, b) => ((ordemStatus[a.p.status] ?? 3) - (ordemStatus[b.p.status] ?? 3)) || (a.i - b.i)).map(x => x.p);
+  const status = ['Todos', ...['Em andamento', 'Submetido', 'Realizado'].filter(s => todos.some(p => p.status === s))];
+  const temas = ['Todos', ...new Set(todos.flatMap(p => lista(p.temas)))];
+  $('#filtros-status').innerHTML = status.map(s => `<button type="button" class="filtro" aria-pressed="${s === filtroStatus}" data-t="${esc(s)}">${esc(s)}</button>`).join('');
+  $('#filtros-temas').innerHTML = temas.map(s => `<button type="button" class="filtro" aria-pressed="${s === filtroTema}" data-t="${esc(s)}">${esc(s)}</button>`).join('');
+  const vis = ord(todos.filter(p => (filtroStatus === 'Todos' || p.status === filtroStatus) && (filtroTema === 'Todos' || lista(p.temas).includes(filtroTema))));
+  $('#lista-projetos').innerHTML = vis.length ? vis.map(cartaoProjeto).join('') : '<p class="vazio">Nenhum projeto com essa combinação de filtros.</p>';
+  $('#contagem-projetos').textContent = vis.length === 1 ? '1 projeto' : vis.length + ' projetos';
+  const cult = ord(todos.filter(ehCultura));
+  $('#lista-cultura').innerHTML = cult.length ? cult.map(cartaoProjeto).join('') : '<p class="vazio">Os projetos culturais aparecem aqui em breve.</p>';
+  let dest = todos.filter(p => p.destaque);
+  if (!dest.length) dest = ord(todos);
+  $('#home-projetos').innerHTML = dest.slice(0, 3).map(cartaoProjeto).join('');
+  const n = s => todos.filter(p => p.status === s).length;
+  const partes = [[n('Em andamento'), 'em andamento'], [n('Realizado'), n('Realizado') === 1 ? 'realizado' : 'realizados'], [n('Submetido'), n('Submetido') === 1 ? 'submetido' : 'submetidos']].filter(x => x[0]).map(x => x[0] + ' ' + x[1]);
+  if (partes.length) $('#home-contagem').textContent = 'Cultura, educação ambiental, patrimônio, turismo e pecuária sustentável: ' + partes.join(', ') + '.';
+}
+function renderDestaque() {
+  const d = DESTAQUE_CULTURA;
+  if (!d || !d.titulo) return;
+  $('#destaque-titulo').textContent = d.titulo;
+  $('#destaque-status').textContent = d.status || '';
+  $('#destaque-status').hidden = !d.status;
+  $('#destaque-texto').textContent = d.texto || '';
+  $('#destaque-itens').innerHTML = lista(d.itens).map(x => `<li>${esc(x)}</li>`).join('');
+  $('#bloco-destaque').hidden = false;
+}
+
+/* ---- logo ---- */
+function tentarLogo() {
+  const img = new Image();
+  img.onload = () => {
+    const s = $('.marca__simbolo'); if (!s) return;
+    const el = document.createElement('img'); el.src = 'logo.png'; el.alt = ''; el.className = 'marca__logo';
+    s.replaceWith(el);
+    const ic = document.querySelector('link[rel="icon"]'); if (ic) ic.href = 'logo.png';
+  };
+  img.src = 'logo.png';
+}
+
+/* ---- linha do tempo ---- */
+let filtroLane = 'todos';
+function renderMarcos() {
+  const opcoes = [['todos', 'Tudo'], ['mundo', 'Mundo'], ['br', 'Brasil e Pantanal'], ['eu', 'Minha trajetória']];
+  $('#filtros-marcos').innerHTML = opcoes.map(([k, r]) => `<button type="button" class="filtro" aria-pressed="${k === filtroLane}" data-lane="${k}">${r}</button>`).join('');
+  $('#lista-marcos').innerHTML = MARCOS.map(m => ({ ...m, lane: m.faixa || m.lane })).filter(m => filtroLane === 'todos' || m.lane === filtroLane).map(m => `
+    <li class="marco" data-lane="${m.lane}">
+      <span class="marco__ano">${esc(m.rot)}</span>
+      <span class="marco__pt" aria-hidden="true"><i></i></span>
+      <div><span class="marco__lane">${LANES[m.lane] || ''}</span><h4>${esc(m.titulo)}</h4><p>${esc(m.texto)}</p></div>
+    </li>`).join('');
+}
+
+/* ---- galeria e retrato ---- */
+function renderFotos() {
+  const fotos = FOTOS.filter(f => f.src);
+  if (!fotos.length) return;
+  $('#fotos').innerHTML = fotos.map(f => `<figure><img src="${esc(f.src)}" alt="${esc(f.legenda || 'Foto da fazenda')}" loading="lazy">${f.legenda ? `<figcaption>${esc(f.legenda)}</figcaption>` : ''}</figure>`).join('');
+  $('#galeria').hidden = false;
+}
+function renderRetrato() {
+  if (!CONFIG.fotoFernanda) return;
+  $('#retrato').innerHTML = `<img src="${esc(CONFIG.fotoFernanda)}" alt="Retrato de Fernanda de Arruda Machado"><figcaption>Fernanda de Arruda Machado</figcaption>`;
+}
+
+/* ---- sistema das seis competências ---- */
+let selComp = 0;
+const fora = new Set();
+function montarEstratos() {
+  $('#estratos').innerHTML = COMPETENCIAS.map((c, i) => `<button type="button" class="estrato" data-i="${i}" aria-pressed="false"><b>${c.letra}</b><span>${esc(c.nome)}</span></button>`).join('');
+  $('#estratos').addEventListener('click', e => {
+    const b = e.target.closest('.estrato'); if (!b) return;
+    selComp = Number(b.dataset.i); atualizarSistema();
+  });
+  $('#painel-comp').addEventListener('click', e => {
+    if (!e.target.closest('#btn-retirar')) return;
+    fora.has(selComp) ? fora.delete(selComp) : fora.add(selComp);
+    atualizarSistema(); $('#btn-retirar').focus();
+  });
+  atualizarSistema();
+}
+function atualizarSistema() {
+  $$('.estrato').forEach((b, i) => {
+    b.setAttribute('aria-pressed', String(i === selComp));
+    if (fora.has(i)) b.setAttribute('data-fora', '1'); else b.removeAttribute('data-fora');
+  });
+  $('#estratos').dataset.trinca = fora.size ? '1' : '0';
+  const n = fora.size;
+  $('#estado-sistema').textContent = n === 0
+    ? 'Sistema completo: as seis competências se sustentam entre si.'
+    : (n === 1 ? 'Sistema com 5 de 6 competências. Falta uma, e o sistema trinca.' : `Sistema com ${6 - n} de 6 competências. Faltam ${n}, e o sistema trinca.`);
+  const c = COMPETENCIAS[selComp], fx = fora.has(selComp);
+  $('#painel-comp').innerHTML = `
+    <h3>${esc(c.nome)}</h3>
+    <p class="pergunta">${esc(c.pergunta)}</p>
+    <p>${esc(c.frase)}</p>
+    <ul class="cha">
+      <li><strong>Conhecimento</strong><span>${esc(c.c)}</span></li>
+      <li><strong>Habilidade</strong><span>${esc(c.h)}</span></li>
+      <li><strong>Atitude</strong><span>${esc(c.a)}</span></li>
+    </ul>
+    <p class="falta"><strong>Se esta competência faltar:</strong> ${esc(c.falta)}</p>
+    <button type="button" class="botao botao--linha" id="btn-retirar" aria-pressed="${fx}">${fx ? 'Recolocar no sistema' : 'Retirar do sistema'}</button>`;
+}
+
+/* ---- estilos de liderança ---- */
+function montarEstilos() {
+  const lista = $('#abas-estilos');
+  lista.innerHTML = ESTILOS.map((e, i) => `<button class="aba" role="tab" id="aba-est-${i}" aria-selected="${i === 0}" aria-controls="painel-estilo" tabindex="${i === 0 ? 0 : -1}" type="button">${esc(e.nome)}</button>`).join('');
+  const pintar = i => {
+    const e = ESTILOS[i], p = $('#painel-estilo');
+    p.setAttribute('role', 'tabpanel'); p.setAttribute('aria-labelledby', 'aba-est-' + i);
+    p.innerHTML = `
+      <p class="lead texto" style="font-family:var(--serif);font-size:1.7rem;line-height:1.2;color:var(--verde)">${esc(e.contribuicao)}</p>
+      <div class="tres" style="margin-top:1rem">
+        <div><h4>O CEPGAS™ entra por</h4><p>${esc(e.entra)}</p></div>
+        <div><h4>E leva você a crescer em</h4><p>${esc(e.cresce)}</p></div>
+        <div><h4>O CHA que trabalhamos</h4>
+          <p><strong>Conhecimento:</strong> ${esc(e.c)}</p>
+          <p style="margin-top:.5rem"><strong>Habilidade:</strong> ${esc(e.h)}</p>
+          <p style="margin-top:.5rem"><strong>Atitude:</strong> ${esc(e.a)}</p></div>
+      </div>
+      <p style="margin-top:1.4rem"><a class="botao botao--verde" href="${esc(CONFIG.diagnostico)}" target="_blank" rel="noopener">Descobrir o meu estilo</a></p>`;
+  };
+  configurarAbas(lista, aba => pintar(Number(aba.id.replace('aba-est-', ''))));
+  pintar(0);
+}
+
+/* ---- formulário de contato ---- */
+function montarContato() {
+  const form = $('#form-contato'), erro = $('#erro-form');
+  const ler = () => {
+    const nome = $('#f-nome').value.trim(), empresa = $('#f-empresa').value.trim(), assunto = $('#f-assunto').value, msg = $('#f-msg').value.trim();
+    if (!nome || !assunto) {
+      erro.textContent = 'Preencha o seu nome e o assunto para abrir a mensagem.';
+      (!nome ? $('#f-nome') : $('#f-assunto')).focus();
+      return null;
+    }
+    erro.textContent = '';
+    const texto = `Olá, Fernanda! Sou ${nome}${empresa ? ', ' + empresa : ''}. Quero conversar sobre: ${assunto}.${msg ? '\n\n' + msg : ''}`;
+    return { assunto, texto };
+  };
+  form.addEventListener('submit', e => { e.preventDefault(); const d = ler(); if (d) window.open(waLink(d.texto), '_blank', 'noopener'); });
+  $('#btn-email').addEventListener('click', () => { const d = ler(); if (d) location.href = mailLink('Contato pelo site: ' + d.assunto, encodeURIComponent(d.texto)); });
+}
+
+/* ---- rotas ---- */
+const PAGINAS = ['inicio', 'quem-sou', 'empresa', 'cepgas', 'projetos', 'cultura', 'meio-ambiente', 'boas-praticas', 'artigos', 'contato'];
+function fecharMenu() { $('#menu').classList.remove('aberto'); $('.menu-btn').setAttribute('aria-expanded', 'false'); }
+function rotear(primeira) {
+  const [p, a] = location.hash.replace(/^#\/?/, '').split('/');
+  const pg = PAGINAS.includes(p) ? p : 'inicio';
+  PAGINAS.forEach(id => { $('#p-' + id).hidden = id !== pg; });
+  $$('[data-nav]').forEach(l => { if (l.dataset.nav === pg) l.setAttribute('aria-current', 'page'); else l.removeAttribute('aria-current'); });
+  document.title = pg === 'inicio' ? 'MSustentaMais | ESG que se sustenta em quem decide' : $('#p-' + pg).dataset.titulo + ' | MSustentaMais';
+  fecharMenu();
+  const alvo = a ? $('#a-' + pg + '-' + a) : null;
+  if (alvo) alvo.scrollIntoView({ behavior: reduzir ? 'auto' : 'smooth', block: 'start' }); else window.scrollTo(0, 0);
+  if (!primeira) $('#p-' + pg).focus({ preventScroll: true });
+}
+
+/* ---- início ---- */
+document.addEventListener('DOMContentLoaded', () => {
+  if (!window.CONTEUDO) $('#aviso-conteudo').hidden = false;
+  ligarLinks(); renderPub(); renderVideos(); renderProdutos(); renderPraticas(); renderMaterias(); renderProjetos(); renderDestaque(); renderMarcos(); renderFotos(); renderRetrato(); tentarLogo();
+  montarEstratos(); montarEstilos(); montarContato();
+
+  configurarAbas($('[aria-label="Tipo de conteúdo"]'), aba => {
+    const k = aba.id.replace('aba-', '');
+    ['pub', 'imp', 'vid'].forEach(x => { $('#painel-' + x).hidden = x !== k; });
+  });
+
+  document.addEventListener('click', e => {
+    const f = e.target.closest('#filtros-pub .filtro'); if (f) { filtroPub = f.dataset.t; renderPub(); $('#filtros-pub .filtro[aria-pressed="true"]').focus(); return; }
+    const fp = e.target.closest('#filtros-praticas .filtro'); if (fp) { filtroPratica = fp.dataset.t; renderPraticas(); $('#filtros-praticas .filtro[aria-pressed="true"]').focus(); return; }
+    const fs = e.target.closest('#filtros-status .filtro'); if (fs) { filtroStatus = fs.dataset.t; renderProjetos(); $('#filtros-status .filtro[aria-pressed="true"]').focus(); return; }
+    const ft = e.target.closest('#filtros-temas .filtro'); if (ft) { filtroTema = ft.dataset.t; renderProjetos(); $('#filtros-temas .filtro[aria-pressed="true"]').focus(); return; }
+    const fm = e.target.closest('#filtros-marcos .filtro'); if (fm) { filtroLane = fm.dataset.lane; renderMarcos(); $('#filtros-marcos .filtro[aria-pressed="true"]').focus(); return; }
+    const yt = e.target.closest('[data-yt]');
+    if (yt) { yt.parentElement.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${yt.dataset.yt}?autoplay=1&rel=0" title="${yt.dataset.titulo}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`; return; }
+    const nav = e.target.closest('a[href^="#/"]');
+    if (nav && nav.getAttribute('href') === location.hash) { e.preventDefault(); rotear(false); }
+  });
+
+  const btn = $('.menu-btn');
+  btn.addEventListener('click', () => { const aberto = $('#menu').classList.toggle('aberto'); btn.setAttribute('aria-expanded', String(aberto)); });
+  window.addEventListener('hashchange', () => rotear(false));
+  rotear(true);
+});
+</script>
+</body>
+</html>
