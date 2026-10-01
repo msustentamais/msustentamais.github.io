@@ -316,6 +316,32 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
 .espiral__fig{margin:0}
 .espiral__fig img{width:100%;height:auto;display:block;border-radius:4px;box-shadow:0 10px 30px rgba(13,59,43,.15)}
 @media (max-width:860px){ .espiral{grid-template-columns:1fr} .espiral__fig{max-width:440px} }
+/* percurso das seis competências */
+.percurso{list-style:none;padding:0;margin:2.2rem 0 1.8rem;display:grid;grid-template-columns:repeat(6,1fr);position:relative}
+.percurso::before{content:"";position:absolute;left:calc(100%/12);right:calc(100%/12);top:2.1rem;height:3px;background:linear-gradient(90deg,#E9B43A,#86B847,#2E9F8E,#1F86B5,#1D5E9E,#E9C989);border-radius:2px}
+.percurso li{position:relative;text-align:center}
+.percurso a{display:block;text-decoration:none;padding:0 .4rem}
+.percurso__n{display:grid;place-items:center;width:4.2rem;height:4.2rem;margin:0 auto;border-radius:50%;background:var(--verde);border:3px solid var(--ouro);font-family:var(--serif);font-size:2rem;font-weight:600;color:var(--ouro);position:relative;z-index:1;transition:transform .2s}
+.percurso li:nth-child(2) .percurso__n{transform:translateY(-.3rem)}
+.percurso li:nth-child(3) .percurso__n{transform:translateY(-.6rem)}
+.percurso li:nth-child(4) .percurso__n{transform:translateY(-.9rem)}
+.percurso li:nth-child(5) .percurso__n{transform:translateY(-1.2rem)}
+.percurso li:nth-child(6) .percurso__n{transform:translateY(-1.5rem);background:var(--ouro);color:var(--verde)}
+.percurso a:hover .percurso__n{border-color:#fff}
+.percurso__t{display:block;margin-top:.8rem;font-size:.95rem;line-height:1.3;color:#D5E4DB}
+.percurso__t b{display:block;font-size:.78rem;letter-spacing:.08em;color:var(--ouro)}
+@media (max-width:760px){
+  .percurso{grid-template-columns:1fr;gap:.9rem}
+  .percurso::before{left:2.05rem;right:auto;top:2rem;bottom:2rem;width:3px;height:auto;background:linear-gradient(180deg,#E9B43A,#86B847,#2E9F8E,#1F86B5,#1D5E9E,#E9C989)}
+  .percurso li{text-align:left}
+  .percurso a{display:flex;align-items:center;gap:1rem;padding:0}
+  .percurso__n,.percurso li .percurso__n{transform:none!important;width:3.6rem;height:3.6rem;font-size:1.6rem;margin:0;flex:none}
+  .percurso__t{margin:0}
+}
+/* botão fixo do diagnóstico */
+.diag-fixo{position:fixed;right:1rem;bottom:4.6rem;z-index:60;background:var(--verde);color:#fff;font-weight:700;text-decoration:none;padding:.6rem 1rem;border-radius:999px;border:2px solid var(--ouro);box-shadow:0 4px 14px rgba(0,0,0,.25);font-size:.9rem}
+.diag-fixo:hover{background:#145a40}
+@media (max-width:560px){ .diag-fixo{font-size:.82rem;padding:.5rem .85rem;bottom:4.2rem} }
 /* home comercial */
 .heroi__titulo{display:flex;align-items:center;gap:clamp(1.5rem,4vw,3.5rem)}
 .heroi__titulo h1{margin-bottom:0}
@@ -460,7 +486,7 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
       <a href="#/meio-ambiente" data-nav="meio-ambiente">Meio ambiente</a>
       <a href="#/boas-praticas" data-nav="boas-praticas">Boas práticas</a>
       <a href="#/artigos" data-nav="artigos">Artigos</a>
-      <a href="#/contato" data-nav="contato">Contato</a>
+      <a href="#/contato" data-nav="contato">Fale conosco</a>
     </nav>
   </div>
 </header>
@@ -553,14 +579,7 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
     <div class="container">
       <h2 class="texto">O método começa por quem decide.</h2>
       <p class="lead texto suave">O CEPGAS™ desenvolve no líder seis competências que funcionam como um sistema, para transformar princípios, critérios e compromissos ESG em decisões, processos e evidências. Falta uma, e o sistema trinca.</p>
-      <div class="letras">
-        <a href="#/cepgas/competencias"><b>C</b><span>Clareza estratégica</span></a>
-        <a href="#/cepgas/competencias"><b>E</b><span>Estruturação de papéis</span></a>
-        <a href="#/cepgas/competencias"><b>P</b><span>Parâmetros e critérios</span></a>
-        <a href="#/cepgas/competencias"><b>G</b><span>Gestão de impacto</span></a>
-        <a href="#/cepgas/competencias"><b>A</b><span>Autonomia real</span></a>
-        <a href="#/cepgas/competencias"><b>S</b><span>Sustentação por evidências</span></a>
-      </div>
+      <ol class="percurso" aria-label="As seis competências do CEPGAS, em sequência"><li><a href="#/cepgas/competencias"><span class="percurso__n">C</span><span class="percurso__t"><b>1</b> Clareza estratégica</span></a></li><li><a href="#/cepgas/competencias"><span class="percurso__n">E</span><span class="percurso__t"><b>2</b> Estruturação de papéis</span></a></li><li><a href="#/cepgas/competencias"><span class="percurso__n">P</span><span class="percurso__t"><b>3</b> Parâmetros e critérios</span></a></li><li><a href="#/cepgas/competencias"><span class="percurso__n">G</span><span class="percurso__t"><b>4</b> Gestão de impacto</span></a></li><li><a href="#/cepgas/competencias"><span class="percurso__n">A</span><span class="percurso__t"><b>5</b> Autonomia real</span></a></li><li><a href="#/cepgas/competencias"><span class="percurso__n">S</span><span class="percurso__t"><b>6</b> Sustentação por evidências</span></a></li></ol>
       <a class="botao botao--ouro" href="#/cepgas/competencias">Ver como cada competência funciona</a>
     </div>
   </div>
@@ -1272,7 +1291,7 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
 </section>
 
 <!-- ============ CONTATO ============ -->
-<section class="pagina" id="p-contato" data-titulo="Contato" tabindex="-1" aria-labelledby="t-contato" hidden>
+<section class="pagina" id="p-contato" data-titulo="Fale conosco" tabindex="-1" aria-labelledby="t-contato" hidden>
   <div class="cabeca">
     <div class="container">
       <h1 id="t-contato">Vamos conversar.</h1>
@@ -1360,6 +1379,7 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
   </div>
 </footer>
 
+<a class="diag-fixo" data-diag target="_blank" rel="noopener">Diagnóstico ESG gratuito</a>
 <a class="zap" data-wa="Olá, Fernanda! Vim pelo site da MSustentaMais e gostaria de conversar." target="_blank" rel="noopener">Conversar no WhatsApp</a>
 
 <script src="conteudo.js"></script>
