@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MSustentaMais | ESG que se sustenta em quem decide</title>
-<meta name="description" content="A MSustentaMais forma líderes em ESG. Conheça Fernanda de Arruda Machado, o método CEPGAS™, projetos de cultura, patrimônio e educação ambiental, boas práticas e artigos.">
+<meta name="description" content="A MSustentaMais forma líderes em ESG a partir de uma fazenda no Pantanal. Conheça Fernanda de Arruda Machado, o método CEPGAS™, projetos de cultura, patrimônio e educação ambiental, boas práticas e artigos.">
 <meta name="theme-color" content="#0D3B2B">
 <meta property="og:title" content="MSustentaMais | ESG que se sustenta em quem decide">
-<meta property="og:description" content="Formação de líderes em ESG. Método CEPGAS™.">
+<meta property="og:description" content="Formação de líderes em ESG a partir de uma fazenda no Pantanal. Método CEPGAS™.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230D3B2B'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E9C989'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -298,120 +298,7 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
 .marca__logo{height:2.4rem;width:auto;display:block}
 .topo .container{max-width:1320px}
 .menu a{white-space:nowrap}
-/* logo em cada novo assunto */
-.cabeca h1::before,.faixa .container>h2::before,.faixa .container>div>h2::before{content:"";display:block;width:34px;height:34px;margin-bottom:.7rem;background:url("logo.png") center/contain no-repeat}
-.cabeca h1::before{width:42px;height:42px}
-/* foto menor com texto ao lado */
-.duas--foto{grid-template-columns:minmax(0,230px) 1fr}
-.duas--foto .retrato{position:sticky;top:5.5rem}
-.duas--foto .retrato figcaption{font-size:.85rem}
-@media (max-width:860px){
-  .duas.duas--foto{display:block}
-  .duas.duas--foto::after{content:"";display:block;clear:both}
-  .duas--foto .retrato{float:left;width:118px;max-width:none;position:static;margin:0 1.1rem .8rem 0}
-  .duas--foto .retrato figcaption{display:none}
-  .duas--foto .retrato::after{display:none}
-}
-.espiral{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:clamp(1.5rem,5vw,4rem);align-items:center}
-.espiral__fig{margin:0}
-.espiral__fig img{width:100%;height:auto;display:block;border-radius:4px;box-shadow:0 10px 30px rgba(13,59,43,.15)}
-@media (max-width:860px){ .espiral{grid-template-columns:1fr} .espiral__fig{max-width:440px} }
-/* percurso das seis competências */
-.percurso{list-style:none;padding:0;margin:2.2rem 0 1.8rem;display:grid;grid-template-columns:repeat(6,1fr);position:relative}
-.percurso::before{content:"";position:absolute;left:calc(100%/12);right:calc(100%/12);top:2.1rem;height:3px;background:linear-gradient(90deg,#E9B43A,#86B847,#2E9F8E,#1F86B5,#1D5E9E,#E9C989);border-radius:2px}
-.percurso li{position:relative;text-align:center}
-.percurso a{display:block;text-decoration:none;padding:0 .4rem}
-.percurso__n{display:grid;place-items:center;width:4.2rem;height:4.2rem;margin:0 auto;border-radius:50%;background:var(--verde);border:3px solid var(--ouro);font-family:var(--serif);font-size:2rem;font-weight:600;color:var(--ouro);position:relative;z-index:1;transition:transform .2s}
-.percurso li:nth-child(2) .percurso__n{transform:translateY(-.3rem)}
-.percurso li:nth-child(3) .percurso__n{transform:translateY(-.6rem)}
-.percurso li:nth-child(4) .percurso__n{transform:translateY(-.9rem)}
-.percurso li:nth-child(5) .percurso__n{transform:translateY(-1.2rem)}
-.percurso li:nth-child(6) .percurso__n{transform:translateY(-1.5rem);background:var(--ouro);color:var(--verde)}
-.percurso a:hover .percurso__n{border-color:#fff}
-.percurso__t{display:block;margin-top:.8rem;font-size:.95rem;line-height:1.3;color:#D5E4DB}
-.percurso__t b{display:block;font-size:.78rem;letter-spacing:.08em;color:var(--ouro)}
-@media (max-width:760px){
-  .percurso{grid-template-columns:1fr;gap:.9rem}
-  .percurso::before{left:2.05rem;right:auto;top:2rem;bottom:2rem;width:3px;height:auto;background:linear-gradient(180deg,#E9B43A,#86B847,#2E9F8E,#1F86B5,#1D5E9E,#E9C989)}
-  .percurso li{text-align:left}
-  .percurso a{display:flex;align-items:center;gap:1rem;padding:0}
-  .percurso__n,.percurso li .percurso__n{transform:none!important;width:3.6rem;height:3.6rem;font-size:1.6rem;margin:0;flex:none}
-  .percurso__t{margin:0}
-}
-/* botão fixo do diagnóstico */
-.diag-fixo{position:fixed;right:1rem;bottom:4.6rem;z-index:60;background:var(--verde);color:#fff;font-weight:700;text-decoration:none;padding:.6rem 1rem;border-radius:999px;border:2px solid var(--ouro);box-shadow:0 4px 14px rgba(0,0,0,.25);font-size:.9rem}
-.diag-fixo:hover{background:#145a40}
-@media (max-width:560px){ .diag-fixo{font-size:.82rem;padding:.5rem .85rem;bottom:4.2rem} }
-/* home comercial */
-.heroi__titulo{display:flex;align-items:center;gap:clamp(1.5rem,4vw,3.5rem)}
-.heroi__titulo h1{margin-bottom:0}
-.heroi__logo{width:clamp(140px,22vw,300px);height:auto;flex:none;filter:drop-shadow(0 6px 18px rgba(0,0,0,.35))}
-.heroi__titulo+.heroi__sub{margin-top:1.4rem}
-@media (max-width:560px){ .heroi__titulo{gap:1rem} .heroi__logo{width:96px} }
-
-.heroi__cha{font-size:1rem;color:var(--ouro);margin:1rem 0 0;max-width:52ch}
-.credenciais{list-style:none;padding:0;margin:1.8rem 0 0;display:flex;flex-wrap:wrap;gap:.4rem 0;font-size:.92rem;color:#C9DBD1}
-.credenciais li+li::before{content:"·";margin:0 .6rem;color:var(--ouro)}
-.triade{display:grid;grid-template-columns:minmax(0,380px) 1fr;gap:clamp(1.5rem,4vw,3rem);align-items:center;margin-top:1.6rem}
-.triade__desenho{width:100%;height:auto}
-.triade__textos>div{padding:1rem 0;border-top:1px solid var(--linha)}
-.triade__textos>div:last-child{border-bottom:1px solid var(--linha)}
-.triade__textos h3{margin:.1rem 0 .3rem}
-.triade__textos p{margin:0;color:var(--suave)}
-.nivel{display:block;font-size:.8rem;font-weight:700;color:var(--ouro-texto);text-transform:uppercase;letter-spacing:.06em}
-.antes-depois{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:1.6rem}
-.antes-depois>div{padding:1.4rem 1.5rem;border-radius:4px}
-.antes{background:var(--bruma);border-top:4px solid #9AB0A4}
-.depois{background:var(--verde);color:#E4EEE8;border-top:4px solid var(--ouro)}
-.depois h3{color:#fff}
-.antes-depois ul{margin:.6rem 0 0;padding-left:1.1rem}
-.antes-depois li{padding:.25rem 0}
-.solucoes{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:1.6rem}
-.solucoes article{display:flex;flex-direction:column;border:1px solid var(--linha);border-top:4px solid var(--ouro);border-radius:4px;padding:1.3rem 1.2rem}
-.solucoes h3{font-size:1.35rem}
-.solucoes p{color:var(--suave);font-size:.98rem}
-.solucoes .ideal{font-size:.92rem}
-.solucoes .botao{margin-top:auto;font-size:.92rem;padding:.7rem 1rem}
-.casos{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:1.6rem}
-.casos article{background:#fff;border:1px solid var(--linha);border-radius:4px;padding:1.4rem 1.5rem}
-.casos dl{display:grid;grid-template-columns:7rem 1fr;gap:.5rem 1rem;margin:1rem 0 0}
-.casos dt{font-weight:700;color:var(--verde)}
-.casos dd{margin:0;color:var(--suave)}
-.relacao{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.3rem);font-weight:600;color:var(--verde);margin:1.2rem 0 0}
-.relacao span{color:var(--ouro)}
-.assinatura{margin:2rem 0 0;font-size:.95rem;color:#B9CCC1}
-@media (max-width:1000px){ .solucoes{grid-template-columns:1fr 1fr} }
-@media (max-width:860px){ .triade,.antes-depois,.casos{grid-template-columns:1fr} .triade__desenho{max-width:320px} }
-@media (max-width:560px){ .solucoes{grid-template-columns:1fr} .casos dl{grid-template-columns:1fr;gap:.1rem} .casos dd{margin-bottom:.5rem} }
-/* quem somos, onde atuamos, plano */
-.numeros{list-style:none;padding:0;margin:1.6rem 0 0;display:grid;grid-template-columns:repeat(6,1fr);border-top:1px solid var(--linha)}
-.numeros li{padding:1.1rem .8rem 1.2rem 0}
-.numeros b{display:block;font-family:var(--serif);font-size:clamp(2rem,3.4vw,2.8rem);font-weight:600;color:var(--verde);line-height:1}
-.numeros span{font-size:.92rem;color:var(--suave)}
-.mvv{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:1.4rem}
-.mvv h3{padding-top:.7rem;border-top:3px solid var(--ouro)}
-.mvv p{color:var(--suave);margin:0}
-.quatro{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem 2rem;margin-top:1.4rem}
-.quatro>div{padding-top:.8rem;border-top:3px solid var(--ouro)}
-.quatro p{color:var(--suave);margin:0}
-.lista-principios{list-style:none;padding:0;margin:1.4rem 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:0 2.4rem;counter-reset:pr}
-.lista-principios li{counter-increment:pr;display:grid;grid-template-columns:2.4rem 1fr;gap:.2rem .6rem;padding:.9rem 0;border-top:1px solid var(--linha)}
-.lista-principios li::before{content:counter(pr,decimal-leading-zero);grid-row:span 2;font-family:var(--serif);font-size:1.4rem;color:var(--ouro-texto);font-weight:600}
-.lista-principios b{font-weight:700}
-.lista-principios span{color:var(--suave)}
-.territorios{list-style:none;padding:0;margin:1.6rem 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
-.territorios li{background:var(--branco);border:1px solid var(--linha);border-top:4px solid var(--verde);padding:1.3rem 1.3rem 1.4rem;border-radius:4px}
-.faixa--bruma .territorios li{background:#fff}
-.territorios .nivel{display:block;font-size:.85rem;font-weight:700;color:var(--ouro-texto);margin-bottom:.3rem;text-transform:uppercase;letter-spacing:.06em}
-.territorios p{color:var(--suave);margin:.4rem 0 0}
-.publicos{list-style:none;padding:0;margin:1.2rem 0 0;display:flex;flex-wrap:wrap;gap:.6rem}
-.publicos li{border:1px solid var(--linha);background:#fff;border-radius:999px;padding:.45rem 1rem;font-size:.95rem}
-@media (max-width:860px){
-  .numeros{grid-template-columns:repeat(3,1fr)}
-  .mvv,.quatro,.lista-principios,.territorios{grid-template-columns:1fr}
-}
-@media (max-width:560px){ .numeros{grid-template-columns:repeat(2,1fr)} }
-@media (max-width:1440px){
+@media (max-width:1240px){
   .menu-btn{display:inline-block}
   .menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--verde);flex-direction:column;align-items:stretch;gap:0;padding:.5rem 1.25rem 1.2rem;border-bottom:1px solid rgba(233,201,137,.25)}
   .menu.aberto{display:flex}
@@ -477,21 +364,19 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
     <nav id="menu" class="menu" aria-label="Principal">
       <a href="#/inicio" data-nav="inicio">Início</a>
       <a href="#/quem-sou" data-nav="quem-sou">Quem sou</a>
-      <a href="#/quem-somos" data-nav="quem-somos">Quem somos</a>
-      <a href="#/onde-atuamos" data-nav="onde-atuamos">Onde atuamos</a>
-      <a href="#/plano" data-nav="plano">Plano de negócios</a>
+      <a href="#/empresa" data-nav="empresa">A empresa</a>
       <a href="#/cepgas" data-nav="cepgas">CEPGAS™</a>
       <a href="#/projetos" data-nav="projetos">Projetos</a>
       <a href="#/cultura" data-nav="cultura">Cultura</a>
       <a href="#/meio-ambiente" data-nav="meio-ambiente">Meio ambiente</a>
       <a href="#/boas-praticas" data-nav="boas-praticas">Boas práticas</a>
       <a href="#/artigos" data-nav="artigos">Artigos</a>
-      <a href="#/contato" data-nav="contato">Fale conosco</a>
+      <a href="#/contato" data-nav="contato">Contato</a>
     </nav>
   </div>
 </header>
 
-<div class="aviso" id="aviso-conteudo" role="alert" hidden></div>
+<div class="aviso" id="aviso-conteudo" role="alert" hidden>O arquivo <strong>conteudo.js</strong> não carregou. Confira se ele está na mesma pasta do site e se não falta nenhuma vírgula, aspa ou chave.</div>
 
 <main id="conteudo">
 
@@ -499,24 +384,13 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
 <section class="pagina" id="p-inicio" data-titulo="Início" tabindex="-1" aria-labelledby="t-inicio">
   <div class="heroi">
     <div class="container heroi__texto">
-      <p class="heroi__intro">MSustentaMais</p>
-      <div class="heroi__titulo">
-        <h1 id="t-inicio">ESG que se sustenta em quem decide.</h1>
-        <img class="heroi__logo" src="logo.png" alt="Logo MSustentaMais" width="256" height="260">
-      </div>
-      <p class="heroi__sub">Transformamos ESG em competência, cultura e resultado, preparando líderes e gestores para compreender, implementar, gerir e sustentar a sustentabilidade nas organizações.</p>
-      <p class="heroi__cha">Conhecimento, Habilidade e Atitude aplicados ao ESG por meio da metodologia CEPGAS™.</p>
+      <p class="heroi__intro">Formação de líderes em ESG, a partir de uma fazenda no Pantanal.</p>
+      <h1 id="t-inicio">ESG que se sustenta em quem decide.</h1>
+      <p class="heroi__sub">Ou a decisão é coerente, ou o impacto aparece. É isso que se aprende no Pantanal, e é isso que a MSustentaMais ensina a quem lidera.</p>
       <div class="acoes">
-        <a class="botao botao--ouro" data-diag target="_blank" rel="noopener">Faça grátis o diagnóstico da sua liderança ESG</a>
-        <a class="botao botao--linha-clara" href="#/cepgas">Conhecer o CEPGAS™</a>
+        <a class="botao botao--ouro" data-diag target="_blank" rel="noopener">Fazer o diagnóstico comportamental</a>
+        <a class="botao botao--linha-clara" href="#/cepgas">Conhecer o método CEPGAS™</a>
       </div>
-      <ul class="credenciais" aria-label="Quem conduz">
-        <li>+30 anos formando pessoas e organizações</li>
-        <li>Doutora em Educação</li>
-        <li>Pesquisadora</li>
-        <li>Experiência em empresas e instituições</li>
-        <li>Criadora do CEPGAS™</li>
-      </ul>
     </div>
     <svg class="horizonte" viewBox="0 0 1440 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
       <g class="sol"><circle cx="900" cy="152" r="56" fill="#E9C989"/></g>
@@ -540,165 +414,48 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
 
   <div class="faixa">
     <div class="container">
-      <h2 class="texto">O problema não é a falta de ESG. É fazê-lo acontecer.</h2>
-      <p class="lead texto suave">Sua empresa pode ter indicadores, relatórios, metas, comitês, consultorias e compromissos ESG. Mas quem toma as decisões está preparado para transformar tudo isso em prática?</p>
+      <h2 class="texto">Mesmo depois de tudo que a empresa já fez, o ESG continua frágil.</h2>
+      <p class="lead texto suave">O problema não é falta de esforço. É que quase tudo o que o mercado oferece ataca o lugar errado.</p>
       <ul class="tentativas">
         <li><strong>Contratar uma boa consultoria técnica.</strong><span>O dado passa a ter dono. A decisão continua sem dono.</span></li>
         <li><strong>Investir num relatório robusto ou num selo.</strong><span>O relatório descreve o que já aconteceu. A pergunta difícil chega depois: por que vocês decidiram assim?</span></li>
         <li><strong>Montar um comitê e treinar a equipe.</strong><span>Comitê não decide. Pessoas decidem. E conhecimento não é critério.</span></li>
       </ul>
-      <p class="texto" style="margin-top:1.8rem">Quando o ESG não se incorpora às competências das lideranças, ele fica no relatório, sem chegar às decisões, aos processos e à cultura. A MSustentaMais atua nessa distância: entre saber o que precisa ser feito e desenvolver pessoas capazes de fazer acontecer.</p>
       <p class="frase">ESG não falha por falta de boa intenção. Falha por falta de liderança preparada.</p>
-    </div>
-  </div>
-
-  <div class="faixa faixa--bruma">
-    <div class="container">
-      <h2>Nosso diferencial: pessoas, ESG e método</h2>
-      <p class="lead texto suave">A MSustentaMais trabalha a partir de uma triangulação própria. O ESG deixa de ser só conteúdo e passa a ser competência aplicada à realidade da organização.</p>
-      <div class="triade">
-        <svg class="triade__desenho" viewBox="0 0 420 360" role="img" aria-label="Triangulação CHA, ESG e CEPGAS">
-          <polygon points="210,40 380,320 40,320" fill="none" stroke="#C9D8CF" stroke-width="2"/>
-          <circle cx="210" cy="40" r="34" fill="#0D3B2B"/><text x="210" y="46" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="20" font-weight="600">CHA</text>
-          <circle cx="380" cy="320" r="34" fill="#0D3B2B"/><text x="380" y="326" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="20" font-weight="600">ESG</text>
-          <circle cx="40" cy="320" r="34" fill="#E9C989"/><text x="40" y="325" text-anchor="middle" fill="#0D3B2B" font-family="Georgia,serif" font-size="13" font-weight="700">CEPGAS™</text>
-          <text x="210" y="215" text-anchor="middle" fill="#13251D" font-family="Georgia,serif" font-size="19" font-style="italic">competência</text>
-          <text x="210" y="240" text-anchor="middle" fill="#13251D" font-family="Georgia,serif" font-size="19" font-style="italic">aplicada</text>
-        </svg>
-        <div class="triade__textos">
-          <div><span class="nivel">Pessoa</span><h3>CHA: as competências</h3><p>Conhecimento (saber-saber), Habilidade (saber-fazer) e Atitude (saber-ser). É o que se desenvolve em cada líder.</p></div>
-          <div><span class="nivel">Campo</span><h3>ESG: sobre o que se atua</h3><p>Ambiental, Social e Governança: a relação do eu com o outro e com o meio.</p></div>
-          <div><span class="nivel">Caminho</span><h3>CEPGAS™: como a transformação acontece</h3><p>As seis competências e, ao mesmo tempo, o percurso para desenvolvê-las, sempre a partir de diagnósticos.</p></div>
-        </div>
-      </div>
-      <p class="frase">O ESG determina sobre o que se atua; o CHA, quais competências desenvolver; o CEPGAS™, como a transformação acontece.</p>
     </div>
   </div>
 
   <div class="faixa faixa--escura">
     <div class="container">
       <h2 class="texto">O método começa por quem decide.</h2>
-      <p class="lead texto suave">O CEPGAS™ desenvolve no líder seis competências que funcionam como um sistema, para transformar princípios, critérios e compromissos ESG em decisões, processos e evidências. Falta uma, e o sistema trinca.</p>
-      <ol class="percurso" aria-label="As seis competências do CEPGAS, em sequência"><li><a href="#/cepgas/competencias"><span class="percurso__n">C</span><span class="percurso__t"><b>1</b> Clareza estratégica</span></a></li><li><a href="#/cepgas/competencias"><span class="percurso__n">E</span><span class="percurso__t"><b>2</b> Estruturação de papéis</span></a></li><li><a href="#/cepgas/competencias"><span class="percurso__n">P</span><span class="percurso__t"><b>3</b> Parâmetros e critérios</span></a></li><li><a href="#/cepgas/competencias"><span class="percurso__n">G</span><span class="percurso__t"><b>4</b> Gestão de impacto</span></a></li><li><a href="#/cepgas/competencias"><span class="percurso__n">A</span><span class="percurso__t"><b>5</b> Autonomia real</span></a></li><li><a href="#/cepgas/competencias"><span class="percurso__n">S</span><span class="percurso__t"><b>6</b> Sustentação por evidências</span></a></li></ol>
+      <p class="lead texto suave">O CEPGAS™ prepara o líder em seis competências que funcionam como um sistema. Falta uma, e o sistema trinca.</p>
+      <div class="letras">
+        <a href="#/cepgas/competencias"><b>C</b><span>Clareza estratégica</span></a>
+        <a href="#/cepgas/competencias"><b>E</b><span>Estruturação de papéis</span></a>
+        <a href="#/cepgas/competencias"><b>P</b><span>Parâmetros e critérios</span></a>
+        <a href="#/cepgas/competencias"><b>G</b><span>Gestão de impacto</span></a>
+        <a href="#/cepgas/competencias"><b>A</b><span>Autonomia real</span></a>
+        <a href="#/cepgas/competencias"><b>S</b><span>Sustentação por evidências</span></a>
+      </div>
       <a class="botao botao--ouro" href="#/cepgas/competencias">Ver como cada competência funciona</a>
     </div>
   </div>
 
   <div class="faixa">
     <div class="container">
-      <h2>O que muda: do ESG declarado ao ESG praticado</h2>
-      <div class="antes-depois">
-        <div class="antes"><h3>Antes</h3><ul>
-          <li>ESG concentrado em poucas pessoas</li>
-          <li>Responsabilidades pouco definidas</li>
-          <li>Indicadores desconectados das decisões</li>
-          <li>Dependência excessiva de consultorias</li>
-          <li>Ações isoladas</li>
-          <li>Relatórios que não refletem a cultura interna</li>
-        </ul></div>
-        <div class="depois"><h3>Depois</h3><ul>
-          <li>Lideranças preparadas</li>
-          <li>Papéis e responsabilidades definidos</li>
-          <li>Critérios incorporados às decisões</li>
-          <li>Indicadores conectados à gestão</li>
-          <li>Evidências organizadas</li>
-          <li>Autonomia para a organização continuar</li>
-        </ul></div>
-      </div>
-      <p class="texto" style="margin-top:1.8rem"><strong>O objetivo não é tornar a empresa dependente da MSustentaMais.</strong> É desenvolver capacidade para que ela possa continuar.</p>
-    </div>
-  </div>
-
-  <div class="faixa faixa--bruma">
-    <div class="container duas">
-      <div><h2>Por onde começar?</h2></div>
-      <div>
-        <p class="lead texto">Antes de propor soluções, é preciso compreender pessoas e organização. O primeiro passo é identificar como a liderança percebe, compreende e aplica a sustentabilidade nas decisões.</p>
-        <h3 style="margin-top:1.4rem">Diagnóstico de liderança ESG, gratuito</h3>
-        <p class="texto suave">Uma avaliação inicial que identifica o estilo de liderança, as competências e os pontos de desenvolvimento para a atuação em ESG, e revela o maior gargalo da empresa.</p>
-        <div class="acoes"><a class="botao botao--verde" data-diag target="_blank" rel="noopener">Fazer o diagnóstico gratuito</a></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="faixa">
-    <div class="container">
-      <h2>Soluções MSustentaMais</h2>
-      <p class="lead texto suave">Uma metodologia, diferentes formas de aplicação.</p>
-      <div class="solucoes">
-        <article><h3>Diagnóstico de liderança ESG</h3><p>Gratuito. Identificação do estágio atual e das necessidades de desenvolvimento.</p><p class="ideal"><b>Ideal para:</b> organizações e profissionais que precisam saber por onde começar.</p><a class="botao botao--linha" data-diag target="_blank" rel="noopener">Fazer o diagnóstico gratuito</a></article>
-        <article><h3>CEPGAS™ – Formação de líderes e gestores</h3><p>Percurso estruturado de Conhecimentos, Habilidades e Atitudes aplicados ao ESG: cinco módulos, 15 encontros e cerca de 45 horas.</p><p class="ideal"><b>Ideal para:</b> líderes, gestores, empresários e profissionais que decidem.</p><a class="botao botao--linha" data-wa="Olá, Fernanda! Vim pelo site e quero saber mais sobre a formação CEPGAS™ para líderes." target="_blank" rel="noopener">Quero saber mais</a></article>
-        <article><h3>CEPGAS™ Empresas – in company</h3><p>A metodologia aplicada aos desafios, indicadores, processos e pessoas da própria organização.</p><p class="ideal"><b>Ideal para:</b> empresas que querem transformar ESG em capacidade interna de gestão.</p><a class="botao botao--linha" data-wa="Olá, Fernanda! Vim pelo site e quero conversar sobre o CEPGAS™ in company na minha empresa." target="_blank" rel="noopener">Falar sobre a minha empresa</a></article>
-        <article><h3>Consultoria em sustentabilidade e ESG</h3><p>Diagnóstico, estruturação, acompanhamento e apoio à implementação de estratégias, projetos e processos.</p><p class="ideal"><b>Ideal para:</b> empresas, propriedades rurais e organizações.</p><a class="botao botao--linha" data-wa="Olá, Fernanda! Vim pelo site e quero conversar sobre consultoria em sustentabilidade e ESG." target="_blank" rel="noopener">Fale com a MSustentaMais</a></article>
-      </div>
-    </div>
-  </div>
-
-  <div class="faixa faixa--bruma">
-    <div class="container">
-      <h2>Resultados e evidências</h2>
-      <p class="lead texto suave">Sustentabilidade precisa ser demonstrada. Não basta dizer que funcionou: é preciso mostrar o que mudou.</p>
-      <div class="casos">
-        <article>
-          <span class="nivel">Consultoria CEPGAS™ · 2026</span>
-          <h3>Governança mais clara numa empresa atendida</h3>
-          <dl>
-            <dt>Problema</dt><dd>Fortalecer a governança: processos decisórios, critérios de responsabilidade e alçadas.</dd>
-            <dt>Intervenção</dt><dd>Formação individual em cinco módulos, com ênfase no pilar de Governança.</dd>
-            <dt>Resultado</dt><dd>Redução de custos, maior clareza decisória, consistência nos processos internos e prestação de contas mais sólida.</dd>
-            <dt>Evidência</dt><dd>Atestado de capacidade técnica emitido pela empresa atendida.</dd>
-          </dl>
-        </article>
-        <article>
-          <span class="nivel">Morada Comum · 2026</span>
-          <h3>Diagnóstico territorial em Cáceres e Vila Bela da Santíssima Trindade</h3>
-          <dl>
-            <dt>Problema</dt><dd>Conhecer a identidade, os gargalos e as oportunidades de dois territórios da pecuária.</dd>
-            <dt>Intervenção</dt><dd>Articulação de produtores, lideranças, sindicato rural, prefeituras e câmaras, com quatro rodas de conversa.</dd>
-            <dt>Resultado</dt><dd>Quadro-síntese por município, atas sistematizadas e relatórios periódicos, em 230 horas de trabalho.</dd>
-            <dt>Evidência</dt><dd>Atestado de capacidade técnica da Morada Comum.</dd>
-          </dl>
-        </article>
-      </div>
-    </div>
-  </div>
-
-  <div class="faixa">
-    <div class="container duas duas--foto">
-      <figure class="retrato retrato--home" id="retrato-home"><span class="retrato__mono" aria-hidden="true">FM</span></figure>
-      <div>
-        <h2>Quem está por trás do método</h2>
-        <h3 style="margin-top:0">Dra. Fernanda de Arruda Machado</h3>
-        <p class="texto">Mais de 30 anos atuando com educação, desenvolvimento de pessoas, organizações e sustentabilidade, na academia, nas empresas e no território.</p>
-        <ul class="marcadores">
-          <li>Doutora em Educação, na temática Sustentabilidade (Universidad de Santiago de Compostela)</li>
-          <li>Mestre em Educação Ambiental e Mestre em Educação</li>
-          <li>Especialista em Turismo e Desenvolvimento Local e Regional</li>
-          <li>Pedagoga, pesquisadora, consultora e educadora</li>
-          <li>Experiência em empresas: chefe de Recursos Humanos na Bate Forte Atacado e consultorias em São Paulo e Mato Grosso do Sul</li>
-          <li>Criadora da metodologia CEPGAS™</li>
-        </ul>
-        <div class="acoes"><a class="botao botao--verde" href="#/quem-sou">Conhecer a trajetória</a></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="faixa faixa--bruma">
-    <div class="container">
-      <h2>De onde vem o método</h2>
-      <p class="lead texto suave">Sustentabilidade não nasceu para nós dentro de uma apresentação. Ela é vivida: na sala de aula, nas empresas, na produção e no território. Não existe sustentabilidade separando empresa, pessoas e meio ambiente.</p>
-      <p class="relacao" aria-label="Eu, outro e meio ambiente">Eu <span>·</span> Outro <span>·</span> Meio ambiente</p>
+      <h2>Do Pantanal para a decisão</h2>
+      <p class="lead texto suave">Um método vale o que vale a vida de quem o ensina. Conheça de onde ele vem.</p>
       <div class="entradas">
-        <a href="#/quem-sou"><h3>Quem sou</h3><p>Educadora, pesquisadora e consultora de liderança ESG.</p></a>
-        <a href="#/meio-ambiente"><h3>Meio ambiente</h3><p>O território como ponto de partida, e a história da sustentabilidade.</p></a>
+        <a href="#/quem-sou"><h3>Quem sou</h3><p>Educadora, gestora da terra e consultora de liderança ESG.</p></a>
+        <a href="#/meio-ambiente"><h3>Meio ambiente</h3><p>O Pantanal como ponto de partida, e a história da sustentabilidade.</p></a>
         <a href="#/cultura"><h3>Cultura</h3><p>Patrimônio, saberes tradicionais e setor criativo como parte da sustentabilidade.</p></a>
       </div>
     </div>
   </div>
 
-  <div class="faixa">
+  <div class="faixa faixa--bruma">
     <div class="container">
-      <h2>Onde o trabalho da MSustentaMais acontece</h2>
+      <h2>Onde o trabalho acontece</h2>
       <p class="lead texto suave" id="home-contagem">Projetos de cultura, educação ambiental, patrimônio, turismo e pecuária sustentável.</p>
       <div class="projetos projetos--tres" id="home-projetos"></div>
       <div class="acoes">
@@ -708,27 +465,28 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
     </div>
   </div>
 
+  <div class="faixa">
+    <div class="container">
+      <h2>Boas práticas recentes</h2>
+      <p class="lead texto suave">Práticas do território e da liderança, atualizadas com frequência.</p>
+      <ul class="linhas" id="home-praticas"></ul>
+      <p style="margin-top:1.4rem"><a class="botao botao--linha" href="#/boas-praticas">Ver todas as boas práticas</a></p>
+    </div>
+  </div>
+
   <div class="faixa faixa--bruma">
     <div class="container">
-      <h2>Conhecimento e posicionamento</h2>
-      <p class="lead texto suave">Artigos, pesquisas, boas práticas e vídeos sobre ESG, liderança, educação ambiental, turismo, pecuária e desenvolvimento local.</p>
-      <h3 style="margin-top:1.6rem">Boas práticas recentes</h3>
-      <ul class="linhas" id="home-praticas"></ul>
-      <h3 style="margin-top:2.2rem">Para ler</h3>
+      <h2>Para ler</h2>
       <ul class="linhas" id="lista-recentes"></ul>
-      <div class="acoes"><a class="botao botao--linha" href="#/boas-praticas">Ver todas as boas práticas</a><a class="botao botao--linha" href="#/artigos">Acessar os conteúdos</a></div>
+      <p style="margin-top:1.4rem"><a class="botao botao--linha" href="#/artigos">Ver artigos, publicações e vídeos</a></p>
     </div>
   </div>
 
   <div class="faixa faixa--escura">
     <div class="container">
-      <h2 class="texto">Sua empresa já fala sobre ESG. Seus líderes estão preparados para fazê-lo acontecer?</h2>
-      <p class="lead texto suave">Descubra gratuitamente o estágio atual da sua liderança e onde estão as oportunidades de desenvolvimento.</p>
-      <div class="acoes">
-        <a class="botao botao--ouro" data-diag target="_blank" rel="noopener">Faça o diagnóstico gratuito de liderança ESG</a>
-        <a class="botao botao--linha-clara" data-wa="Olá, Fernanda! Vim pelo site da MSustentaMais e gostaria de conversar sobre o cenário da minha empresa." target="_blank" rel="noopener">Fale com a Dra. Fernanda Machado</a>
-      </div>
-      <p class="assinatura">MSustentaMais · ESG que se sustenta em quem decide · Competência. Cultura. Resultado.</p>
+      <h2 class="texto">Quer saber se o meu trabalho faz sentido para a sua empresa agora?</h2>
+      <p class="lead texto suave">Uma conversa privada e direta. Você conta o cenário, e eu digo, com honestidade, se faz sentido.</p>
+      <div class="acoes"><a class="botao botao--ouro" data-wa="Olá, Fernanda! Vim pelo site da MSustentaMais e gostaria de conversar sobre o cenário da minha empresa." target="_blank" rel="noopener">Conversar no WhatsApp</a></div>
     </div>
   </div>
 </section>
@@ -738,41 +496,29 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
   <div class="cabeca">
     <div class="container">
       <h1 id="t-quem-sou">Fernanda de Arruda Machado</h1>
-      <p class="lead">Educadora, pesquisadora e consultora em sustentabilidade. Vivo a sustentabilidade na academia, nas empresas e na gestão de uma fazenda, lugares onde o discurso não se sustenta sem prática.</p>
+      <p class="lead">Educadora, gestora e consultora em sustentabilidade. Vivo a sustentabilidade todos os dias numa fazenda no Pantanal, um lugar onde discurso não se sustenta.</p>
     </div>
   </div>
   <div class="faixa">
-    <div class="container duas duas--foto">
+    <div class="container duas">
       <figure class="retrato" id="retrato">
         <span class="retrato__mono" aria-hidden="true">FM</span>
         <figcaption>Fernanda de Arruda Machado</figcaption>
       </figure>
       <div>
-        <p class="frase" style="margin-top:0">Aprendi a olhar menos para o que se fala e mais para o que se decide.</p>
+        <p class="frase" style="margin-top:0">Foi lá que eu aprendi a olhar menos para o que se fala e mais para o que se decide.</p>
 
         <div class="bloco">
           <h2>Educadora</h2>
-          <p class="texto">Mais de 30 anos de docência, pesquisa e consultoria, da educação de jovens e adultos à pós-graduação. Serviços prestados ao SEBRAE, ao SENAC e ao SESI. Coautora de livros de educação ambiental e ex-colunista de jornal.</p>
-        </div>
-        <div class="bloco">
-          <h2>Experiência em empresas</h2>
-          <p class="texto">Chefe de Recursos Humanos na Bate Forte Atacado. Atuação na Aspen Consultoria, em São José do Rio Preto (SP), atendendo a concessionária Liban, e na Excel Consultoria, atendendo vários municípios de Mato Grosso do Sul.</p>
+          <p class="texto">Mais de 30 anos de docência, pesquisa e consultoria, da educação de jovens e adultos à pós-graduação. Trabalhos consolidados com SEBRAE, SENAC e SESI. Coautora de livros de educação ambiental e ex-colunista de jornal.</p>
         </div>
         <div class="bloco">
           <h2>Gestora da terra</h2>
-          <p class="texto">Proprietária de uma fazenda pantaneira. Participou do programa Fazenda Pantaneira Sustentável a partir de 2018. Embaixadora Territorial do projeto Pecuária Tropical pelo Clima, da Morada Comum.</p>
+          <p class="texto">Gestora da Fazenda Pantaneira Santa Fé do Machadinho, que participa dos programas Fazenda Pantaneira Sustentável e Produção Sustentável de Bezerros desde 2018. Embaixadora Territorial do projeto Pecuária Tropical pelo Clima, da Morada Comum.</p>
         </div>
         <div class="bloco">
           <h2>Consultora de liderança ESG</h2>
-          <p class="texto">Criei o CEPGAS™, metodologia de desenvolvimento de competências de liderança em sustentabilidade e ESG. Participação no COMDEMA, no COMDER e na IGR Pantanal – Instância de Governança Regional do Pantanal.</p>
-        </div>
-        <div class="bloco">
-          <h2>Colunista</h2>
-          <p class="texto">Escrevo sobre sustentabilidade, território e Pantanal para os portais Zaki News, Cáceres no Ar e Centro-Oeste News.</p>
-          <div class="acoes" style="margin-top:1rem">
-            <a class="botao botao--linha" data-ig target="_blank" rel="noopener">Instagram</a>
-            <a class="botao botao--linha" href="#/artigos">Ler os artigos</a>
-          </div>
+          <p class="texto">Criei o CEPGAS™, metodologia de formação de líderes em ESG, aplicada em consultoria estratégica individual. Participo, como representante, do COMDER, do COMDEMA e da IGR Pantanal, a Instância de Governança Regional do Pantanal, na construção de propostas de desenvolvimento sustentável regional.</p>
         </div>
       </div>
     </div>
@@ -782,11 +528,9 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
     <div class="container">
       <h2>Formação</h2>
       <ul class="linhas">
-        <li class="linha"><span class="linha__ano">Doutorado</span><div class="linha__corpo"><h3>Doutora em Educação, na temática Sustentabilidade</h3><p>Universidad de Santiago de Compostela, Espanha, 2019.</p></div></li>
-        <li class="linha"><span class="linha__ano">Mestrado</span><div class="linha__corpo"><h3>Mestre em Educação Ambiental</h3><p>Universidad de Santiago de Compostela, Espanha, 2011.</p></div></li>
-        <li class="linha"><span class="linha__ano">Mestrado</span><div class="linha__corpo"><h3>Mestre em Educação</h3><p>Universidade Federal de Mato Grosso, 2007. Área de concentração Educação, Cultura e Sociedade.</p></div></li>
-        <li class="linha"><span class="linha__ano">Formação executiva</span><div class="linha__corpo"><h3>ProLíder Turismo – Formação Executiva para Gestores do Setor Turístico</h3><p>Senac Mato Grosso, 2025, 80 horas, com imersão na Nova SBE, em Lisboa, Portugal.</p></div></li>
-        <li class="linha"><span class="linha__ano">Especialização</span><div class="linha__corpo"><h3>Especialista em Turismo e Desenvolvimento Local e Regional</h3><p>Pós-graduação lato sensu, Universidade do Estado de Mato Grosso (UNEMAT), Campus de Cáceres, 2004.</p></div></li>
+        <li class="linha"><span class="linha__ano">Doutorado</span><div class="linha__corpo"><h3>Doutora em Educação</h3><p>Universidad de Santiago de Compostela, Espanha, 2019.</p></div></li>
+        <li class="linha"><span class="linha__ano">Mestrado</span><div class="linha__corpo"><h3>Mestre em Educação</h3><p>Universidade Federal de Mato Grosso.</p></div></li>
+        <li class="linha"><span class="linha__ano">Especialização</span><div class="linha__corpo"><h3>Turismo, Desenvolvimento Local e Regional</h3><p>Universidade do Estado de Mato Grosso (UNEMAT).</p></div></li>
         <li class="linha"><span class="linha__ano">Especialização</span><div class="linha__corpo"><h3>Didática e Metodologia do Ensino Superior</h3><p>Universidade Católica Dom Bosco, 1993.</p></div></li>
         <li class="linha"><span class="linha__ano">Graduação</span><div class="linha__corpo"><h3>Pedagogia</h3><p>Universidade Estadual de Maringá, 1992.</p></div></li>
       </ul>
@@ -803,103 +547,45 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
       </div>
       <div class="acoes" style="margin-top:2.2rem">
         <a class="botao botao--verde" data-wa="Olá, Fernanda! Vim pelo site da MSustentaMais e gostaria de conversar." target="_blank" rel="noopener">Conversar no WhatsApp</a>
-        <a class="botao botao--linha" href="#/quem-somos">Conhecer a MSustentaMais</a>
+        <a class="botao botao--linha" href="#/empresa">Conhecer a empresa</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ QUEM SOMOS ============ -->
-<section class="pagina" id="p-quem-somos" data-titulo="Quem somos" tabindex="-1" aria-labelledby="t-quem-somos" hidden>
+<!-- ============ A EMPRESA ============ -->
+<section class="pagina" id="p-empresa" data-titulo="A empresa" tabindex="-1" aria-labelledby="t-empresa" hidden>
   <div class="cabeca">
     <div class="container">
-      <h1 id="t-quem-somos">Quem somos</h1>
-      <p class="lead">A MSustentaMais é uma empresa de educação, consultoria, formação e desenvolvimento de soluções em sustentabilidade e ESG, voltada a pessoas, lideranças, organizações e territórios. Base em Cáceres, Mato Grosso, no Pantanal, com atendimento regional e nacional.</p>
+      <h1 id="t-empresa">A MSustentaMais</h1>
+      <p class="lead">Uma consultoria de liderança ESG com sede numa fazenda no Pantanal. Prepara quem decide para sustentar, diante de qualquer pessoa, o que a empresa afirma sobre sustentabilidade.</p>
     </div>
   </div>
 
   <div class="faixa">
     <div class="container">
-      <p class="frase" style="margin-top:0;max-width:44ch">A MSustentaMais vai além de ajudar empresas a “ter ESG”: forma pessoas e cria projetos e processos capazes de fazer a sustentabilidade acontecer na governança, promovendo o ambiental e o social e aprimorando competências que permanecem depois da consultoria.</p>
-      <ul class="numeros" aria-label="A MSustentaMais em números">
-        <li><b>+30</b><span>anos de educação, pesquisa e consultoria</span></li>
-        <li><b>4</b><span>titulações acadêmicas</span></li>
-        <li><b>+50</b><span>produções científicas</span></li>
-        <li><b>5</b><span>países com atuação</span></li>
-        <li><b>+100</b><span>trabalhos orientados</span></li>
-        <li><b>2</b><span>metodologias autorais</span></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="faixa faixa--bruma">
-    <div class="container">
-      <h2>Propósito, missão e visão</h2>
-      <div class="mvv">
-        <div><h3>Propósito</h3><p>Ressignificar relações por meio da educação e do desenvolvimento de competências para transformar sustentabilidade em prática, gestão, cultura, impacto e valor.</p></div>
-        <div><h3>Missão</h3><p>Desenvolver competências em sustentabilidade e ESG por meio da educação, da sensibilização, da consultoria e de metodologias aplicadas, promovendo relações mais responsáveis entre pessoas, organizações, territórios e meio ambiente.</p></div>
-        <div><h3>Visão</h3><p>Ser referência no desenvolvimento de competências e soluções em sustentabilidade e ESG, integrando educação, pessoas, gestão, território e evidências.</p></div>
-      </div>
-      <p class="texto" style="margin-top:1.8rem"><strong>Valores:</strong> liberdade, responsabilidade, verdade, justiça e cuidado com o coletivo.</p>
-    </div>
-  </div>
-
-  <div class="faixa">
-    <div class="container">
-      <h2>Sustentabilidade é ressignificar relações</h2>
-      <p class="lead texto suave">Eu comigo. Eu com o outro. Nós com as organizações. As organizações com seus territórios. Todos com o meio ambiente.</p>
+      <h2>No que acreditamos</h2>
       <div class="tres">
-        <div><h4>Ambiental: a relação com o meio</h4><p>Como usamos água, energia, solo e outros recursos? Como produzimos, consumimos e descartamos? Que impactos deixamos nos territórios?</p></div>
-        <div><h4>Social: a relação com o outro</h4><p>Não existe sustentabilidade sem pessoas. O outro não está fora da organização: ele participa do valor e dos impactos que ela produz.</p></div>
-        <div><h4>Governança: a maneira como decidimos</h4><p>Quem decide, com quais critérios, quem participa e quem responde. A governança faz a sustentabilidade não depender só da boa intenção de alguém.</p></div>
+        <div><h4>ESG é decisão do dia a dia</h4><p>Não é relatório nem discurso. Sustentabilidade se prova na forma como a liderança decide.</p></div>
+        <div><h4>Método e empresa são coisas distintas</h4><p>A MSustentaMais é a empresa. O CEPGAS™ é a metodologia de formação de líderes que ela desenvolveu.</p></div>
+        <div><h4>O que fica é da empresa do cliente</h4><p>Critérios escritos, papéis definidos e evidências organizadas continuam na empresa depois que a consultoria termina.</p></div>
       </div>
-      <p class="texto" style="margin-top:1.8rem"><strong>A educação é o elo.</strong> Não como simples transmissão de informação, mas como sensibilização e desenvolvimento de competências, para que as pessoas possam compreender, decidir, aplicar, avaliar e assumir a responsabilidade pelos impactos das suas decisões.</p>
-      <p class="frase">Não basta saber mais sobre ESG. É preciso saber interpretar, decidir, fazer, demonstrar e sustentar.</p>
-    </div>
-  </div>
-
-  <div class="faixa faixa--bruma">
-    <div class="container">
-      <h2>Princípios</h2>
-      <ul class="lista-principios">
-        <li><b>Educação transformadora</b><span>Conhecimento precisa gerar capacidade de compreender, decidir e agir.</span></li>
-        <li><b>Sensibilização</b><span>Informação sozinha não muda nada; é preciso significado e vínculo com a causa.</span></li>
-        <li><b>Relações</b><span>A sustentabilidade se concretiza na relação do eu com o outro e com o meio ambiente.</span></li>
-        <li><b>Responsabilidade</b><span>Toda decisão produz impactos e requer responsabilização.</span></li>
-        <li><b>Ética</b><span>Sustentabilidade precisa existir no discurso e na prática.</span></li>
-        <li><b>Respeito aos territórios</b><span>Identidade, cultura, ambiente e saberes locais vêm antes do modelo pronto.</span></li>
-        <li><b>Visão sistêmica</b><span>Questões ambientais, sociais, econômicas, culturais e de governança são interdependentes.</span></li>
-        <li><b>Autonomia</b><span>O conhecimento fica na organização e capacita as pessoas a conduzir seus próprios processos.</span></li>
-        <li><b>Evidências</b><span>Sustentabilidade precisa ser demonstrável por práticas, indicadores e registros.</span></li>
-        <li><b>Melhoria contínua</b><span>Sustentabilidade não é um estado final, é um processo permanente.</span></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="faixa">
-    <div class="container duas">
-      <div>
-        <h2>Quem conduz</h2>
-      </div>
-      <div>
-        <p class="texto"><strong>Fernanda de Arruda Machado</strong>, fundadora da MSustentaMais e criadora do CEPGAS™. Educadora, pesquisadora e consultora, com mais de 30 anos de atuação, proprietária de uma fazenda pantaneira, Embaixadora Territorial do projeto Pecuária Tropical pelo Clima, da Morada Comum, e gestora da IGR Pantanal – Turismo Sustentável.</p>
-        <div class="acoes"><a class="botao botao--verde" href="#/quem-sou">Conhecer a Fernanda</a><a class="botao botao--linha" href="#/onde-atuamos">Ver onde atuamos</a></div>
-      </div>
+      <p class="texto" style="margin-top:1.8rem">Nossos valores: liberdade, responsabilidade, verdade, justiça e cuidado com o coletivo.</p>
     </div>
   </div>
 
   <div class="faixa faixa--bruma">
     <div class="container">
       <h2>De onde viemos</h2>
-      <p class="lead texto suave">Mais de três décadas de educação, pesquisa e consultoria, e um método que amadureceu na prática.</p>
+      <p class="lead texto suave">Uma fazenda, três décadas de educação e um método que amadureceu no território.</p>
       <ul class="linhas">
         <li class="linha"><span class="linha__ano">1994 a 1998</span><div class="linha__corpo"><h3>Educação de jovens e adultos</h3><p>Coordenação do programa de EJA no SESI-MT e capacitação de professores.</p></div></li>
-        <li class="linha"><span class="linha__ano">2001 a 2004</span><div class="linha__corpo"><h3>Serviços ao SEBRAE-MT</h3><p>Treinamentos de liderança, atendimento e desenvolvimento de equipes, e consultoria em turismo e arranjos produtivos locais.</p></div></li>
+        <li class="linha"><span class="linha__ano">2001 a 2004</span><div class="linha__corpo"><h3>Consultoria no SEBRAE-MT</h3><p>Treinamentos de liderança, atendimento e desenvolvimento de equipes, e consultoria em turismo e arranjos produtivos locais.</p></div></li>
         <li class="linha"><span class="linha__ano">2003</span><div class="linha__corpo"><h3>A fazenda vira projeto</h3><p>A proposta de implantação do turismo na Fazenda Santa Fé do Machadinho, feita como monografia, torna-se projeto real e é apresentada em eventos nacionais até 2005.</p></div></li>
         <li class="linha"><span class="linha__ano">2004 a 2006</span><div class="linha__corpo"><h3>Educação ambiental com o Pantanal</h3><p>Projetos com comunidades pantaneiras, em parceria com a UFMT e com apoio da FAPEMAT.</p></div></li>
-        <li class="linha"><span class="linha__ano">2018</span><div class="linha__corpo"><h3>Pecuária sustentável</h3><p>A fazenda passa a participar do programa Fazenda Pantaneira Sustentável.</p></div></li>
+        <li class="linha"><span class="linha__ano">2018</span><div class="linha__corpo"><h3>Pecuária sustentável</h3><p>A fazenda passa a participar dos programas Fazenda Pantaneira Sustentável e Produção Sustentável de Bezerros.</p></div></li>
         <li class="linha"><span class="linha__ano">2025</span><div class="linha__corpo"><h3>A metodologia ganha nome</h3><p>O trabalho de formação de líderes, que já era aplicado, evolui para o CEPGAS™.</p></div></li>
-        <li class="linha"><span class="linha__ano">2026</span><div class="linha__corpo"><h3>A MSustentaMais se formaliza</h3><p>A empresa é constituída em Cáceres para reunir, sob uma marca, a educação, a consultoria, o CEPGAS™ e os projetos territoriais e culturais.</p></div></li>
+        <li class="linha"><span class="linha__ano">2026</span><div class="linha__corpo"><h3>CEPGAS™ em consultoria individual</h3><p>Formação em cinco módulos, com diagnósticos e plano de ação para cada líder.</p></div></li>
       </ul>
     </div>
   </div>
@@ -913,131 +599,6 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
   </div>
 </section>
 
-<!-- ============ ONDE ATUAMOS ============ -->
-<section class="pagina" id="p-onde-atuamos" data-titulo="Onde atuamos" tabindex="-1" aria-labelledby="t-onde-atuamos" hidden>
-  <div class="cabeca">
-    <div class="container">
-      <h1 id="t-onde-atuamos">Onde atuamos</h1>
-      <p class="lead">A base é Cáceres, em Mato Grosso, e o atendimento é regional e nacional, com experiência construída na academia, nas empresas e no território.</p>
-    </div>
-  </div>
-
-  <div class="faixa">
-    <div class="container">
-      <h2>Território</h2>
-      <p class="lead texto suave">Cada lugar tem identidade, cultura, ambiente e saberes próprios. Por isso, partimos sempre de um diagnóstico do território, e não de um modelo pronto.</p>
-      <ul class="territorios">
-        <li><span class="nivel">Base</span><h3>Cáceres e o Pantanal</h3><p>Sede da empresa e da Fazenda Pantaneira Santa Fé do Machadinho, laboratório vivo onde a metodologia é praticada antes de ser ensinada. Atuação na IGR Pantanal – Turismo Sustentável e nos conselhos municipais COMDER e COMDEMA.</p></li>
-        <li><span class="nivel">Região</span><h3>Mato Grosso</h3><p>Como Embaixadora Territorial do projeto Pecuária Tropical pelo Clima, da Morada Comum, diagnóstico territorial com produtores, mulheres produtoras e juventude em Cáceres e Vila Bela da Santíssima Trindade. Educação ambiental com as comunidades pantaneiras de Mimoso e São Pedro de Joselândia. Serviços prestados ao SEBRAE, ao SENAC e ao SESI.</p></li>
-        <li><span class="nivel">Alcance</span><h3>Brasil e além</h3><p>Atendimento a empresas e organizações de todo o país, com experiência em consultoria em São Paulo e em vários municípios de Mato Grosso do Sul. O diagnóstico de liderança ESG do CEPGAS™ é gratuito e feito on-line, de qualquer lugar. A trajetória acadêmica e de pesquisa soma atuação em cinco países.</p></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="faixa faixa--bruma">
-    <div class="container">
-      <h2>Linhas de atuação</h2>
-      <p class="lead texto suave">Quatro linhas de trabalho, com o mesmo princípio: partir do diagnóstico e deixar a competência dentro da organização.</p>
-      <div class="quatro">
-        <div><h3>Formação e desenvolvimento de lideranças</h3><p>Com o CEPGAS™ como produto-âncora: seis competências, cinco módulos e acompanhamento.</p></div>
-        <div><h3>Consultoria em sustentabilidade e ESG</h3><p>Diagnóstico, planejamento, estruturação, acompanhamento e avaliação.</p></div>
-        <div><h3>Educação para a sustentabilidade</h3><p>Cursos, oficinas, palestras, programas corporativos e processos de sensibilização.</p></div>
-        <div><h3>Projetos e desenvolvimento territorial</h3><p>Elaboração, execução, acompanhamento e avaliação de projetos de sustentabilidade, educação ambiental, turismo, cultura e desenvolvimento local.</p></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="faixa">
-    <div class="container">
-      <h2>Para quem trabalhamos</h2>
-      <ul class="publicos">
-        <li>Empresas</li><li>Propriedades rurais</li><li>Cooperativas</li><li>Sindicatos e associações</li><li>Organizações do terceiro setor</li><li>Instituições de ensino</li><li>Órgãos públicos</li><li>Projetos territoriais</li><li>Lideranças, individualmente</li>
-      </ul>
-      <h2 style="margin-top:3rem">Espaços de governança e redes</h2>
-      <ul class="linhas">
-        <li class="linha"><span class="linha__ano">IGR</span><div class="linha__corpo"><h3>IGR Pantanal – Turismo Sustentável</h3><p>Gestão da Instância de Governança Regional do turismo no Pantanal.</p></div></li>
-        <li class="linha"><span class="linha__ano">Conselhos</span><div class="linha__corpo"><h3>COMDER e COMDEMA</h3><p>Representação da sociedade nos conselhos municipais de desenvolvimento rural e de meio ambiente.</p></div></li>
-        <li class="linha"><span class="linha__ano">Morada Comum</span><div class="linha__corpo"><h3>Embaixadora Territorial</h3><p>Embaixadora Territorial do projeto Pecuária Tropical pelo Clima, da Morada Comum, no território de Cáceres e Vila Bela da Santíssima Trindade.</p></div></li>
-      </ul>
-      <div class="acoes" style="margin-top:2.2rem">
-        <a class="botao botao--verde" data-wa="Olá, Fernanda! Vim pelo site da MSustentaMais e quero conversar sobre um trabalho na minha região." target="_blank" rel="noopener">Levar a MSustentaMais para a minha região</a>
-        <a class="botao botao--linha" href="#/projetos">Ver os projetos</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PLANO DE NEGÓCIOS ============ -->
-<section class="pagina" id="p-plano" data-titulo="Plano de negócios" tabindex="-1" aria-labelledby="t-plano" hidden>
-  <div class="cabeca">
-    <div class="container">
-      <h1 id="t-plano">Plano de negócios</h1>
-      <p class="lead">O caminho que a MSustentaMais escolheu para crescer: o que oferece, para quem, como trabalha e o que vem pela frente.</p>
-    </div>
-  </div>
-
-  <div class="faixa">
-    <div class="container">
-      <h2>O desafio que enfrentamos</h2>
-      <p class="texto">Muitas organizações já sabem o que é ESG, mas não conseguem transformá-lo em decisão, prática e evidência. O relatório existe, o discurso existe, e a sustentabilidade continua dependendo da boa intenção de alguém.</p>
-      <h2 style="margin-top:2.6rem">Nossa proposta de valor</h2>
-      <p class="frase" style="margin-top:.6rem">Desenvolvemos pessoas e organizações para transformar sustentabilidade em gestão, impacto e resultado.</p>
-    </div>
-  </div>
-
-  <div class="faixa faixa--bruma">
-    <div class="container">
-      <h2>O que nos diferencia</h2>
-      <div class="tres">
-        <div><h4>Método praticado no território</h4><p>A metodologia é aplicada na Fazenda Pantaneira Santa Fé do Machadinho antes de ser ensinada.</p></div>
-        <div><h4>ESG, CHA e CEPGAS™</h4><p>O ESG determina sobre o que se atua; o CHA, quais competências desenvolver; o CEPGAS™, como a transformação acontece.</p></div>
-        <div><h4>Competência que fica</h4><p>Critérios escritos, papéis definidos e evidências organizadas continuam na organização depois da consultoria.</p></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="faixa">
-    <div class="container">
-      <h2>Portfólio</h2>
-      <p class="lead texto suave">O CEPGAS™ é o produto-âncora: cinco módulos, 15 encontros e cerca de 45 horas, sempre guiados por diagnósticos.</p>
-      <div class="quatro">
-        <div><h3>Formação de lideranças</h3><p>Consultoria estratégica individual CEPGAS™, mentoria individual e corporativa.</p></div>
-        <div><h3>Consultoria ESG</h3><p>Diagnóstico, planejamento, estruturação, acompanhamento e avaliação.</p></div>
-        <div><h3>Educação para a sustentabilidade</h3><p>Workshops in-company, cursos, oficinas e palestras.</p></div>
-        <div><h3>Projetos territoriais</h3><p>Projetos culturais, de educação ambiental e turismo, e vivências na fazenda.</p></div>
-      </div>
-      <div class="acoes"><a class="botao botao--linha" href="#/quem-somos">Ver todos os produtos e serviços</a></div>
-    </div>
-  </div>
-
-  <div class="faixa faixa--bruma">
-    <div class="container">
-      <h2>Como o trabalho acontece</h2>
-      <ol class="passos">
-        <li><h4>Diagnóstico</h4><p>O líder ou a organização faz o diagnóstico, que revela o estilo de liderança e o maior gargalo.</p></li>
-        <li><h4>Conversa</h4><p>Uma conversa direta para entender o cenário e dizer, com honestidade, se o trabalho faz sentido.</p></li>
-        <li><h4>Formação ou consultoria</h4><p>O percurso é construído em cima das decisões reais, com exercícios e plano de ação.</p></li>
-        <li><h4>Evidências</h4><p>O resultado fica registrado em critérios, papéis e indicadores que a organização mantém.</p></li>
-      </ol>
-    </div>
-  </div>
-
-  <div class="faixa">
-    <div class="container">
-      <h2>Próximos passos</h2>
-      <ul class="linhas">
-        <li class="linha"><span class="linha__ano">Em breve</span><div class="linha__corpo"><h3>Curso online CEPGAS™</h3><p>O método em vídeo, no ritmo do líder.</p></div></li>
-        <li class="linha"><span class="linha__ano">Em breve</span><div class="linha__corpo"><h3>Certificação de liderança CEPGAS™</h3><p>Reconhecimento formal da formação.</p></div></li>
-        <li class="linha"><span class="linha__ano">Em curso</span><div class="linha__corpo"><h3>Cultura e território</h3><p>Projetos como Cáceres em Sentidos, que unem cultura, educação ambiental, turismo e setor criativo.</p></div></li>
-      </ul>
-      <div class="acoes" style="margin-top:2.2rem">
-        <a class="botao botao--verde" data-diag target="_blank" rel="noopener">Começar pelo diagnóstico gratuito</a>
-        <a class="botao botao--linha" data-wa="Olá, Fernanda! Vi o plano da MSustentaMais no site e quero conversar sobre parceria." target="_blank" rel="noopener">Propor uma parceria</a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ============ CEPGAS ============ -->
 <section class="pagina" id="p-cepgas" data-titulo="CEPGAS™" tabindex="-1" aria-labelledby="t-cepgas" hidden>
   <div class="cabeca">
@@ -1045,7 +606,7 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
       <h1 id="t-cepgas">CEPGAS™</h1>
       <p class="lead">Formação de líderes em ESG por competências: Conhecimento, Habilidade e Atitude. O método começa por quem decide, e não pelo relatório.</p>
       <div class="acoes">
-        <a class="botao botao--ouro" data-diag target="_blank" rel="noopener">Fazer o diagnóstico gratuito de liderança ESG</a>
+        <a class="botao botao--ouro" data-diag target="_blank" rel="noopener">Fazer o diagnóstico comportamental</a>
         <a class="botao botao--linha-clara" data-guia target="_blank" rel="noopener">Baixar o guia das seis competências</a>
       </div>
     </div>
@@ -1065,40 +626,22 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
     </div>
   </div>
 
-  <div class="faixa faixa--bruma">
-    <div class="container espiral">
-      <figure class="espiral__fig">
-        <img src="espiral-cepgas.jpg" alt="Espiral Ascendente de Aprendizagem: as seis competências do CEPGAS em espiral, de Clareza estratégica a Sustentação por evidências, apoiadas nos pilares Conhecimento, Habilidade e Atitude, sobre a base Ambiental, Social e Governança." width="900" height="1391" loading="lazy">
-      </figure>
-      <div>
-        <h2>A espiral ascendente de aprendizagem</h2>
-        <p class="lead texto suave">As seis competências não são degraus isolados. Elas sobem juntas, numa espiral contínua: cada volta retoma a anterior num nível mais alto.</p>
-        <ul class="marcadores">
-          <li><strong>A espiral:</strong> o caminho do CEPGAS™, da Clareza estratégica à Sustentação por evidências.</li>
-          <li><strong>Os pilares:</strong> Conhecimento, Habilidade e Atitude, o CHA que sustenta cada competência.</li>
-          <li><strong>A base:</strong> Ambiental, Social e Governança, o campo onde tudo acontece.</li>
-        </ul>
-        <p class="frase">Líderes que transformam ESG em cultura, gestão e vantagem competitiva sustentável.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="faixa ancora" id="a-cepgas-estilos">
+  <div class="faixa faixa--bruma ancora" id="a-cepgas-estilos">
     <div class="container">
       <h2 class="texto">Cada líder entra por uma porta.</h2>
-      <p class="lead texto suave">O diagnóstico de liderança ESG identifica o seu estilo predominante de liderança. O CEPGAS™ reconhece o que já é força e trabalha onde você mais precisa crescer.</p>
+      <p class="lead texto suave">O diagnóstico comportamental identifica o seu estilo predominante de liderança. O CEPGAS™ reconhece o que já é força e trabalha onde você mais precisa crescer.</p>
       <div class="abas" role="tablist" aria-label="Estilos de liderança" id="abas-estilos"></div>
       <div id="painel-estilo" class="painel-aba"></div>
       <p class="suave" style="margin-top:1.2rem">Há ainda perfis que combinam dois estilos e um perfil equilibrado. O diagnóstico mostra o seu.</p>
     </div>
   </div>
 
-  <div class="faixa faixa--bruma ancora" id="a-cepgas-plano">
+  <div class="faixa ancora" id="a-cepgas-plano">
     <div class="container">
       <h2 class="texto">O plano de ação</h2>
       <p class="lead texto">É o roteiro individual do líder. Parte do diagnóstico, mostra qual das seis competências está mais fraca e define, para cada uma, o que fazer, quem faz, com qual critério e com qual evidência.</p>
       <ol class="passos">
-        <li><h4>Diagnóstico de liderança ESG</h4><p>Você descobre o seu estilo de liderança e o maior gargalo do ESG da sua empresa.</p></li>
+        <li><h4>Diagnóstico comportamental</h4><p>Você descobre o seu estilo de liderança e o maior gargalo do ESG da sua empresa.</p></li>
         <li><h4>Devolutiva</h4><p>Reconhecemos o que já é força e mostramos o nível de cada dimensão do CHA.</p></li>
         <li><h4>Plano de ação por módulo</h4><p>A consultoria segue em cinco módulos, sempre sobre as decisões reais da sua mesa.</p></li>
         <li><h4>Evidências e continuidade</h4><p>O que foi decidido fica registrado e a equipe segue sem depender de mim.</p></li>
@@ -1112,7 +655,7 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
       <h3 style="margin-top:2.6rem">O que o CEPGAS™ não é</h3>
       <p class="texto">Não é curso. Não é selo para pendurar na parede. E não substitui a consultoria técnica que mede os seus dados. Ela continua importante. O CEPGAS™ prepara quem decide para sustentar esses dados na frente de qualquer pessoa.</p>
       <div class="acoes">
-        <a class="botao botao--verde" data-diag target="_blank" rel="noopener">Começar pelo diagnóstico gratuito</a>
+        <a class="botao botao--verde" data-diag target="_blank" rel="noopener">Começar pelo diagnóstico</a>
         <a class="botao botao--linha" data-compra target="_blank" rel="noopener" hidden></a>
         <a class="botao botao--linha" data-wa="Olá, Fernanda! Quero conversar sobre a consultoria estratégica individual CEPGAS™." target="_blank" rel="noopener">Conversar no WhatsApp</a>
       </div>
@@ -1125,7 +668,7 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
   <div class="cabeca">
     <div class="container">
       <h1 id="t-projetos">Projetos</h1>
-      <p class="lead">O que já fizemos, o que está em andamento e as propostas encaminhadas. Cultura, educação ambiental, patrimônio, turismo e pecuária sustentável, sempre a partir do território.</p>
+      <p class="lead">O que já fizemos, o que está em andamento e o que foi submetido. Cultura, educação ambiental, patrimônio, turismo e pecuária sustentável, sempre a partir do território.</p>
     </div>
   </div>
   <div class="faixa">
@@ -1206,18 +749,18 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
   <div class="cabeca">
     <div class="container">
       <h1 id="t-meio-ambiente">O meio ambiente é o lugar onde a decisão aparece.</h1>
-      <p class="lead">Não é um capítulo do relatório. Se a decisão não é coerente, o impacto aparece.</p>
+      <p class="lead">Não é um capítulo do relatório. No Pantanal, se a decisão não é coerente, o impacto aparece. Foi assim que eu aprendi a liderar.</p>
     </div>
   </div>
 
   <div class="faixa">
     <div class="container">
       <div class="tres">
-        <div><h4>A fazenda como ponto de partida</h4><p>A Fazenda Pantaneira Santa Fé do Machadinho participou, a partir de 2018, do programa Fazenda Pantaneira Sustentável.</p></div>
+        <div><h4>A fazenda como ponto de partida</h4><p>A Fazenda Pantaneira Santa Fé do Machadinho participa, desde 2018, dos programas Fazenda Pantaneira Sustentável e Produção Sustentável de Bezerros.</p></div>
         <div><h4>Educação ambiental com a comunidade</h4><p>Desde 2003, projetos de educação ambiental com comunidades pantaneiras, como Mimoso e São Pedro de Joselândia, com a UFMT e o apoio da FAPEMAT.</p></div>
         <div><h4>Escuta do território hoje</h4><p>Como Embaixadora Territorial do projeto Pecuária Tropical pelo Clima, da Morada Comum, conduzi o diagnóstico territorial e rodas de conversa com produtores, mulheres produtoras e juventude em Cáceres e Vila Bela da Santíssima Trindade.</p></div>
       </div>
-      <p class="texto" style="margin-top:2rem">Minha dissertação de mestrado em Educação Ambiental tratou da sustentabilidade florestal em Cáceres, em Mato Grosso. Em 2005, apresentei em Fortaleza o trabalho “A Água na Percepção Pantaneira de Meio Ambiente”.</p>
+      <p class="texto" style="margin-top:2rem">Minha tese de doutorado tratou da sustentabilidade florestal em Cáceres, em Mato Grosso. Em 2005, apresentei em Fortaleza o trabalho “A Água na Percepção Pantaneira de Meio Ambiente”.</p>
       <section id="galeria" aria-label="Fotos da fazenda" hidden>
         <div class="fotos" id="fotos"></div>
       </section>
@@ -1265,7 +808,7 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
   <div class="cabeca">
     <div class="container">
       <h1 id="t-artigos">Artigos, imprensa e vídeos</h1>
-      <p class="lead">O que publico sobre liderança ESG, educação ambiental, cultura e sustentabilidade, as matérias em que o trabalho apareceu e os vídeos.</p>
+      <p class="lead">O que publico sobre liderança ESG, educação ambiental, cultura e sustentabilidade no Pantanal, as matérias em que o trabalho apareceu e os vídeos.</p>
     </div>
   </div>
   <div class="faixa">
@@ -1291,7 +834,7 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
 </section>
 
 <!-- ============ CONTATO ============ -->
-<section class="pagina" id="p-contato" data-titulo="Fale conosco" tabindex="-1" aria-labelledby="t-contato" hidden>
+<section class="pagina" id="p-contato" data-titulo="Contato" tabindex="-1" aria-labelledby="t-contato" hidden>
   <div class="cabeca">
     <div class="container">
       <h1 id="t-contato">Vamos conversar.</h1>
@@ -1310,7 +853,7 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
         <select id="f-assunto" name="assunto" required>
           <option value="">Escolha uma opção</option>
           <option>Consultoria estratégica individual CEPGAS™</option>
-          <option>Diagnóstico de liderança ESG</option>
+          <option>Diagnóstico comportamental</option>
           <option>Palestra ou workshop na minha empresa</option>
           <option>Vivência na fazenda</option>
           <option>Projeto cultural ou de educação ambiental</option>
@@ -1333,7 +876,7 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
           <li><b>E-mail</b><a id="txt-email"></a></li>
           <li><b>Onde estou</b>Cáceres, Mato Grosso, Pantanal.</li>
           <li id="canal-redes" hidden><b>Redes</b><span id="txt-redes"></span></li>
-          <li><b>Antes de conversar</b><a data-diag target="_blank" rel="noopener">Faça o diagnóstico gratuito de liderança ESG</a><br><a data-guia target="_blank" rel="noopener">Baixe o guia das seis competências</a></li>
+          <li><b>Antes de conversar</b><a data-diag target="_blank" rel="noopener">Faça o diagnóstico comportamental</a><br><a data-guia target="_blank" rel="noopener">Baixe o guia das seis competências</a></li>
         </ul>
       </div>
     </div>
@@ -1347,15 +890,13 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
     <div class="rodape__grade">
       <div>
         <h2>MSustentaMais</h2>
-        <p>Formação de líderes em ESG, projetos de cultura e educação ambiental. O CEPGAS™ é a metodologia da MSustentaMais.</p>
+        <p>Formação de líderes em ESG, projetos de cultura e educação ambiental, a partir de uma fazenda no Pantanal. O CEPGAS™ é a metodologia da MSustentaMais.</p>
       </div>
       <div>
         <h2>Navegue</h2>
         <ul>
           <li><a href="#/quem-sou">Quem sou</a></li>
-          <li><a href="#/quem-somos">Quem somos</a></li>
-          <li><a href="#/onde-atuamos">Onde atuamos</a></li>
-          <li><a href="#/plano">Plano de negócios</a></li>
+          <li><a href="#/empresa">A empresa</a></li>
           <li><a href="#/cepgas">CEPGAS™</a></li>
           <li><a href="#/projetos">Projetos</a></li>
           <li><a href="#/cultura">Cultura</a></li>
@@ -1379,7 +920,6 @@ form input:focus,form select:focus,form textarea:focus{outline:3px solid var(--m
   </div>
 </footer>
 
-<a class="diag-fixo" data-diag target="_blank" rel="noopener">Diagnóstico ESG gratuito</a>
 <a class="zap" data-wa="Olá, Fernanda! Vim pelo site da MSustentaMais e gostaria de conversar." target="_blank" rel="noopener">Conversar no WhatsApp</a>
 
 <script src="conteudo.js"></script>
@@ -1566,7 +1106,7 @@ function renderProdutos() {
   $('#lista-produtos').innerHTML = PRODUTOS.map(p => {
     let link;
     if (p.acao === 'compra' && urlSegura(CONFIG.compra)) link = `<a class="botao botao--linha" href="${esc(CONFIG.compra)}" target="_blank" rel="noopener">${esc(CONFIG.compraTexto)}</a>`;
-    else if (p.acao === 'diag') link = `<a class="botao botao--linha" href="${esc(CONFIG.diagnostico)}" target="_blank" rel="noopener">Fazer o diagnóstico gratuito</a>`;
+    else if (p.acao === 'diag') link = `<a class="botao botao--linha" href="${esc(CONFIG.diagnostico)}" target="_blank" rel="noopener">Fazer o diagnóstico</a>`;
     else if (p.status === 'Em breve') link = `<a class="botao botao--linha" href="${esc(waLink('Olá, Fernanda! Quero saber quando este item estiver disponível: ' + p.nome + '.'))}" target="_blank" rel="noopener">Quero saber quando abrir</a>`;
     else link = `<a class="botao botao--linha" href="${esc(waLink('Olá, Fernanda! Quero saber mais sobre: ' + p.nome + '.'))}" target="_blank" rel="noopener">Conversar sobre isto</a>`;
     return `<li class="linha"><span class="linha__ano" style="font-size:1.25rem">${esc(p.status)}</span><div class="linha__corpo"><h3>${esc(p.nome)}</h3><p>${esc(p.desc)}</p><p style="margin-top:.7rem">${link}</p></div></li>`;
@@ -1614,8 +1154,8 @@ function renderMaterias() {
 
 /* ---- projetos ---- */
 let filtroStatus = 'Todos', filtroTema = 'Todos';
-const classeSelo = s => ({ 'Em andamento': 'andamento', 'Realizado': 'realizado', 'Proposta encaminhada': 'submetido' }[s] || 'realizado');
-const ordemStatus = { 'Em andamento': 0, 'Proposta encaminhada': 1, 'Realizado': 2 };
+const classeSelo = s => ({ 'Em andamento': 'andamento', 'Realizado': 'realizado', 'Submetido': 'submetido' }[s] || 'realizado');
+const ordemStatus = { 'Em andamento': 0, 'Submetido': 1, 'Realizado': 2 };
 const ehCultura = p => lista(p.temas).some(t => t === 'Cultura' || t === 'Patrimônio');
 function cartaoProjeto(p) {
   const u = urlSegura(p.link);
@@ -1630,9 +1170,9 @@ function cartaoProjeto(p) {
 function renderProjetos() {
   const todos = PROJETOS.filter(p => p && p.titulo);
   const ord = arr => arr.map((p, i) => ({ p, i })).sort((a, b) => ((ordemStatus[a.p.status] ?? 3) - (ordemStatus[b.p.status] ?? 3)) || (a.i - b.i)).map(x => x.p);
-  const status = ['Todos', ...['Em andamento', 'Proposta encaminhada', 'Realizado'].filter(s => todos.some(p => p.status === s))];
+  const status = ['Todos', ...['Em andamento', 'Submetido', 'Realizado'].filter(s => todos.some(p => p.status === s))];
   const temas = ['Todos', ...new Set(todos.flatMap(p => lista(p.temas)))];
-  $('#filtros-status').innerHTML = status.map(s => `<button type="button" class="filtro" aria-pressed="${s === filtroStatus}" data-t="${esc(s)}">${esc(s)} (${s === 'Todos' ? todos.length : todos.filter(p => p.status === s).length})</button>`).join('');
+  $('#filtros-status').innerHTML = status.map(s => `<button type="button" class="filtro" aria-pressed="${s === filtroStatus}" data-t="${esc(s)}">${esc(s)}</button>`).join('');
   $('#filtros-temas').innerHTML = temas.map(s => `<button type="button" class="filtro" aria-pressed="${s === filtroTema}" data-t="${esc(s)}">${esc(s)}</button>`).join('');
   const vis = ord(todos.filter(p => (filtroStatus === 'Todos' || p.status === filtroStatus) && (filtroTema === 'Todos' || lista(p.temas).includes(filtroTema))));
   $('#lista-projetos').innerHTML = vis.length ? vis.map(cartaoProjeto).join('') : '<p class="vazio">Nenhum projeto com essa combinação de filtros.</p>';
@@ -1643,13 +1183,8 @@ function renderProjetos() {
   if (!dest.length) dest = ord(todos);
   $('#home-projetos').innerHTML = dest.slice(0, 3).map(cartaoProjeto).join('');
   const n = s => todos.filter(p => p.status === s).length;
-  const partes = [[n('Em andamento'), 'em andamento'], [n('Realizado'), n('Realizado') === 1 ? 'realizado' : 'realizados'], [n('Proposta encaminhada'), n('Proposta encaminhada') === 1 ? 'proposta encaminhada' : 'propostas encaminhadas']].filter(x => x[0]).map(x => x[0] + ' ' + x[1]);
-  const nomes = s => { const t = todos.filter(p => p.status === s).map(p => esc(p.titulo)); return t.length > 1 ? t.slice(0, -1).join('; ') + ' e ' + t[t.length - 1] : (t[0] || ''); };
-  const linhas = [];
-  if (n('Em andamento')) linhas.push(`<b>${n('Em andamento')} ${n('Em andamento') === 1 ? 'projeto' : 'projetos'} em andamento:</b> ${nomes('Em andamento')}.`);
-  if (n('Proposta encaminhada')) linhas.push(`<b>${n('Proposta encaminhada')} ${n('Proposta encaminhada') === 1 ? 'proposta encaminhada' : 'propostas encaminhadas'}:</b> ${nomes('Proposta encaminhada')}.`);
-  if (n('Realizado')) linhas.push(`<b>${n('Realizado')} ${n('Realizado') === 1 ? 'projeto realizado' : 'projetos realizados'}</b> em cultura, educação ambiental, patrimônio, turismo, formação de líderes e pecuária sustentável. <a href="#/projetos">Ver todos os projetos</a>.`);
-  if (linhas.length) $('#home-contagem').innerHTML = linhas.join('<br>');
+  const partes = [[n('Em andamento'), 'em andamento'], [n('Realizado'), n('Realizado') === 1 ? 'realizado' : 'realizados'], [n('Submetido'), n('Submetido') === 1 ? 'submetido' : 'submetidos']].filter(x => x[0]).map(x => x[0] + ' ' + x[1]);
+  if (partes.length) $('#home-contagem').textContent = 'Cultura, educação ambiental, patrimônio, turismo e pecuária sustentável: ' + partes.join(', ') + '.';
 }
 function renderDestaque() {
   const d = DESTAQUE_CULTURA;
@@ -1696,8 +1231,7 @@ function renderFotos() {
 }
 function renderRetrato() {
   if (!CONFIG.fotoFernanda) return;
-  const img = `<img src="${esc(CONFIG.fotoFernanda)}" alt="Retrato de Fernanda de Arruda Machado"><figcaption>Fernanda de Arruda Machado</figcaption>`;
-  ['#retrato', '#retrato-home'].forEach(s => { const el = $(s); if (el) el.innerHTML = img; });
+  $('#retrato').innerHTML = `<img src="${esc(CONFIG.fotoFernanda)}" alt="Retrato de Fernanda de Arruda Machado"><figcaption>Fernanda de Arruda Machado</figcaption>`;
 }
 
 /* ---- sistema das seis competências ---- */
@@ -1782,12 +1316,11 @@ function montarContato() {
 }
 
 /* ---- rotas ---- */
-const PAGINAS = ['inicio', 'quem-sou', 'quem-somos', 'onde-atuamos', 'plano', 'cepgas', 'projetos', 'cultura', 'meio-ambiente', 'boas-praticas', 'artigos', 'contato'];
+const PAGINAS = ['inicio', 'quem-sou', 'empresa', 'cepgas', 'projetos', 'cultura', 'meio-ambiente', 'boas-praticas', 'artigos', 'contato'];
 function fecharMenu() { $('#menu').classList.remove('aberto'); $('.menu-btn').setAttribute('aria-expanded', 'false'); }
 function rotear(primeira) {
   const [p, a] = location.hash.replace(/^#\/?/, '').split('/');
-  const q = p === 'empresa' ? 'quem-somos' : p;
-  const pg = PAGINAS.includes(q) ? q : 'inicio';
+  const pg = PAGINAS.includes(p) ? p : 'inicio';
   PAGINAS.forEach(id => { $('#p-' + id).hidden = id !== pg; });
   $$('[data-nav]').forEach(l => { if (l.dataset.nav === pg) l.setAttribute('aria-current', 'page'); else l.removeAttribute('aria-current'); });
   document.title = pg === 'inicio' ? 'MSustentaMais | ESG que se sustenta em quem decide' : $('#p-' + pg).dataset.titulo + ' | MSustentaMais';
@@ -1799,7 +1332,7 @@ function rotear(primeira) {
 
 /* ---- início ---- */
 document.addEventListener('DOMContentLoaded', () => {
-  if (!window.CONTEUDO) { const av = $('#aviso-conteudo'); av.innerHTML = 'O arquivo <strong>conteudo.js</strong> não carregou. Confira se ele está na mesma pasta do site e se não falta nenhuma vírgula, aspa ou chave.'; av.hidden = false; }
+  if (!window.CONTEUDO) $('#aviso-conteudo').hidden = false;
   ligarLinks(); renderPub(); renderVideos(); renderProdutos(); renderPraticas(); renderMaterias(); renderProjetos(); renderDestaque(); renderMarcos(); renderFotos(); renderRetrato(); tentarLogo();
   montarEstratos(); montarEstilos(); montarContato();
 
