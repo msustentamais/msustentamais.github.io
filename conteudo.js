@@ -24,12 +24,12 @@ window.CONTEUDO = {
     cidade: "Cáceres, Mato Grosso",
     youtube: "",            // link do canal, ex.: "https://www.youtube.com/@msustentamais"
     youtubeVideoId: "",     // opcional: vídeo em destaque (o código depois de "v=" no link)
-    instagram: ""           // opcional, ex.: "https://www.instagram.com/msustentamais"
+    instagram: "https://www.instagram.com/consultora.fernandamachado"
   },
 
   /* ---------- VENDAS E LINKS DO CEPGAS ---------- */
   vendas: {
-    diagnostico: "https://msustentamais.github.io/CEPGAS/diagnostico_comportamental.html",
+    diagnostico: "https://msustentamais.github.io/CEPGAS/lead_diagnostico.html",
     landingCepgas: "https://msustentamais.github.io/CEPGAS/landing_cepgas.html",
     guia: "https://msustentamais.github.io/CEPGAS/lead_guia.html",
     compra: "https://pay.kiwify.com.br/bFlIE4j",
@@ -40,8 +40,9 @@ window.CONTEUDO = {
      Envie as fotos para uma pasta "img" no GitHub e escreva o caminho aqui.
      A galeria só aparece quando houver pelo menos uma foto. */
   fotos: {
-    fernanda: "",           // ex.: "img/fernanda.jpg" (aparece em "Quem sou")
+    fernanda: "fernanda.jpg",   // aparece em "Quem sou" e na página inicial
     fazenda: [
+      { src: "fazenda-01.jpg", legenda: "Fazenda Pantaneira Santa Fé do Machadinho, no Pantanal de Cáceres" },
       // { src: "img/fazenda-01.jpg", legenda: "Rebanho no fim da tarde" },
     ]
   },
@@ -155,15 +156,33 @@ window.CONTEUDO = {
   ],
 
   /* ---------- PROJETOS ----------
-     status: "Em andamento", "Realizado" ou "Submetido".
+     status: "Em andamento", "Realizado" ou "Proposta encaminhada".
      temas: um ou mais. Os projetos com o tema "Cultura" ou "Patrimônio"
             aparecem também na página Cultura.
      periodo, descricao e link são opcionais — se ficarem "", não aparecem.
      destaque: true faz o projeto aparecer na página inicial (use em até 3). */
   projetos: [
     {
+      titulo: "Revitalização Sustentável da Casa do Daveron",
+      status: "Proposta encaminhada",
+      periodo: "2026",
+      temas: ["Turismo", "Cultura", "Patrimônio", "Educação ambiental"],
+      descricao: "Proposta de um Centro Integrado de Turismo Regenerativo, Cultura e Educação Ambiental no Daveron, espaço da Secretaria Municipal de Turismo e Cultura de Cáceres. A primeira etapa prevê o Portal da Princesinha do Pantanal, o Museu do Pantaneiro, banheiros e apoio ao turismo esportivo e totens digitais. As próximas incluem viveiro, compostagem e energia renovável, sala imersiva 360° sobre o Pantanal e as mudanças climáticas, passarelas ambientais acessíveis, rotas interpretativas e feira gastronômica e de artesanato. A ideia pode ser replicada em outros municípios da IGR Pantanal.",
+      link: "",
+      destaque: false
+    },
+    {
+      titulo: "Caminhos Pantaneiros – Rota das 7 Maravilhas do Pantanal",
+      status: "Proposta encaminhada",
+      periodo: "2026",
+      temas: ["Turismo", "Cultura", "Patrimônio"],
+      descricao: "Proposta encaminhada pela MSustentaMais ao Patrocínio Embratur 2026. Estrutura e promove internacionalmente um roteiro que integra os sete municípios da IGR Pantanal: Cáceres, Poconé, Itiquira, Santo Antônio de Leverger, Porto Esperidião, Barão de Melgaço e Nossa Senhora do Livramento. Prevê inventário dos atrativos, 7 vídeos municipais, exposição de artesanato com curadoria do artista Carlos Viana em Lisboa e um guia on-line em quatro idiomas, integrado ao portal Descubra Mato Grosso.",
+      link: "",
+      destaque: false
+    },
+    {
       titulo: "Cáceres em Sentidos",
-      status: "Submetido",
+      status: "Proposta encaminhada",
       periodo: "2026",
       temas: ["Cultura", "Educação ambiental", "Turismo"],
       descricao: "A cultura como promotora da educação ambiental, do turismo e do setor criativo: livro em 10 capítulos com versões acessíveis, vídeos temáticos, oficinas para professores e mostra cultural. Proposta apresentada ao Programa Rouanet Centro-Oeste.",
@@ -175,7 +194,7 @@ window.CONTEUDO = {
       status: "Em andamento",
       periodo: "desde 2018",
       temas: ["Pecuária sustentável"],
-      descricao: "Fazenda pantaneira gerida com os programas Fazenda Pantaneira Sustentável e Produção Sustentável de Bezerros. É o campo onde a metodologia é praticada no dia a dia.",
+      descricao: "Fazenda pantaneira que participou do programa Fazenda Pantaneira Sustentável. É o campo onde a metodologia é praticada no dia a dia.",
       link: "",
       destaque: true
     },
@@ -189,20 +208,11 @@ window.CONTEUDO = {
       destaque: true
     },
     {
-      titulo: "Pecuária Tropical pelo Clima",
+      titulo: "Pecuária Tropical pelo Clima – Morada Comum",
       status: "Em andamento",
       periodo: "2026",
       temas: ["Pecuária sustentável", "Governança"],
-      descricao: "Como Embaixadora Territorial do projeto, da Morada Comum, conduzi o diagnóstico territorial e rodas de conversa com produtores, mulheres produtoras e juventude em Cáceres e Vila Bela da Santíssima Trindade.",
-      link: "",
-      destaque: false
-    },
-    {
-      titulo: "Vozes da Pecuária",
-      status: "Em andamento",
-      periodo: "",
-      temas: ["Pecuária sustentável"],
-      descricao: "Atuação como embaixadora do projeto.",
+      descricao: "Como Embaixadora Territorial do projeto Pecuária Tropical pelo Clima, da Morada Comum, conduzi o diagnóstico territorial e rodas de conversa com produtores, mulheres produtoras e juventude em Cáceres e Vila Bela da Santíssima Trindade, com 230 horas de dedicação.",
       link: "",
       destaque: false
     },
@@ -211,25 +221,25 @@ window.CONTEUDO = {
       status: "Em andamento",
       periodo: "2025 e 2026",
       temas: ["Governança", "Turismo"],
-      descricao: "Participação, como representante, no COMDER, no COMDEMA e na IGR Pantanal, a Instância de Governança Regional do Pantanal, na construção de propostas de desenvolvimento sustentável regional.",
+      descricao: "Representação da sociedade no COMDER e no COMDEMA e gestão da IGR Pantanal – Turismo Sustentável, na construção de propostas de desenvolvimento sustentável regional.",
       link: "",
       destaque: false
     },
     {
       titulo: "Restauração da Rua da Manga – Quintino Bocaiúva",
       status: "Realizado",
-      periodo: "",
+      periodo: "2003",
       temas: ["Patrimônio", "Cultura"],
-      descricao: "",
+      descricao: "Recuperação das fachadas das propriedades do perímetro de patrimônio histórico de Cáceres, incluindo as casas históricas da Rua da Manga (Rua Quintino Bocaiúva), em colaboração com a Secretaria Municipal de Meio Ambiente e Turismo.",
       link: "",
       destaque: false
     },
     {
       titulo: "Restauração da Ilha do Malheiro",
       status: "Realizado",
-      periodo: "",
+      periodo: "2003",
       temas: ["Patrimônio", "Cultura", "Meio ambiente"],
-      descricao: "",
+      descricao: "Recuperação da margem da Baía do Malheiro, no rio Paraguai, em colaboração com a Secretaria Municipal de Meio Ambiente e Turismo de Cáceres.",
       link: "",
       destaque: false
     },
@@ -238,8 +248,8 @@ window.CONTEUDO = {
       status: "Realizado",
       periodo: "",
       temas: ["Cultura"],
-      descricao: "",
-      link: "",
+      descricao: "Produção audiovisual “A Cultura Pantaneira Cacerense e sua Iconografia – Percepção de Sentido”, realizada com a Lei Paulo Gustavo, do Ministério da Cultura.",
+      link: "https://youtu.be/qP0pGBpSXWo",
       destaque: false
     },
     {
@@ -268,13 +278,49 @@ window.CONTEUDO = {
       descricao: "Proposta de implantação do turismo na fazenda, feita como monografia, que virou projeto real e foi apresentada em eventos nacionais.",
       link: "",
       destaque: false
+    },
+    {
+      titulo: "Consultoria CEPGAS™ – formação em competências de liderança ESG",
+      status: "Realizado",
+      periodo: "junho e julho de 2026",
+      temas: ["Formação de líderes ESG", "Governança"],
+      descricao: "Formação individual em cinco módulos, com ênfase no pilar de Governança: revisão de processos decisórios, critérios de responsabilidade e alçadas, e integração dos pilares Ambiental e Social. A empresa atendida relatou redução de custos, maior clareza decisória e uma estrutura mais sólida de prestação de contas.",
+      link: "",
+      destaque: false
+    },
+    {
+      titulo: "Programa de Formação de Educadores Ambientais do Pantanal (ProFEAP)",
+      status: "Realizado",
+      periodo: "2003 a 2006",
+      temas: ["Educação ambiental"],
+      descricao: "Participação desde a criação do Coletivo Educador – Núcleo Cuiabá, coordenado pela Profa. Dra. Michèle Sato (GPEA/UFMT): secretaria do programa e orientação de dois projetos de intervenções locais.",
+      link: "",
+      destaque: false
+    },
+    {
+      titulo: "Turismo, patrimônio e meio ambiente com a Prefeitura de Cáceres",
+      status: "Realizado",
+      periodo: "2003 e 2004",
+      temas: ["Turismo", "Patrimônio", "Meio ambiente"],
+      descricao: "Colaboração voluntária com a Secretaria Municipal de Meio Ambiente e Turismo: projetos de fomento do turismo rural, 25º Festival Internacional de Pesca de Cáceres (FIP 2003) e mutirão de limpeza do rio Paraguai, além da restauração da Rua da Manga e da Ilha do Malheiro.",
+      link: "",
+      destaque: false
+    },
+    {
+      titulo: "Capacitação de professores do Curso de Suplência",
+      status: "Realizado",
+      periodo: "1995 a 1997",
+      temas: ["Educação"],
+      descricao: "Palestrante e ministrante nos Encontros de Capacitação para Professores do Curso de Suplência I, promovidos pelo SESI e pela Prefeitura de Cáceres, com 40 horas cada.",
+      link: "",
+      destaque: false
     }
   ],
 
   /* ---------- DESTAQUE DA PÁGINA CULTURA ---------- */
   culturaDestaque: {
     titulo: "Cáceres em Sentidos",
-    status: "Proposta submetida ao Programa Rouanet Centro-Oeste",
+    status: "Proposta encaminhada ao Programa Rouanet Centro-Oeste",
     texto: "Um livro sobre Cáceres escrito com quem vive a cidade e o Pantanal, em versões impressa, com letra ampliada, digital e em audiolivro, acompanhado de vídeos temáticos, oficinas de elaboração de projetos para professores e uma mostra cultural aberta à comunidade.",
     itens: [
       "Cultura",
@@ -293,6 +339,12 @@ window.CONTEUDO = {
   /* ---------- MATÉRIAS NA IMPRENSA (links externos) ----------
      Copie o modelo abaixo (tire as barras // do início das linhas) para cada matéria. */
   materias: [
+    {
+      data: "2026-06-14",
+      veiculo: "Zaki News",
+      titulo: "O El Niño em nossos territórios",
+      link: "https://zakinews.com.br/o-el-nino-em-nossos-territorios/"
+    },
     // {
     //   data: "2024-05-10",
     //   veiculo: "Nome do jornal ou site",
@@ -310,14 +362,15 @@ window.CONTEUDO = {
     { ano: "2004", tipo: "Livro", titulo: "Múltiplas Dimensões da Educação Ambiental", detalhe: "Coautoria.", link: "" },
     { ano: "2004", tipo: "Livro", titulo: "Conceitos em Educação Ambiental", detalhe: "Coautoria.", link: "" },
     { ano: "2004", tipo: "Pesquisa", titulo: "Projeto Ambiental Escolar Comunitário (PAEC)", detalhe: "Um dos quatro cadernos do Projeto de Educação Ambiental (PrEA), com as comunidades pantaneiras de Mimoso e São Pedro de Joselândia. Coautoria.", link: "" },
-    { ano: "2004", tipo: "Apresentação", titulo: "Turismo Rural no Pantanal", detalhe: "Trabalho apresentado em 2004.", link: "" },
-    { ano: "2003", tipo: "Monografia", titulo: "Proposta de Implantação do Turismo na Fazenda Santa Fé do Machadinho", detalhe: "Especialização em Turismo, Desenvolvimento Local e Regional (UNEMAT). Apresentada em eventos como o V Fórum Brasileiro de Educação Ambiental até 2005.", link: "" }
+    { ano: "2004", tipo: "Apresentação", titulo: "Turismo Rural no Pantanal", detalhe: "Programa local de turismo rural apresentado no 1º SENATUR – Seminário Nacional de Turismo Rural, em São Paulo, como representante de Mato Grosso, a convite da ABRATURR.", link: "" },
+    { ano: "2003", tipo: "Monografia", titulo: "Proposta de Implantação do Turismo na Fazenda Santa Fé do Machadinho", detalhe: "Especialização em Turismo e Desenvolvimento Local e Regional (UNEMAT). Apresentada em eventos como o V Fórum Brasileiro de Educação Ambiental até 2005.", link: "" }
   ],
 
   /* ---------- VÍDEOS ----------
      Cole o endereço do YouTube em "link" e o vídeo passa a tocar no site.
      Sem link, o cartão aparece como "Em breve". */
   videos: [
+    { serie: "Cultura pantaneira", titulo: "A Cultura Pantaneira Cacerense e sua Iconografia – Percepção de Sentido", descricao: "Produção audiovisual realizada com a Lei Paulo Gustavo.", link: "https://youtu.be/qP0pGBpSXWo" },
     { serie: "Aula gratuita", titulo: "Por que o ESG da sua empresa continua frágil", descricao: "Nove minutos sobre o que o mercado oferece, por que não resolve e o que muda quando o líder decide com critério.", link: "" },
     { serie: "Estilos de liderança", titulo: "CEPGAS™ para o líder executor", descricao: "Como o método conversa com quem transforma intenção em ação.", link: "" },
     { serie: "Estilos de liderança", titulo: "CEPGAS™ para o líder inspirador", descricao: "Como o método dá prova ao propósito de quem mobiliza pessoas.", link: "" },
@@ -329,8 +382,9 @@ window.CONTEUDO = {
      status: "Disponível", "Sob consulta" ou "Em breve".
      acao: "diag" (abre o diagnóstico), "compra" (abre a página de compra) ou "wa" (WhatsApp). */
   produtos: [
-    { nome: "Diagnóstico comportamental", desc: "Descubra o seu estilo predominante de liderança e o maior gargalo do ESG da sua empresa.", status: "Disponível", acao: "diag" },
-    { nome: "Consultoria estratégica individual CEPGAS™", desc: "Formação em cinco módulos, em cima das decisões reais do líder.", status: "Disponível", acao: "wa" },
+    { nome: "Diagnóstico de liderança ESG", desc: "Gratuito. Descubra o seu estilo predominante de liderança e o maior gargalo do ESG da sua empresa.", status: "Disponível", acao: "diag" },
+    { nome: "Consultoria em sustentabilidade e ESG", desc: "Diagnóstico, planejamento, estruturação, acompanhamento e avaliação para empresas, propriedades rurais e organizações.", status: "Disponível", acao: "wa" },
+    { nome: "Consultoria estratégica individual CEPGAS™", desc: "Cinco módulos, 15 encontros e cerca de 45 horas, em cima das decisões reais do líder.", status: "Disponível", acao: "wa" },
     { nome: "Mentoria individual e corporativa", desc: "Acompanhamento continuado de líderes e equipes.", status: "Sob consulta", acao: "wa" },
     { nome: "Workshops in-company", desc: "Formação da equipe dentro da própria empresa.", status: "Sob consulta", acao: "wa" },
     { nome: "Palestras", desc: "ESG, liderança, cultura e Pantanal, para eventos, escolas e empresas.", status: "Sob consulta", acao: "wa" },
@@ -352,16 +406,19 @@ window.CONTEUDO = {
     { ano: 1994, rot: "1994", faixa: "eu", titulo: "Educação de jovens e adultos", texto: "Passo a coordenar o programa de EJA do SESI-MT, até 1998." },
     { ano: 1999, rot: "1999", faixa: "br", titulo: "Lei 9.795", texto: "O Brasil ganha a Política Nacional de Educação Ambiental." },
     { ano: 2000, rot: "2000", faixa: "br", titulo: "Pantanal na UNESCO", texto: "A região é reconhecida como Patrimônio Natural da Humanidade e Reserva da Biosfera." },
-    { ano: 2001, rot: "2001", faixa: "eu", titulo: "Consultoria no SEBRAE-MT", texto: "Começo a atuar como consultora e instrutora, até 2004." },
+    { ano: 1995, rot: "1995 a 1997", faixa: "eu", titulo: "Formação de professores", texto: "Capacito professores do Curso de Suplência em Cáceres, com o SESI e a Prefeitura." },
+    { ano: 2001, rot: "2001", faixa: "eu", titulo: "Serviços ao SEBRAE-MT", texto: "Começo a prestar serviços ao SEBRAE-MT em treinamentos, até 2004." },
     { ano: 2003, rot: "2003", faixa: "eu", titulo: "Educação ambiental no Pantanal", texto: "Entro no GPEA/UFMT e no ProFEAP. Minha monografia sobre turismo na fazenda vira projeto real." },
     { ano: 2004, rot: "2004", faixa: "mundo", titulo: "Who Cares Wins (ONU)", texto: "O termo ESG entra no vocabulário do mercado financeiro." },
     { ano: 2004, rot: "2004", faixa: "eu", titulo: "Projetos com as comunidades", texto: "Coautoria de livros de educação ambiental e do PrEA e do PAEC. Começa o projeto apoiado pela FAPEMAT, até 2006." },
     { ano: 2005, rot: "2005", faixa: "eu", titulo: "A água na percepção pantaneira", texto: "Apresento o trabalho em Fortaleza, no encontro por uma nova cultura da água na América Latina." },
+    { ano: 2007, rot: "2004 a 2009", faixa: "eu", titulo: "Docência em pós-graduação", texto: "Professora convidada em cursos de especialização do Instituto Cuiabano de Educação (ICE), em educação ambiental, docência e gestão." },
+    { ano: 2010, rot: "2010 a 2013", faixa: "eu", titulo: "Educação a distância e orientação", texto: "Instrutora do curso Docência para a Educação Profissional, da Rede EAD Senac (470 horas), professora no IFMT e orientadora de trabalhos na especialização em Educação Integral da UFMT." },
     { ano: 2015, rot: "2015", faixa: "mundo", titulo: "Agenda 2030 e Acordo de Paris", texto: "Os ODS e as metas climáticas passam a orientar empresas e países." },
-    { ano: 2018, rot: "2018", faixa: "eu", titulo: "Pecuária sustentável na fazenda", texto: "A fazenda entra nos programas Fazenda Pantaneira Sustentável e Produção Sustentável de Bezerros." },
-    { ano: 2019, rot: "2019", faixa: "eu", titulo: "Doutorado", texto: "Título de Doutora em Educação pela Universidad de Santiago de Compostela." },
+    { ano: 2018, rot: "2018", faixa: "eu", titulo: "Pecuária sustentável na fazenda", texto: "A fazenda entra no programa Fazenda Pantaneira Sustentável." },
+    { ano: 2019, rot: "2019", faixa: "eu", titulo: "Doutorado", texto: "Doutora em Educação, na temática Sustentabilidade, pela Universidad de Santiago de Compostela." },
     { ano: 2025, rot: "2025", faixa: "mundo", titulo: "COP30 em Belém", texto: "A agenda climática global acontece em território brasileiro." },
-    { ano: 2025, rot: "2025 e 2026", faixa: "eu", titulo: "Governança regional", texto: "Integro, como representante, o COMDER, o COMDEMA e a IGR Pantanal." },
-    { ano: 2026, rot: "2026", faixa: "eu", titulo: "CEPGAS™ e cultura", texto: "Aplico o método em consultoria estratégica individual, atuo como Embaixadora Territorial do projeto Pecuária Tropical pelo Clima e submeto o projeto Cáceres em Sentidos ao Programa Rouanet Centro-Oeste." }
+    { ano: 2025, rot: "2025 e 2026", faixa: "eu", titulo: "Governança regional", texto: "Represento a sociedade no COMDER e no COMDEMA e assumo a gestão da IGR Pantanal – Turismo Sustentável." },
+    { ano: 2026, rot: "2026", faixa: "eu", titulo: "CEPGAS™ e cultura", texto: "Formalizo a MSustentaMais, aplico o CEPGAS™ em consultoria, atuo como Embaixadora Territorial do projeto Pecuária Tropical pelo Clima, da Morada Comum, e submeto o projeto Cáceres em Sentidos ao Programa Rouanet Centro-Oeste." }
   ]
 };
